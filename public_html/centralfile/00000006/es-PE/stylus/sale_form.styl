@@ -1,0 +1,995 @@
+
+$color_p = #000
+$color_s = #212121
+$color_t = #3D3D3D
+$color_f = #d7ab9e
+$color_b = #797979
+$color_int = #000
+$color_title = #000
+$color_boton_primario = #000
+$color_boton_primario_hover = #333
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+$font_size_h1 = 25px
+$font_size_h2 = 19px
+
+.bx-wrapper
+	.bx-controls-direction
+		a
+			z-index 99 !important
+#cntnImgThumb
+	img
+		float left
+		max-width 130px
+		display	 block
+		margin	5px
+		cursor pointer
+		width auto
+#content
+	.saleform_product_images
+		margin-left -10px
+		.product_image_full
+			text-align center
+			margin-bottom 15px
+			width auto
+			margin 0 auto 20px auto
+			display block
+
+		.product_thumbnails_side
+			margin 0px 0 0 0px
+			img
+				border 1px solid #eeeeee
+				padding 8px
+				margin 0 0 9px 0
+				cursor pointer
+				&:hover
+					border 1px solid $color_s
+			.active
+				border 1px solid $color_s
+				padding 0 8px
+				margin 0 0 10px 0
+
+		.product_thumbnails_color
+			margin 20px 0 0 0
+			img
+				border 1px solid #fff
+				padding 0 3px
+				margin 0 10px
+				float left
+				&:hover
+					border 1px solid #606060
+			.active
+				border 1px solid #606060
+				padding 0 3px
+				margin 0 10px
+	.saleform_product_description
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  55px 0 15px
+			font-weight  normal
+			width  100%
+			float  left
+		p
+			font-size 14px
+			text-align justify
+		b
+			color $color_p
+			font-size 13px
+			margin 28px 0 5px 0
+			display block
+		h2
+			color #000
+			font-size 30px
+			text-align left
+			letter-spacing -1px
+			margin 20px 0 15px 0px
+			font-family $fonttext_f3
+			width 100%
+			float left
+			text-transform none
+	#spnItemSku
+		display none
+	.products_recommended
+		display block
+		margin 50px 0
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 20px
+			font-weight  normal
+			width  100%
+			float  left
+	h1
+		color $color_p
+		border-bottom none
+		font-family $fonttext_f1
+		text-align left
+		text-decoration none
+		font-size $font_size_h1
+
+	/* SALEFORM OPTION POSITION RIGHT */
+	.saleform_options
+		.product_title
+			margin 0px 0 0 0
+			padding 0px 50px 0px 0px
+			font-size 22px
+			font-family $fonttext_f2
+			text-transform capitalize
+			line-height 25px
+			display inline-block
+
+		.saleform_product_form
+			display inline-block
+			margin 15px 0 0 0
+			width 100%
+			.col-xs-60
+				padding 0 !important
+			.product_summ_total_before
+				display none
+
+			.product_sumnprice
+				font-size 22px
+				width 40%
+				float left
+				font-family $fonttext_f1
+				color $color_p
+				margin 10px 0 0 0
+			// .product_oldprice
+			// 	font-size 20px
+			// 	width 22%
+			// 	float left
+			// 	font-family $fonttext_f1
+			// 	color #848484
+			// 	margin 10px 0 0 0
+			// 	text-decoration line-through
+			.product_summ_total
+				font-size 30px
+				text-align left
+				display block
+				width 50%
+				letter-spacing -1px
+				color $color_p
+				font-weight normal
+				float left
+				font-family $fonttext_f3
+				color $color_p
+			/*i
+				font-size 17px
+				font-style normal
+				display none
+				text-align center
+				color #333333
+				width 100%
+				margin 2px 0 10px 0
+				font-weight bold*/
+			#saleform_prices
+				margin-bottom 15px
+				i
+					position absolute
+					right -10px
+					background rgba(244,67,54,0.82)
+					padding 6px
+					top 40px
+					font 700 14px/12px Arial,Helvetica,sans-serif
+					color #fff
+					text-transform uppercase
+					padding 9px 0 7px
+					text-shadow 1px 1px rgba(0,0,0,0.24)
+					width auto
+					text-align center
+					display block
+					position absolute
+					padding 6px 10px 6px 10px
+					right -10px
+					top 16px
+					z-index 1
+					-webkit-transform rotate(0)
+					-ms-transform rotate(0)
+					transform rotate(0)
+					&:before
+						position absolute
+						bottom -6px
+						right 0
+						width 0
+						height 0
+						border-style solid
+						border-width 7px 10px 0 0
+						border-color #bf4138 transparent transparent transparent
+						content "."
+						text-indent -5000px
+						-webkit-transform rotate(0)
+						-ms-transform rotate(0)
+						transform rotate(0)
+				b
+					font-size 22px
+					font-family $fonttext_f3
+					color #848484
+					margin 10px 0 0 0
+					text-decoration line-through
+					padding-right 12px
+				strong
+					color  #c00008
+					font-size  22px
+					font-weight  normal
+					text-align  left
+				span
+					font-size 30px
+					text-align left
+					display block
+					width auto
+					color #000
+					font-family $fonttext_f2
+					float left
+					margin-bottom 10px
+
+		.description_title
+			margin 10px 0 5px 0
+			font-family $fonttext_f3
+			color $color_p
+			font-size 13px
+			text-align justify
+
+
+		#cont_atrb_group
+			div
+				width 100%
+				margin 10px 0 15px 0
+				padding 0px
+				border-radius 3px
+				font-size 14px
+				span
+					width 100%
+					padding 8px 0
+					float left
+					font-family $fonttext_f3
+					text-transform capitalize
+				select
+					text-transform capitalize
+					width 50%
+					border none
+					display inline-block
+					height 30px
+					background #f9f9f9
+					text-align left
+					color #999
+					border 1px solid #cdcdcd
+
+
+
+		.product_select_qty
+			width 100% !important
+			margin 30px 0 10px 0px
+			padding 0px
+			border-radius 3px
+			font-size 14px
+			display inline-block
+			span
+				width 100%
+				padding 6px 0
+				float left
+				font-family $fonttext_f2
+				letter-spacing -1px
+				text-transform capitalize
+			select
+				width 80px
+				height 40px
+				display inline-block
+				text-align left
+				color #000
+				border 1px solid #cdcdcd
+				text-align center
+				float left
+		.product_qty_10
+			display inline-block
+			width 65px
+			margin 0px 0 0 10px
+			border 1px solid #cdcdcd
+			height 40px
+			background #f1f1f1
+			float left
+			text-align center
+
+		.detail_stock
+			float left
+			display inline-block
+			width 100%
+			margin-top 10px
+
+		.product_select_pcolor
+			width 80% !important
+			margin 0px 0 10px -10px
+			padding 0px
+			border-radius 3px
+			font-size 14px
+			display inline-block
+			span
+				width 100%
+				padding 6px 0
+				float left
+				font-family $fonttext_f1
+			.color
+				display inline-block
+				width 100%
+				margin 5px 0
+				b
+					a
+						width 29px
+						height 29px
+						display inline-block
+						margin 0 2px 4px 0
+						border 1px solid #ccc
+						padding 0px
+						&:hover
+							border 1px solid #000
+
+		.btn_addcart
+			width 50%
+			height 40px
+			font-size 16px
+			float left
+			margin 0 0 10px 20px
+			display inline-block
+			background-color $color_boton_primario
+			color #ffffff
+			font-family $fonttext_f3
+			font-weight bold
+			text-transform none
+			border-color $color_p
+			-webkit-box-shadow  0px 2px 0px 0px rgba(89,89,89,1)
+			-moz-box-shadow  0px 2px 0px 0px rgba(89,89,89,1)
+			box-shadow  0px 2px 0px 0px rgba(89,89,89,1)
+			border-radius 3px
+			moz-border-radius 3px
+			webkit-border-radius 3px
+			&:hover
+				color #ffffff
+				background $color_boton_primario_hover
+				border-color $color_boton_primario_hover
+
+
+		.product_select_pay
+			width 100%
+			margin 5px 0 15px 0
+			padding 0px
+			border-radius 3px
+			font-size 14px
+			display inline-block
+			span
+				width 100%
+				padding 6px 0
+				float left
+				font-family $fonttext_f1
+
+		.tellme_mail
+			padding 20px 35px 15px
+			float left
+			width 100%
+			text-align justify
+			margin 5px 0 0 0
+			background #ffffff
+			border 1px solid #e6e6e6
+			p
+				font-size 13px
+				text-align center
+				font-weight normal
+				color #333333
+				margin 5px 0 5px 0px
+			input[type='text']
+				width 66%
+				display block
+				float left
+				height 30px
+				border 1px solid #dcdcdc
+				color #6b6b6b
+				padding 0 0 0 10px
+			input[type='button']
+				background $color_p
+				border none
+				color #ffffff
+				padding 0px
+				width 34%
+				display block
+				float left
+				height 30px
+		.saleform_ad_mail
+			padding 17px 5px 10px
+			float left
+			width 100%
+			text-align justify
+			p
+				font-size 13px
+				text-align center
+				font-weight bold
+				color #333333
+			.mailclie
+				width 66%
+				display block
+				float left
+				height 30px
+				border 1px solid #dcdcdc
+				color #6b6b6b
+				padding 0 0 0 10px
+			.btnmail
+				background $color_p
+				border none
+				color #ffffff
+				padding 0px
+				width 34%
+				display block
+				float left
+				height 30px
+
+
+
+
+
+	.saleform_information_confidence
+		background #ffffff
+		padding 10px 0px
+		float left
+		width 100%
+		margin 10px 0 0 0
+
+		h4
+			font-size 14px
+			font-weight normal
+			letter-spacing -1px
+			margin 5px 0 7px 0px
+			text-align left
+			font-family $fonttext_f2
+		ul
+			list-style none
+			padding 0px
+			margin 0 0 10px 0
+			li
+				font-size 13px
+				line-height 20px
+				padding 0 0 0 0px
+				i
+					color $color_p
+					margin 0 10px 0 0
+		strong
+			font-size 14px
+			font-weight normal
+			letter-spacing -1px
+			margin 15px 0 7px 0px
+			text-align left
+			font-family $fonttext_f3
+			width 100%
+			display inline-block
+		p
+			font-size 13px
+		img
+			margin 0 20px 5px 0
+			text-align center
+			float left
+
+		.confidence_phone
+			font-size 13px
+			color #000
+			font-family Arial
+			margin 35px 0 0 20px
+			display block
+			i
+				color $color_p
+				margin 0 12px 0 0
+				text-align left
+
+		.confidence_mail
+			font-size 13px
+			color #000
+			font-family Arial
+			margin 5px 0 0 20px
+			display block
+			i
+				color $color_p
+				margin 0 7px 0 1px
+
+
+
+
+
+
+
+
+	/* PRODUCTO VIEW RECENT SECTION DOWN */
+	.product_view_recent
+		margin 30px 0 20px 0
+		display inline-block
+		width 100%
+		h2
+			color: $color_p;
+			font-size $font_size_h2
+			text-align: left;
+			padding: 0 0 10px 0;
+			letter-spacing: -1px;
+			margin: 5px 0 5px;
+			font-weight: normal;
+			width: 100%;
+			float: left;
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			text-transform capitalize
+		span
+			font-size 15px
+			letter-spacing 0px
+/** LIGTH BOX - MODAL **/
+.modal-backdrop
+	display none
+
+.modal
+	&.fade
+		.modal-dialog
+			transform translate(0px, 0%)
+			transition transform 0.3s ease-out 0s
+			-webkit-transform scale(0.6)
+			transform scale(0.6)
+
+.modal
+	&.in
+		.modal-dialog
+			-webkit-transform: scale(1);
+			transform: scale(1);
+
+
+/** LIGTH BOX - MODAL**/
+/** LIGTH BOX - MODAL**/
+.modal
+	display none
+	.modal-header
+		padding 30px 10px 20px 0
+		border-bottom 0px
+		h3
+			font-size 22px
+			text-align center
+			display block
+			font-family $fonttext_f2
+			text-transform none
+			color $color_title
+			border-bottom 1px solid #ddd
+			margin 0 auto
+			width 88%
+			font-weight normal
+			letter-spacing -1px
+			padding 0 0 5px 0
+			strong
+				font-weight normal
+	.modal-body
+		padding 20px 40px
+		i
+			font-style normal
+			font-size 17px
+		strong
+			font-size 18px
+			margin 0 0 10px 30px
+			display block
+			line-height 17px
+			color $color_p
+			//text-transform capitalize
+			font-family $fonttext_f3
+
+		p
+			margin 0px 0 0 30px
+			color $color_p
+			font-family $fonttext_f3
+			font-size 14px
+			font-weight normal
+			span
+				display inline-block
+		b
+			border-top 1px solid #bbb
+			margin 25px 0 4px 30px
+			display inline-block
+			font-size 14px
+			color $color_p
+			font-weight normal
+			width 92%
+			padding 10px 0 0 0
+			span
+				color $color_p
+				margin 0 10px 0 0
+				font-size 17px
+				font-weight normal
+
+
+
+		small
+			display inline-block
+			margin 20px 18px 60px 0px
+			text-align left
+			float right
+			.btn-action
+				color #fff
+				background-color $color_b
+				border 1px solid $color_b
+				font-size 15px
+				font-weight normal
+				padding 6px 14px 8px
+				margin 0 11px 0 0
+				text-transform none
+				font-family $fonttext_f3
+				font-weight bold
+			.btn-pay
+				color #fff
+				background-color $color_boton_primario
+				border 1px solid  $color_boton_primario
+				font-size 15px
+				font-weight normal
+				padding 6px 22px 8px
+				text-transform none
+				font-family $fonttext_f3
+				font-weight bold
+
+		#spnSummSku
+			font-size 13px
+
+
+	.modal-footer
+		display inline-block
+		height 0px
+		width 100%
+		border none
+		height auto
+		padding 0px
+		margin 0px
+
+	.btn-pay
+		background #df000c
+		border 1px solid #df000c
+		color #ffffff
+		padding 6px 25px
+		&:hover
+			background #c00008
+			border 1px solid #df000c
+			color #ffffff
+
+
+
+		.modal-footer
+			display inline-block
+			width 100%
+			border none
+			height 0px
+			padding 5px 0 0 0
+
+		.btn-pay
+			background $color_p
+			border 1px solid $color_p
+			color #ffffff
+			padding 6px 25px
+			&:hover
+				background $color_b
+				border 1px solid $color_b
+				color #ffffff
+
+
+// productos buscados
+
+.box_product
+	border 1px solid transparent
+	cursor:pointer
+	margin:0 0 0px
+	padding:3% 1px 3% 2px
+	position:relative
+	text-align:center
+	min-height:300px
+	&:hover
+		border:1px solid #eee
+
+	.img_product
+		display:inline-block
+		height 190px
+		text-align center
+		img
+			max-height 190px
+	.img_product_size170
+		display:inline-block
+		height auto
+		text-align center
+		width 100%
+		background #fff
+		padding 0 0 5px 0
+		margin 0 0 25px 0
+		img
+			max-height 170px
+	.name_product
+		text-align center
+		color $color_p
+		padding 0 15px 3px 15px
+		font-size 13px
+		padding 10px 0 0px 0
+		border-top none
+		margin 5px 0 0 0
+		font-family $fonttext_f3
+		text-transform none
+		a
+			color $color_p
+			font-size 13px
+			text-decoration none
+	.price_product
+		color $color_title
+		font-size:17px
+		text-align: center
+		/*TEMPORAL*/
+		b
+			display none
+		strong
+			font-family $fonttext_f2
+			text-transform none
+	.btn_add_car
+		b
+			font-weight normal
+			float left
+			font-size 13px
+			width 100%
+			margin 15px 0 0 0
+			a
+				-moz-user-select none
+				background-color transparent
+				background-image none
+				border 0 solid #fff
+				border-radius 0
+				color #999
+				cursor pointer
+				display inline-block
+				font-size 13px
+				font-weight normal
+				line-height 1.42857
+				margin 0
+				padding 0 12px
+				text-align center
+				text-decoration underline
+				vertical-align middle
+				white-space nowrap
+		a
+			margin 5px 0 10px 0
+			-moz-user-select none
+			background-image none
+			border 1px solid transparent
+			border-radius 4px
+			cursor pointer
+			display inline-block
+			font-size 14px
+			font-weight normal
+			line-height 1.42857
+			padding 6px 12px
+			text-align center
+			vertical-align middle
+			white-space nowrap
+			background-color #c00008
+			border-color #c00008
+			color #fff
+			text-decoration none
+		img
+			width 140px
+			clear both
+
+@media (min-width:992px) and (max-width:1199px)
+	#content
+		.saleform_product_images
+			.product_thumbnails_color
+				img
+					margin 0 5px 0 12px
+				.active
+					margin 0 5px 0 12px
+		.saleform_options
+			.saleform_product_form
+				.product_summ_total
+					width 100%
+				.btn_addcart
+					width 100%
+					margin 15px 0 10px 0px
+
+@media (min-width:768px) and (max-width:991px)
+	#content
+		.saleform_options
+			.saleform_product_form
+				padding 20px 0
+				margin 5px 0 0 0
+				.btn_addcart
+					width 100%
+					margin 15px 0 10px 0px
+				.product_select_siz, .product_select_color
+					width 45%
+					float left
+					select
+						width 95%
+				.product_select_color
+					margin-right 8%
+
+				.product_oldprice
+					width 40%
+				.product_summ_total
+					width 100%
+				.description_title
+					font-size 12px
+
+				.product_select_qty
+					select
+						width 60px
+
+
+			.product_title
+				margin 0px 0 0px 0
+				text-align left
+		.saleform_information_confidence
+			margin 20px 0 0
+			.confidence_phone
+				font-size 25px
+			.confidence_mail
+				font-size 15px
+		.saleform_product_images
+				.product_image_full
+					padding 0px
+					width auto
+		.saleform_product_images
+			.product_thumbnails_color
+				img
+					width 16%
+					margin 0px 0 0 2px
+				.active
+					width 16%
+					margin 0px
+		.saleform_product_images
+			.product_thumbnails_side
+				margin 10px 0 0 -10px
+
+
+
+
+@media (max-width:767px)
+	#content
+		.saleform_product_images
+			.product_image_full
+				width auto
+		.saleform_product_images
+			.product_thumbnails_side
+				z-index 100
+				margin 10px 0px 0px -10px
+				img
+					background #ffffff
+			.product_thumbnails_color
+				img
+					width 15%
+					margin 0px 0 0 2px
+				.active
+					width 15%
+					margin 0px
+			.product_image_full
+				padding 0
+				h1
+					font-size 15px
+
+
+		.saleform_options
+			.saleform_product_form
+				padding 20px 15px
+
+				.product_summ_total
+					width 100%
+					float left
+					text-align right
+				i
+					float right
+					font-size 16px
+					margin 17px 0 13px
+					padding 0 0 0 8px
+					text-align left
+					width 47%
+
+				.product_select_color
+					width 100%
+					float right
+					font-size 13px
+
+				.product_select_siz
+					width 100%
+					float left
+					font-size 13px
+					span
+						padding 6px 0 0 0px
+						font-size 12px
+				.product_select_color
+					span
+						padding 6px 0 0 0px
+						font-size 12px
+				.product_qty_10
+					width 48%
+					float right
+			.product_select_qty
+				margin 30px 0 10px
+
+		.saleform_information_confidence
+			margin 0px
+
+
+		/*new*/
+		.saleform_options
+			.product_title
+					margin 40px 0 0px 0
+					text-align left
+			.col-xs-60
+				padding 0
+			.saleform_product_form
+				padding 20px 0
+				margin 5px 0 0 0
+				.btn_addcart
+					width 100%
+					margin 20px 0
+				.product_select_siz, .product_select_color
+					select
+						width 95%
+				.product_oldprice
+					width 40%
+				.product_summ_total
+					width 100%
+				.description_title
+					font-size 12px
+
+				.product_select_qty
+					select
+						width 60px
+			#cont_atrb_group
+				div
+					select
+						width 100%
+
+	.modal
+		z-index 3000
+		.modal-header
+			display none
+		.modal-body
+			padding 20px 0
+			text-align center
+			#imgSummImage
+				display inline-block
+			p
+				margin 0
+				text-align left !important
+			b
+				margin 25px 0 4px 0
+				text-align left !important
+				float left
+			small
+				text-align left !important
+				float left
+
+				.btn-action
+					margin-left 10px
+			strong
+				margin 20px 0 10px
+
+@media (max-width:479px)
+	.modal
+		.modal-body
+			small
+				.btn
+					font-size 14px
+					width 100%
+					margin-bottom 10px
+					margin-left 10px
+					margin-right 10px
+
+				.btn-action
+					padding 6px 10px 10px
+/*Estilos victor*/
+
+/**ESTILO DE SCRIPT CART - VICTOR **/
+#msg_prod_sze_cntn
+	display none
+#msg_prod_sze_cntn{position:absolute;z-index:1006;font-family:inherit;overflow:auto;width:300px;min-height:100px;padding:10px;top:50%;left:50%;text-align:center;background-color:#fff;display:none;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px;}
+#msg_prod_sze_cntn big{display:block;margin-top:0px;font-size:12pt;font-weight:bold;text-align:right;color:#ccc;cursor:pointer;}
+#msg_prod_sze_cntn span{display:block;margin:10px 0px 15px 0px;font-size:11pt;text-align:center;line-height:16px;color:#434343;}
+#msg_prod_sze_cntn .msg_sze_btn_ok{width:90px;height:30px;margin-top:10px;border:none;cursor:pointer;background:url('../images/interface/sprt_store.png') no-repeat -400px -195px;}

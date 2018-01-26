@@ -1,0 +1,460 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" /><link rel="icon" type="img_files/png" href="/support/img_files/common/icon.png" /><link href="/support/font/font.css" media="screen" rel="stylesheet" type="text/css" /><link href="/support/es-PE/css_files/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" /><link href="/support/es-PE/css_files/base.css" media="screen" rel="stylesheet" type="text/css" /><link href="support/es-PE/css_files/information.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/support/js_files/jquery.1.11.1/jquery.min.js"></script>
+    <script src="../support/js_files/jquery.FlowupLabels.js"></script>
+
+    <script src="../support/js_files/libs/toastr.2.1.1/content/scripts/toastr.min.js"></script>
+    <link href="../support/js_files/libs/toastr.2.1.1/content/content/toastr.css" rel="stylesheet" />
+
+    <script src="../support/js_files/fechadeentrega.js"></script>
+
+    <link href="../support/css_files/loader.css" rel="stylesheet" />
+
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-79169347-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</head>
+<body>
+    <form name="Form1" method="post" action="fecha-entrega" id="Form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTczNzkxMDA2NWRkHgh1lclkH1Ye0lMYzGkkzC2aDoY=" />
+</div>
+
+<script>
+</script><script>
+var page = 1;
+var _inCallback = false;
+//<![CDATA[
+$(document).ready(function() {
+  var _spDomns = '';var _lstDomns = $('#uctrlBkendHeader_hdfListDomns').val(); _spDomns = _lstDomns.split('~');
+  var _spPartDom = '';
+    for(var i=0; i<_spDomns.length; i++) {
+         _spPartDom = _spDomns[i].split('|');
+         if(_spPartDom[0]== $.cookie('ecmm_domn')){
+             $('#dom_name').text(_spPartDom[1]);
+             var _func = 'location.href=';
+             var _link = _func + "'" + _spPartDom[1] + "'" ;
+              break;
+         }
+     }
+ var _usrLog = 1;
+  if(parseInt($.cookie('ecmm_domn'))>0 && _usrLog >0){
+     $('#topmenuLog').show();
+  }else{ $('#topmenuLog').hide();}
+})
+//]]>
+</script>
+<div>
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="827214C0" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEALuvMqrBALC3sL+CAKbneXZAQLp//OcAgLnyfnVDQL4yfnVDQL5yfnVDQL6yfnVDQLalYcxArmQ3JIGAqaQ3JIGAqeQ3JIGAqSQ3JIGAu3L71gCxbak0QQCy+yp4gfk25xFMJICO7xYC+IBeqOu7IjAIQ==" />
+</div>
+
+<script src="/support/js_files/jquery.cookie.js"></script>
+<header>
+    <div class="container-fluid">
+        <div class="row" id="topmenuLog" style="display:none;">
+
+          <div class="topmenu">
+
+              <div class="col-xs-60 col-sm-20 col-md-25 col-lg-25">
+         <div class="saldo"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            <span>Saldo Disponible:</span><b>S/ 0.00</b>
+            <a href="/bend/trnsctn"><span>Ver movimientos</span></a>
+        </div>
+        </div>
+
+              <div class="hidden-xs hidden-sm col-md-25 col-lg-25">
+              </div>
+              <div class="col-xs-60 col-sm-60 col-md-35 col-lg-35">
+                <div class="domains">
+
+                      <ul class="nav nav-pills">
+
+                        <li><a href="#" onclick="opendom();return false;"><i id="newpageDomn" class="glyphicon glyphicon-new-window" title="Ir a la web"></i> Ir a tienda</a></li>
+
+                        <li class="dropdown">
+                          <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span id="dom_name">Dominios</span><span class="caret"></span> </a><ul id="menu1" class="dropdown-menu" aria-labelledby="drop1">    <li onclick="goDom(this.id)" id="57"><a href="/bend/principal">cesarin.latiendota.com</a></li> </ul>
+                        </li>
+
+                        <!--<li><a href="/bend/report-client-mailing?ldys=90">Notificaciones <small class="alert_del"></small> </a></li>-->
+                        <li><a href="/bend/help">Ayuda</a></li>
+
+                         <li class="dropdown">
+                                <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">        <i class="glyphicon glyphicon-user"></i>etx.cesar.pina@gmail.com <span class="caret"></span>   </a>   <ul id="menu1" class="dropdown-menu" aria-labelledby="drop2">        <li><a href="/mrch/profile">Perfil de Usuario</a></li>        <li><a href="/bend/user-options">Cuentas de Usuarios</a></li>        <li><a href="/mrch/sign-out">Cerrar sesión</a></li>    </ul>
+                        </li>
+
+                      </ul>
+
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+         <div class="col-xs-60 col-sm-60 col-md-12 col-lg-11">
+            <div id="logo">
+            <a href="/bend/principal" title="">
+              <img src="../support/es-PE/images/header/logo.png" class="img-responsive" alt="Backend" title="Backend" width="auto" height="auto"/>
+             </a>
+            </div>
+          </div>
+
+         <div class="col-xs-60 col-sm-60 col-md-48 col-lg-49">
+
+            <nav class="navbar navbar-static mainmenu">
+              <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <div id="uctrlBkendHeader_idmenus"> <div id='navbar' class='navbar-collapse collapse' aria-expanded='false'><ul class='nav navbar-nav'><li class='dropdown'><a href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-pencil'></span>Diseños</a> <ul class='dropdown-menu'><li><a href='/bend/header-footer'>Cabecera y pie de página</a></li><li><a href='/bend/widgets'>Widgets</a></li><li><a href='/preview/config'>Configuración página</a></li></ul> </li><li class='dropdown'><a href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-cog'></span>Configuración</a> <ul class='dropdown-menu'><li><a href='/bend/shipping'>Costo de envío</a></li><li><a href='/bend/mailing-temp'>Plantilla para email</a></li><li><a href='/bend/user-options'>Opciones de usuario</a></li><li><a href='/mrch/profile'>Perfil usuario</a></li><li><a href='/bend/hold-conf'>Métodos de Pago</a></li><li><a href='/bend/google-analytics-adm'>Google Analytics</a></li></ul> </li><li class='dropdown'><a href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-signal'></span>Reportes</a> <ul class='dropdown-menu'><li><a href='/bend/report-orders'>Pedidos</a></li><li><a href='/bend/report-orders-sales'>Ventas</a></li><li><a href='/bend/report-claims-book'>Libro de Reclamaciones</a></li><li><a href='/bend/report-recarga'>Recargas</a></li></ul> </li><li class='dropdown'><a href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-heart'></span>Productos</a> <ul class='dropdown-menu'><li><a href='/bend/categories'>Categorías</a></li><li><a href='/bend/atributes'>Atributos</a></li><li><a href='/bend/inventory'>Inventario</a></li><li><a href='/bend/item-sincronizar'>Sincronizar  Producto</a></li><li><a href='/bend/prod-crear'>Agregar producto</a></li></ul> </li><li class='dropdown'><a href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'><span class='glyphicon glyphicon-list-alt'></span>Contenidos</a> <ul class='dropdown-menu'><li><a href='/bend/pages'>Páginas</a></li><li><a href='/bend/file-manager'>Archivos</a></li></ul> </li></ul></div></div>
+            </nav>
+
+          </div>
+
+        </div>
+    </div>
+
+    <input type="hidden" name="uctrlBkendHeader$hdfListDomns" id="uctrlBkendHeader_hdfListDomns" value="57|cesarin.latiendota.com~" />
+    <input type="hidden" name="uctrlBkendHeader$hdfMrch" id="uctrlBkendHeader_hdfMrch" />
+    <script type="text/javascript" src="/support/js_files/confirm.min.js"></script>
+</header>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //localStorage.setItem('userLogn', '');
+
+        //console.log('=>' + localStorage.getItem('userLogn'));
+        if (localStorage.getItem('userLogn') == '' || localStorage.getItem('userLogn') == undefined) {
+            AddLog(undefined);
+        }
+    });
+
+
+
+
+    function AddLog(d) {
+
+        localStorage.clear();
+        if (d == '' || d == undefined) {
+            d = $('#dom_name').text();
+        }
+        var domn = d;
+        var mrch = $('#uctrlBkendHeader_hdfMrch').val();
+        //console.log(domn);
+        //console.log(mrch);
+        if (mrch.length > 0 && domn.length > 0) {
+            $.ajax({
+                dataType: "json", type: "POST", contentType: "application/json; charset=utf-8",
+                url: "/transdata/wmet_bkend_domn_trnsctn.aspx/AddLog",
+                data: "{'domn':'" + domn + "','mrch':'" + mrch + "'}",
+                error: function (xhr) { },
+                success: function (data) {
+                    //console.log(data.d);
+                    localStorage.setItem('userLogn', 'Y');
+                }
+            })
+
+        }
+    }
+
+</script>
+        <div class="content">
+            <div class="container-fluid backg_content_bread">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-60 col-sm-60 col-md-60 col-lg-60">
+                            <div class="page_breadcrumb">
+                                <a href="">Configuración</a> <span>»</span> <b>Fecha de entrega</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container backg_content config-costo">
+                <div class="header_personalize">
+                    <div class="row">
+                        <div class="col-xs-60 col-sm-60 col-md-60 col-lg-60">
+                            <div class="name-page">
+                                <div class="col-xs-60 col-sm-35 col-md-40 col-lg-46 no-space">
+                                    <h1>Configuración Fecha de entrega</h1>
+                                </div>
+
+                                <div class="col-xs-60 col-sm-25 col-md-20 col-lg-14 no-space">
+                                    <div class="pull-right">
+
+                                        <div class="dropdown downl_invent" style="float: right">
+                                            <button type="button" id="btnNewConf" class="btn btn-default" data-toggle="modal" data-target="#mdl_fecha_entrega">Nueva configuración</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Descripción de la pagina, mensajes de ayuda y video tutorial.-->
+                        <div class="col-xs-60 col-sm-60 col-md-60 col-lg-60">
+                            <section class="pg_description_content" style="margin-bottom: 25px;">
+
+                            </section>
+                            <div class="help-option">
+
+
+                            </div>
+                        </div>
+                        <div class="pg_video_description" style="display: none">
+                            <div class="video">
+
+                                <input type="hidden" name="hdf_help_video" id="hdf_help_video" />
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <hr class="help-option-hr">
+                        <!--Fin descripción.................................................-->
+
+
+                        <div class="col-xs-60 col-sm-30 col-md-30 col-lg-30 report_filter">
+                            <div class="form-inline">
+                                <div class="col-xs-60 col-sm-30 col-md-30 col-lg-30">
+                                    <div class="form-group">
+                                        <label for="cmbServices">Servicios</label>
+                                        <select name="cmbServices" id="cmbServices" class="form-control">
+    <option value="0">—Seleccione—</option>
+    <option value="1">Normal</option>
+    <option value="2">Express</option>
+    <option value="3">Super express</option>
+
+</select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="hdfServices" id="hdfServices" value="0" />
+                        <div class="col-xs-60 col-sm-60 col-md-60 col-lg-60">
+                            <h3>Fechas de entrega</h3>
+                            <div class="figroup_content">
+                                <div class="table-responsive">
+                                    <table id='myTable' class='table table-hover'>    <thead>        <tr>            <th><span class="title_name">Servicio</span></th>            <th><span class="title_name">Tiempo mínimo</span></th>            <th><span class="title_name">Tiempo máximo</span></th>            <th><span class="title_name">Turnos configurados</span></th>            <th><span class="title_name">Fecha de registro</span></th>            <th colspan='2'><span class="title_name">Opciones</span></th>        </tr>    </thead>    <tbody><tr><td>Express</td><td>2 días</td><td>4 días</td><td><span>2</span></td><td><span>02/05/2017 04:18:58 p.m.</span></td><td><b class="glyphicon glyphicon-pencil" title="Editar" onclick="viewDataEdit(13);" ></b></td><td><i class="glyphicon glyphicon-trash" title="Eliminar" onclick="DelConfig(13);"> </i></td></tr></tbody></table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<footer>
+    <div class="container">
+    <div class="row">
+            <p>SAMI<span>SHOP</span> - e-commerce agency © 2015  All rights reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/support/js_files/bootstrap_3.3.4.min.js" defer="defer"></script>
+<script src="/support/js_files/global.js" ></script>
+<script src="/support/js_files/confirm.min.js"></script>
+
+
+        <div id="mdl_fecha_entrega" class="modal fade modal_add_fecha_entrega" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                        <h3>Fecha de entrega</h3>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="hdfServExec" id="hdfServExec">
+                        <div class="row">
+                            <div class="col-sm-15 ">
+                                <div class="form-group">
+                                    <label for="cmbTipoServA">
+                                        Escoge el tipo de Servicio</label>
+                                    <select name="cmbTipoServA" id="cmbTipoServA" class="form-control">
+    <option value="0">—Seleccione—</option>
+    <option value="1">Normal</option>
+    <option value="2">Express</option>
+    <option value="3">Super express</option>
+
+</select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-27">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label for="cmbtmin">Tiempo mínimo:</label>
+                                    <select name="cmbtmin" id="cmbtmin" class="form-control">
+                                        <option value="0">Días</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label for="cmbtmax">Tiempo máximo:</label>
+                                    <select name="cmbtmax" id="cmbtmax" class="form-control">
+                                        <option value="0">Días</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="figroup_content table_date_send">
+                                <div class="table-responsive">
+                                    <div class="loader" id="loaderTable"></div>
+                                    <table id="config_dlvry_dts" class="table table-hover animate-bottom" style="display:none;">
+                                        <thead>
+                                            <tr>
+                                                <th>Turno</th>
+                                                <th>Lunes</th>
+                                                <th>Martes</th>
+                                                <th>Miercoles</th>
+                                                <th>Jueves</th>
+                                                <th>Viernes</th>
+                                                <th>Sabado</th>
+                                                <th>Domingo</th>
+                                                <th>Horario</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <div class="add_file">
+                                        <a id="add_new_row">+ Añadir más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row form_btn">
+                            <div class="col-xs-60 col-sm-60 col-md-60 col-lg-60">
+                                <input type="button" id="btnSaveData" value="Grabar" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="hdfLoadRslt" id="hdfLoadRslt" />
+        <input type="hidden" name="hdfServ" id="hdfServ" value="0" />
+        <input type="hidden" name="hdf_ed_cnf" id="hdf_ed_cnf" value="0" />
+
+
+
+<script language="javascript">
+//<![CDATA[
+function opendom(){
+  var _spDomns = '';var _lstDomns = $('#uctrlBkendHeader_hdfListDomns').val(); _spDomns = _lstDomns.split('~');
+  var _spPartDom = '';
+    for(var i=0; i<_spDomns.length; i++) {
+         _spPartDom = _spDomns[i].split('|');
+         if(_spPartDom[0]== $.cookie('ecmm_domn')){
+             $('#dom_name').text(_spPartDom[1]);
+             var _link = 'http://'+ _spPartDom[1];
+             window.open(_link,'_blank');             break;
+         }
+     }
+}
+//]]>
+</script>
+<script language="javascript">
+//<![CDATA[
+function goDom(_idom){
+     var _dn = _idom;
+     var _pr = 'domn='+_dn;
+     setCookie('ecmm_domn',_dn,15);
+     AddLog(_idom);
+     window.location.href='/bend/principal';
+}
+//]]>
+</script>
+<script language="javascript">
+//<![CDATA[
+function oNumbs(ev){
+     var currCode = (ev.which) ? ev.which : ev.keyCode;
+     if (currCode == 8 || (currCode >= 48 && currCode <= 57))
+     {return true;}else {return false;}
+}
+//]]>
+</script>
+<script>
+//<![CDATA[
+function getCookie(cn) {
+    var name = cn + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return '';
+}
+//]]>
+</script>
+<script>
+//<![CDATA[
+function setCookie(cn, cv, ed) {
+    var d = new Date();
+    d.setTime(d.getTime() + (ed*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cn + "=" + cv + "; " + expires + "; path=/";
+}
+//]]>
+</script>
+<script language="javascript">
+//<![CDATA[
+function Confirmar(Myfunction, vrb){
+   bootbox.confirm('¿Estás seguro que quieres borrar el registro?', function (result) {
+      if (result) {
+        Myfunction(vrb);
+       }
+    });
+}
+
+//]]>
+</script>
+</form>
+
+</body>
+
+</html>
+<script src="../support/js_files/page_help_mssge.js"></script>

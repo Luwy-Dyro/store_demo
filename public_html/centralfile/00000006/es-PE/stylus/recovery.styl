@@ -1,0 +1,142 @@
+$color_p = #000
+$color_s = #212121
+$color_t = #3D3D3D
+$color_f = #d7ab9e
+$color_b = #797979
+$color_int = #000
+$color_title = #000
+$color_boton_primario = #000
+$color_boton_primario_hover = #333
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+$font_size_h1 = 25px
+$font_size_h2 = 19px
+#content
+	.recovery
+		display block
+		margin 60px 0 0 0
+		.col-md-15, .col-lg-15
+			display none !important
+		.col-md-30, .col-lg-30
+			width 100% !important
+		strong
+			font-size $font_size_h1
+			font-weight normal
+			text-align left
+			display block
+			margin 10px 0 20px 0
+			font-family $fonttext_f3
+			color $color_p
+			border-bottom none
+			letter-spacing -1px
+			text-transform none
+		.form-group
+			display block
+			width 75%
+			margin 0
+			clear both
+			padding 15px 0 0 0
+			input
+				border-radius 0px
+				margin 0 0 15px 0
+				border 1px solid #cccccc
+			label
+				display block
+				font-size 14px
+				color $color_p
+				font-weight normal
+			.nickname
+				width 50%
+		.captcha
+			input
+				width 50%
+				float right
+		.form_btn
+			display block
+			text-align left
+			margin 50px 0 40px 0
+			height auto
+			padding	5px 0px
+
+			.btn_signin
+				font-size 16px
+				font-family $fonttext_f3
+				text-transform none
+				padding 5px 20px 5px
+				border-radius 0px 0px 0px 0px
+				-moz-border-radius 0px 0px 0px 0px
+				-webkit-border-radius 0px 0px 0px 0px
+				background $color_boton_primario
+				&:hover
+					background $color_boton_primario_hover
+					border-color $color_boton_primario_hover
+
+			p
+				margin 10px 0 0 0
+				display block
+				color #333
+
+		.form_containerzx
+			h1
+				border-bottom none
+				color #000
+				display block
+				font-family $fonttext_f1
+				font-size $font_size_h1
+				font-weight normal
+				letter-spacing -1px
+				margin 0px 0 50px
+				text-align left
+				text-transform none
+				padding 0 0 5px 0
+			.buttons_group
+				.btn-action
+					margin 40px 0 120px 0
+					padding-left 60px
+					padding-right 60px
+			.form-group
+				width 35%
+				padding 10px 0 0 0
+
+
+
+//@media (min-width:992px) and (max-width:1199px)
+
+//@media (min-width:768px) and (max-width:991px)
+@media (min-width:1367px) and (max-width:1950px)
+	#content
+		.recovery
+			.bredcrumb, .page_breadcrumb, .breadcrumb, .breadcrumbs
+				margin-top 130px
+			.form_containerzx
+				.buttons_group
+					.btn-action
+						margin 40px 0 130px
+			strong
+				margin 200px 0 20px
+			.form_btn
+				margin 60px 0 190px
+
+@media (max-width:767px)
+	#content
+		.recovery
+			.form-group
+				width auto
+				.nickname
+					width 100%
+			.form_containerzx
+				.form-group
+					width 100%
+
+
+
+@media (max-width:479px)
+
+	#content
+		.recovery
+			.form_containerzx
+				h1
+					line-height 52px

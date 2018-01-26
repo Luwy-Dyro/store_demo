@@ -1,0 +1,294 @@
+$color_p = #000
+$color_s = #212121
+$color_t = #3D3D3D
+$color_f = #d7ab9e
+$color_b = #797979
+$color_int = #000
+$color_title = #000
+$color_boton_primario = #000
+$color_boton_primario_hover = #333
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+$font_size_h1 = 25px
+$font_size_h2 = 19px
+#content
+
+	.register_join
+		display inlile-block
+		margin 0
+		width 100%
+		h1
+			color $color_p
+			display block
+			font-family $fonttext_f3
+			font-size $font_size_h1
+			font-weight normal
+			letter-spacing -1px
+			margin 0px 0 10px
+			text-align left
+			text-transform none
+			padding 0
+			border-bottom none
+		.col-md-15, .col-lg-15
+			display none !important
+		.col-md-30, .col-lg-30
+			width 100% !important
+		.social_login
+			display block
+			width 80%
+			margin 0 auto
+			text-align left
+			.btn-facebook
+				padding 6px 4%
+				margin 0 2% 0 0
+				.ico-facebook
+					width 19px
+					height 24px
+					float left
+					margin 0 12px 0 0
+					padding 0 5px 0 0
+				span
+					float left
+					margin 3px 0 0 0
+			.btn-google
+				padding 6px 4%
+				.ico-gplus
+					width 32px
+					height 24px
+					float left
+					margin 0 12px 0 0
+					padding 0 5px 0 0
+				span
+					float left
+					margin 3px 0 0 0
+		.line
+			display block
+			width 75%
+			margin 25px auto 0 auto
+			span
+				border-bottom 1px solid #E6E6E6
+				float left
+				width 45%
+				padding 15px 0 0 0
+			b
+				float left
+				width 10%
+				text-align left
+				font-size 20px
+				font-weight normal
+				color #999
+		.form-group
+			display block
+			margin 0
+			clear both
+			padding 15px 0 0 0
+			width 50%
+			input
+				border-radius 0px
+				margin 0 0 15px 0
+				border 1px solid #cccccc
+			label
+				display block
+				font-size 14px
+				color $color_p
+				font-weight normal
+			.nickname
+				width 100%
+		.captcha
+			input
+				width 180px
+				float right
+				margin 5px 0 0 25px
+				height 35px
+
+		.form_btn
+				display block
+				text-align left
+				margin 50px 0 40px 0
+				height auto
+				padding	5px 0px
+
+				.btn_signin
+					font-size 16px
+					font-family $fonttext_f3
+					letter-spacing -1px
+					text-transform none
+					padding 5px 20px 5px
+					border-radius 0px 0px 0px 0px
+					-moz-border-radius 0px 0px 0px 0px
+					-webkit-border-radius 0px 0px 0px 0px
+					background $color_boton_primario
+					&:hover
+						background $color_boton_primario_hover
+						border-color $color_boton_primario_hover
+
+				p
+					margin 15px 0 0 0
+					display block
+					color $color_p
+					font-size 13px
+					a
+						color $color_p
+						font-family $fonttext_f3
+
+	.registered_wrapper
+		.jumbotron
+			background none
+			margin-top 73px
+			h1
+				font-family $fonttext_f3
+				text-align left
+				border-bottom 0px
+				text-transform uppercase
+				font-size $font_size_h1
+				color $color_p
+				line-height 40px
+				margin 20px 10px 40px 0px
+				padding 0px 0 10px 0
+				letter-spacing -1px
+
+			p
+				a
+					color $color_title
+
+	.reclamations
+		display inlile-block
+		margin 0
+		width 100%
+		h1
+			border-bottom 2px solid #ddd
+			color #000
+			display block
+			font-family $fonttext_f3
+			font-size 20px
+			font-weight bold
+			letter-spacing -1px
+			margin 0px 0 0px
+			text-align left
+			text-transform none
+			padding 0 0 0px 0
+		h3
+			display inline-block
+			width 100%
+			margin 15px 0 10px 0
+			font-size 18px
+			letter-spacing -1px
+
+
+		.form-group
+			display block
+			margin 0
+			clear both
+			padding 15px 0 0 0
+			width 70%
+			input
+				border-radius 0px
+				margin 0 0 15px 0
+				border 1px solid #cccccc
+				display inline-block
+				height 30px
+			label
+				display inline-block
+				font-size 13px
+				color $color_t
+				font-weight normal
+				font-family $fonttext_f3
+
+			.indentify
+				width 100%
+				display inline-block
+				margin 5px 0 20px 0
+				input[type="radio"]
+					margin 0 5px 0 0
+					float left
+				input[type="checkbox"]
+					margin 0 15px 0 0
+					float left
+					height 22px
+				label
+					margin 0 40px 0 0
+					float left
+					padding-top 5px
+			.box
+				display inline-block
+				width 100%
+				margin 0 0 20px 0
+				label
+					float left
+					width 22%
+					clear both
+					padding 0 2% 0 0
+				input[type="text"]
+					float left
+					width 76%
+				select
+					float left
+					width 76%
+					margin 0 0 15px
+					height 30px
+
+				input[type="checkbox"], input[type="radio"], textarea
+					float left
+				textarea
+					margin 0 0 20px 0
+					width 75%
+				#cmb_day, #cmb_mnth, #cmb_year
+					width 15%
+					margin-right 15px
+
+
+		.form_btn
+			.btn-action
+				padding-left 45px
+				padding-right 45px
+				padding-bottom 5px
+				padding-top 8px
+				background #000
+				font-size 16px
+				font-family $fonttext_f3
+				letter-spacing -1px
+				text-transform none
+
+
+
+@media (min-width:992px) and (max-width:1199px)
+	.register_join
+		.social_login
+			width 100%
+
+
+@media (min-width:768px) and (max-width:991px)
+	.register_join
+		.social_login
+			.btn-facebook
+				margin 0 15px 0 0
+
+
+@media (max-width:767px)
+	#content
+		.register_join
+			.form-group
+				width 100%
+
+			.captcha
+				input
+					width 100%
+					float none
+					margin 5px 0 0 0
+				div
+					span
+						width 49% !important
+						margin 5px 3px 5px 0 !important
+
+
+		.reclamations
+			.form-group
+				width 100%
+				.box
+					label
+						width 100%
+					input[type="text"], textarea, select
+						width 100%

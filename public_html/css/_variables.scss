@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Poppins:300,400,500,600,700');
+
+/* font */
+$default_font:                    					'Poppins', sans-serif;
+/*'Covered By Your Grace' - Font is used only in banners */
+$default_font1:                  					'Covered By Your Grace', cursive;
+
+$default_font_size:              					16px;
+$default_line_height:               				24px;
+$default_title_size_h1_main_page:            		24px;
+$default_title_size_h1_sub_page:            		74px;
+
+$default_text_color:              					#777;
+$default_bg_color:                					#ffffff;
+$default_title_color:               				#333333;
+
+$simple_links_hover_speed: 							0.2s;
+
+/* Colors */
+$default_color:                  					#a6b739;
+$default_color2:                    				#333333;
+$default_color3:                    				#fe4135;
+$default_color4:                    				#c2c2c2;
+
+$link_color_base:                   				$default_text_color;
+
+$border:                            				#e9e9e9;
+
+/* loader */
+$loader_site:                       				$default_color;
+$loader_site_bg:                    				#ffffff;
+$loader_btn:                        				#ffffff;
+
+/*$back_to_top_bg (button go up)*/
+$back_to_top_bg:                    				$default_color;
+$back_to_top_bg_hover:            					$default_color2;
+$back_to_top_text:                					#ffffff;
+$back_to_top_text_hover:                			#ffffff;
+
+/* button */
+$btn_colorbg:                       				$default_color;
+$btn_colortext:                  					#ffffff;
+$btn_colorbg_hover:              					$default_color2;
+$btn_colortext_hover:               				#ffffff;
+
+$btnred_colorbg:                    				#fe4135;
+$btnred_colortext:                					$btn_colortext;
+
+$btnunderline_colortext:            				$default_color2;
+$btnunderline_colorborder:        					$default_color2;
+
+$btnborder_colorbg:              					$btn_colorbg;
+$btnborder_colortext:               				$btn_colortext;
+
+$btnborder_default_border:        					#e9e9e9;
+$btnborder_default_color_text:    					$default_color2;
+
+$btnwhite_colorbg:                					#ffffff;
+$btnwhite_colortext:                				#ffffff;
+
+$btninversion_colortext:            				#ffffff;
+$btninversion_colorbg:            					$default_color2;
+$btninversion_colorbg_hover:        				$default_color;
+$btninversion_colortext_hover:    					#ffffff;
+$btninversion_colorbg_hover:        				$default_color;
+
+$btn_link_text_color:               				$default_color2;
+$btn_link_text_color_hover:      					$default_color;
+$btn_link_icon:                  					$default_color4;
+$btn_link_icon_hover:               				$default_color;
+$btn_link_bg:                      					transparent;
+$btn_link_bg_hover:                 				transparent;
+
+/* social icon */
+$social_icon_color:              					$default_color4;
+$social_icon_color_hover:           				$default_color2;
+$social_icon_color_active:        					$default_color2;
+
+/*=============================== typography */
+/* placeholder */
+$placeholder:                         				$default_text_color;
+
+/*form*/
+$input_border:                    					transparent;
+$input_bg:                        					#f6f6f8;
+$input_text_color:                					$default_text_color;
+$input_border_focus:                				$default_color;
+$label-color-text:                					$default_color2;
+$input_icon_color:                					$default_color4;
+$input_icon:                        				$default_color4;
+$input_icon_active:              					$default_color;
+
+$form_has_success_label:            				$default_color;
+$form_has_success_border:           				$default_color;
+$form_has_success_icon:             				$default_color;
+$form_has_success_hint:             				$default_color;
+$form_has_error_label:              				#fe4135;
+$form_has_error_border:             				#fe4135;
+$form_has_error_icon:               				#fe4135;
+$form_has_error_hint:               				#fe4135;
+
+/* badge */
+$badge_empty_bg:                  					#ededed;
+$badge_bg:                        					#ededed;
+$badge_text_color:                					$default_color2;
+$badge_empty_bg_text_color:        					$default_color2;
+
+$label_color_text:               					$default_color2;
+$quote_border:                                    	$default_color;
+$quote_bull:                                        #ffffff;
+$blockquote_color:                                	$default_color2;
+$blockquote_cite_color:                          	$default_text_color;
+$first_letter:                                    	$default_color;
+
+/*list simple dot*/
+$list_simple_dot_text_color:        				$default_text_color;
+$list_simple_dot_text_color_hover: 					$default_color;
+$list_simple_dot_marker_color:   					$default_color2;
+$list_simple_dot_text_color_active:					$default_color;
+
+/* checkbox-group (global checkbox)*/
+$checkbox_text_label:               				$default_text_color;
+$checkbox_text_label_hover:      					$default_color;
+$checkbox_bg:                       				#f6f6f8;
+$checkbox_bg_check:              					$default_color;
+$checkbox_text_check:               				#ffffff;
+
+/* alert */
+$alert_success_bg:                                	#effaf1;
+$alert_success_text:                                $default_color;
+$alert_info_bg:                                 	#ffecea;
+$alert_info_text:                                   #fe4135;
+$alert_warning_bg:                                	#e9f4ff;
+$alert_warning_text:                                #298ffc;
+$alert_danger_bg:                                   #fff5e7;
+$alert_danger_text:                              	#fe9e14;
+
+/* tooltip_bg */
+$tooltip_bg:                                        $default_color2;
+$tooltip_text:                                    	#ffffff;
+
+/* popovers */
+$btn_popover_bg:                                    #f1f1f1;
+$btn_popover_bg_hover:                            	$default_color2;
+$btn_popover_text:                                	$default_color2;
+$btn_popover_text_hover:                            #ffffff;
+$popover_bg:                                        #ffffff;
+
+/* link (<a class="link")*/
+$link_color:                                        $default_color;
+$link_color_hover:                                	$default_color2;
+
+/* mark*/
+$mark_bg:                                           $default_color2;
+$mark_text:                                      	#ffffff;
+
+/* badge */
+$badge_01_bg:                                       $default_color2;
+$badge_01_text:                                 	#ffffff;
+$badge_01_normal_bg:                                #f1f1f1;
+$badge_01_normal_text:                           	$default_color2;
+$badge_01_success_bg:                               $default_color;
+$badge_01_success_text:                          	#ffffff;
+$badge_01_primary_bg:                               #298ffc;
+$badge_01_primary_text:                         	#ffffff;
+$badge_01_danger_bg:                                #fe4135;
+$badge_01_danger_text:                            	#ffffff;
+$badge_01_warninng_bg:                            	#fe9e14;
+$badge_01_warninng_text:                            #ffffff;
+
+/* decimal-list (Numbered list)*/
+$decimal_list_marker:                               $default_color2;
+$decimal_list_link:                              	$default_text_color;
+$decimal_list_link_hover:                           $default_color;
+$decimal_list_text:                              	$default_text_color;
+
+/*=============================== finish typography */
+
+
+
+/*=============================== header */
+/*  Changing objects to white (header-08, index-12.html)*/
+$header-static-one-color:           #ffffff;
+
+$header_background:                                 #ffffff;
+$header_default_text_color:                         $default_text_color;
+$header_default_title_color:                        $default_title_color;
+$header_default_color:                              $default_color;
+$header_default_color2:                             $default_color2;
+$header_shadow_color:                               rgba(244, 244, 244, 1);
+$header_border:                                     $border;
+$heade_top_line:									$header_border;
+$header_dropdown_caret:                         	$default_color4;
+$header_dropdown_caret_hover:                   	$header_default_color;
+$header_dropdown_text_color:                        $header_default_color2;
+$header_dropdown_text_color_hover:                  $header_default_color;
+$header_dropdown_bg_color:                          #ffffff;
+$header_dropdown_bg_color_hover:                    #f6f6f8;
+$header_dropdown_label:                             $header_default_text_color;
+$header_dropdown_label_hover:                       $header_default_color2;
+$header_dropdown_value:                             $header_default_text_color;
+$header_dropdown_value_hover:                       $header_default_color;
+$header_dropdown_border:                            $header_border;
+$header_dropdown_icon:                              $header_default_color2;
+$header_dropdown_icon_hover:                        $header_default_color;
+$header_dropdown_shadow:                            rgba(0, 0, 0, 0.15);
+$header_input_bg:                                   #f6f6f8;
+$header_input_text:                                 $header_default_text_color;
+$header_counter_arrow:                              $default_color4;
+$header_counter_arrow_hover:                        $header_default_color2;
+$header_placeholder:                                $placeholder;
+$header_icon:                                       $header_default_color2;
+$header_icon_hover:                                 $header_default_color;
+$header_social_icon_color:                          $social_icon_color;
+$header_social_icon_color_hover:                    $social_icon_color_hover;
+$header_social_icon_color_active:                   $social_icon_color_active;
+
+
+/* logo*/
+$logo_h_text_color:                                 $header_default_color2;
+$logo_h_text_color_h:                               $header_default_color;
+$logo_h_mobile_text_color:                          $header_default_color2;
+$logo_h_mobile_text_color_h:                        $header_default_color;
+
+/* mini menu */
+$header_mini_menu_text_color:                       $header_default_text_color;
+$header_mini_menu_text_color_hover:                 $header_default_color;
+$header_mini_menu_text_color_active:                $header_default_color;
+
+/* search */
+$header_search_icon:                                $header_icon;
+$header_search_icon_hover:                          $header_icon_hover;
+$header_search_close:                               $header_search_icon;
+$header_search_close_hover:                         $header_search_icon_hover;
+$header_search_close_bg:                            transparent;
+$header_search_open_icon:                           $header_search_icon;
+$header_search_open_icon_hover:                     $header_search_icon_hover;
+$header_search_input_bg:                            $header_input_bg;
+$header_search_input_text:                          $header_input_text;
+$header_search_placeholder:                         $header_placeholder;
+$header_search_btn_search:                          $header_search_icon;
+$header_search_btn_search_hover:                    $header_search_icon_hover;
+$header_search_btn_search_border:                   #d8d8d8;
+
+/* mobile menu */
+$header_mobile_menu_toggle_icon:                    $header_icon;
+$header_mobile_menu_toggle_icon_hover:              $header_icon_hover;
+$header_mobile_menu_toggle_text:                    $header_default_color2;
+$header_mobile_menu_toggle_text_hover:              $header_default_color;
+$header_mobile_menu_border:                         $header_border;
+$header_mobile_menu_text_color:                     $header_default_color2;
+$header_mobile_menu_text_color_hover:               $header_default_color;
+$header_mobile_menu_bg_color:                       #ffffff;
+$header_mobile_menu_bg_color_hover:                 #f6f6f8;
+$header_mobile_menu_original_bg:                    $header_dropdown_bg_color_hover;
+$header_mobile_menu_panel_menu:                     #ffffff;
+$header_mobile_menu_icon:                           $header_icon;
+$header_mobile_menu_icon_hover:                     $header_icon_hover;
+$header_mobile_menu_fullscreen_bg:                  rgba(0, 0, 0, 0.55);
+
+/* box-compare (index-02.html)*/
+$header_box_compare_title:                          $header_default_title_color;
+$header_box_compare_title_hover:                    $header_default_title_color;
+$header_box_compare_icon:                           $header_icon;
+$header_box_compare_icon_hover:                     $header_icon_hover;
+
+/* box-wishlist (index-02.html)*/
+$header_box_wishlist_title:                         $header_default_title_color;
+$header_box_wishlist_title_hover:                   $header_default_title_color;
+$header_box_wishlist_icon:                          $header_icon;
+$header_box_wishlist_icon_hover:                    $header_icon_hover;
+
+/* account (index-02.html)*/
+$header_account_dropdown_label:                     $header_default_color2;
+$header_account_dropdown_label_hover:               $header_default_color2;
+$header_account_icon:                               $header_icon;
+$header_account_icon_hover:                         $header_icon_hover;
+
+/* cart*/
+$header_cart_badge_bg:                              $header_default_color;
+$header_cart_badge_text_color:                      #ffffff;
+$header_cart_badge_emty_bg:                         #ededed;
+$header_cart_badge_emty_bg_text_color:              $header_default_color2;
+$header_cart_dropdown_shadow:                       rgba(40, 40, 40, 0.2);
+$header_cart_dropdown_toggle_icon:                  $header_icon;
+$header_cart_dropdown_toggle_icon_hover:            $header_icon_hover;
+$header_cart_dropdown_toggle_label:                 $header_default_title_color;
+$header_cart_dropdown_toggle_label_hover:           $header_default_color2;
+$header_cart_top_title:                             $header_default_title_color;
+$header_cart_btn_close:                             $header_icon;
+$header_cart_btn_close_hover:                       $header_icon_hover;
+$header_cart_border:                                $header_border;
+$header_cart_item_title:                            $header_default_title_color;
+$header_cart_item_title_hover:                      $header_default_color;
+$header_cart_item_qty_label:                        $header_default_title_color;
+$header_cart_item_price:                            $header_default_color;
+$header_cart_item_control:                          $default_color4;
+$header_cart_item_control_hover:                    $header_default_color;
+$header_cart_item_total_color1:                     $header_default_title_color;
+$header_cart_item_total_color2:                     $header_default_color;
+$header_cart_counter_input_bg:                      $header_input_bg;
+$header_cart_counter_input_text:                    $header_input_text;
+$header_cart_counter_arrow:                         $header_counter_arrow;
+$header_cart_counter_arrow_hover:                   $header_counter_arrow_hover;
+$stuck_nav_cart_icon:                               $header_cart_dropdown_toggle_icon;
+$stuck_nav_cart_icon_hover:                         $header_cart_dropdown_toggle_icon_hover;
+$stuck_nav_cart_badge_bg:                           $header_cart_badge_bg;
+$stuck_nav_cart_badge_text:                         $header_cart_badge_text_color;
+
+/* box info (desctope)*/
+$header_box_info_time_color:                        $header_default_text_color;
+$header_box_info_telephone_color:                   $header_default_color2;
+$header_box_info_icon_color:                        $header_icon;
+
+/* header-menu */
+$header_menu_color_link:                            $header_default_color2;
+$header_menu_color_link_hover:                      $header_default_color;
+$header_menu_color_link_active:                     $header_default_color;
+$header_menu_title_und_border:                      $header_default_title_color;
+$header_menu_title_und_text_color:                  $header_default_title_color;
+$header_menu_title_und_border_hover:                $header_default_color;
+$header_menu_title_und_text_color_hover:            $header_default_color;
+$header_menu_arrow_color:                           #c6c6c6;
+$header_menu_bg_link:                               transparent;
+$header_menu_bg_link_hover:                         transparent;
+$stuck_nav_bg:                                      #ffffff;
+$stuck_nav_menu_color_link:                         $header_menu_color_link;
+$stuck_nav_menu_color_link_hover:                   $header_menu_color_link_hover;
+$header_menu_megamenu_submenu_bg:                   #ffffff;
+$header_menu_dropdown_shadow:                       rgba(0, 0, 0, 0.07);
+$stuck_nav_shadow_01:                               rgba(0, 0, 0, 0.12);
+$stuck_nav_shadow_02:                               rgba(0, 0, 0, 0.24);
+$badge-menu-text-color:                             #ffffff;
+$header_menu_megamenu_submenu_dropdown_text_color:        $default_color2;
+$header_menu_megamenu_submenu_dropdown_text_color_hover:  $default_color;
+$header_menu_megamenu_submenu_dropdown_text_color_active: $default_color;
+$header_menu_megamenu_submenu_dropdown_bg_color:          $header_dropdown_bg_color;
+$header_menu_megamenu_submenu_dropdown_bg_color_hover:    $header_dropdown_bg_color_hover;
+$header_menu_megamenu_submenu_dropdown_bg_color_active:   $header_dropdown_bg_color_hover;
+$header_menu_megamenu_arrow_color:						  $header_menu_arrow_color;
+$header_menu_megamenu_shadow:               			  rgba(0, 0, 0, 0.1);
+$header_menu_simple_menu_dropdown_text_color:             $default_color2;
+$header_menu_simple_menu_dropdown_text_color_hover:       $default_color;
+$header_menu_simple_menu_dropdown_text_color_active:      $default_color;
+$header_menu_simple_menu_dropdown_bg_color:               $header_dropdown_bg_color;
+$header_menu_simple_menu_dropdown_bg_color_hover:         $header_dropdown_bg_color_hover;
+$header_menu_simple_menu_dropdown_bg_color_active:        $header_dropdown_bg_color_hover;
+$header_menu_simple_menu_dropdown_border:                 $header_border;
+$header_menu_simple_menu_dropdown_arrow_color:            $header_menu_arrow_color;
+$header_menu_simple_dropdown_shadow:                      rgba(0, 0, 0, 0.07);
+
+
+/* image-links-layout (header-menu) "LAYOUT, LISTING, PRODUCT, BLOG, GALLERY"*/
+$header_image_links_layout_figcaption_color:        $header_default_color2;
+$header_image_links_layout_figcaption_color_hover:  $header_default_color;
+$header_image_links_layout_figure_bg:               transparent;
+$header_image_links_layout_figure_bg_hover:         transparent;
+$header_image_links_layout_shadow:                  rgba(244, 244, 244, 1);
+$header_image_links_layout_border:                  $header_border;
+$header_image_links_layout_border_hover:            transparent;
+$header_image_links_layout_shadow1:                 rgba(0, 0, 0, 0.14);
+
+/*=============================== finish header */
+
+/*=============================== product pages*/
+/* input-counter */
+$input_counter_border:            					transparent;
+$input_counter_bg:                					$input_bg;
+$input_counter_arrow_color:      					$default_color4;
+$input_counter_arrow_color_hover:   				$default_color2;
+
+/*nav-tabs (tabs)*/
+$nav_tabs_border:                 					$border;
+$nav_tabs_text_active:           					$default_color;
+$nav_tabs_text_border_active:            			$default_color2;
+$nav_tabs_border_active:            				$default_color2;
+$nav_tabs_color:                    				$default_color2;
+$nav_tabs_color_hover:           					$default_color;
+$nav_tabs_bg:     									transparent;
+$nav_tabs_bg_hover:     							transparent;
+$nav_tabs_bg_active:     							transparent;
+$nav_tabs_mobile_bg_active:     					transparent;
+$nav_tabs_color_active:         					$default_color;
+$nav_tabs_arrow_text:   							$default_color2;
+$nav_tabs_arrow_text_disabled:  					$default_color4;
+$nav_tabs_arrow_bg_start:                 			rgba(255,255,255,0);
+$nav_tabs_arrow_bg_finish:                			rgba(255,255,255,1);
+
+/*product info promo (banner for timer )*/
+$product_info_promo_bg:          					#fe4135;
+$product_info_promo_color:        					#ffffff;
+$product_info_promo_timer_bg:       				$default_color2;
+$product_info_promo_timer_color:    				#ffffff;
+$product_info_title_options:        				$default_title_color;
+
+/*productPrevNext (arrow left and right)*/
+$productPrevNext_text_color:       					$default_color4;
+$productPrevNext_text_color_hover: 					$default_color2;
+
+/*table-product (table)*/
+$table-product-title:               				$default_title_color;
+$table-product-text-color:        					$default_color2;
+$table-product-border:            					$border;
+
+/*review (link stars)*/
+$review_color_link:              					$default_color;
+
+/*required color*/
+$required_color:                    				#fe4135;
+
+/* box-img-content (product-04.html - full width banner)*/
+$box_img_content_title:                          	$default_title_color;
+
+/* video-link-product (["Video Review"])*/
+$video_link_product_border:      					$border;
+$video_link_product_border_hover:   				$border;
+$video_link_product_icon:           				$default_color;
+$video_link_product_icon_hover:  					$default_color2;
+$video_link_product_title:        					$default_color2;
+$video_link_product_title_hover:    				$default_color;
+
+/*=============================== finish product pages*/
+
+
+/*=============================== listing pages*/
+/*filters_row*/
+$filters_row_link_view:         					$default_color4;
+$filters_row_link_view_hover:     					$default_color;
+$filters_row_link_mode_icon:        				$default_color4;
+$filters_row_link_mode_icon_hover: 					$default_color;
+$filters_row_link_mode_bg:       					transparent;
+$filters_row_link_mode_bg_hover:    				transparent;
+$filters_row_link_mode_border:    					$border;
+$filters_row_link_mode_border_hover: 				$border;
+$link_view_mobile_border:         					$border;
+$link_view_mobile_icon:         					$default_color4;
+$link_view_mobile_icon_hover:     					$default_color;
+$link_view_mobile_icon_active:   					$default_color;
+$link_view_mobile_bg:             					transparent;
+$link_view_mobile_bg_hover:     					transparent;
+$link_view_mobile_bg_active:        				transparent;
+$filters_moblile_link:          					$default_color4;
+$filters_moblile_link_hover:    					$default_color;
+
+/*collapse block (aside [.collapse-block])*/
+$collapse_block_border:         					$border;
+$collapse_block_title:           					$default_title_color;
+$collapse_block_icon:             					$default_color4;
+
+/*link-close (aside "SHOPPING BY: [.link-close]")*/
+$link-close_color_text:         					$default_color4;
+$link-close_color_text_hover:     					$default_color;
+
+/*slide-column-close (aside [for button "close"])*/
+$slide_column_bg_start:                 			rgba(255,255,255,0);
+$slide_column_bg_finish:               	 			rgba(255,255,255,1);
+$slide_column_close_btn_text:     					$default_color;
+$slide_column_close_btn_bg:     					transparent;
+$slide_column_close_btn_text_hover:					#ffffff;
+$slide_column_close_btn_bg_hover:  					$default_color;
+
+/*filter mobile (aside [mobile - filter])*/
+$leftColumn_mobile_bg:           					#ffffff;
+
+/*list simple (aside [.list-simple])*/
+$list_simple_text_color:            				$default_color2;
+$list_simple_text_color_hover:   					$default_color;
+$list_simple_text_color_active: 					$default_color;
+
+/* filter list (aside "SHOPPING BY:")*/
+$filter_list_text:               					$default_color2;
+
+/* $options swatch border  options-swatch-color (aside) */
+$options_swatch_border_hover:     					#ffffff;
+$options_swatch_border_active:   					#ffffff;
+
+/* price slider (aside, filter "PRICE")*/
+$price_slider_track_right:                        	#e9e9e9;
+$price_slider_track_left:                           #e9e9e9;
+$price_slider_track_center:                      	$default_color;
+$price_slider_btn:                               	$default_color2;
+$price_slider_btn_active:                           $default_color2;
+
+/* tags-list (aside - "TAGS")*/
+$tags_list_border:                               	$border;
+$tags_list_border_hover:                            $default_color2;
+$tags_list_text:                                    $default_text_color;
+$tags_list_text_hover:                            	#ffffff;
+$tags_list_bg:                                    	transparent;
+$tags_list_bg_hover:                                $default_color2;
+$tags_list_border_active:                           $tags_list_border_hover;
+$tags_list_text_active:                             $tags_list_text_hover;
+$tags_list_bg_active:                               $tags_list_bg_hover;
+
+/* poll-list (aside - "COMMUNITY POLL")*/
+$poll_question:                                  	$default_title_color;
+
+/*=============================== finish listing pages*/
+
+/*Product Item*/
+$product_shadow:                    				rgba(0, 0, 0, 0.07);
+$product_bg_hover:                					#ffffff;
+$title_base_color:               					$default_color2;
+$title_active_color:                				$default_color;
+$base_price_color:               					$default_color;
+$new_price_color:                 					$default_color3;
+$sale_price_color:               					$default_text_color;
+$label_sale_color_bg:             					$default_color3;
+$label_sale_color_text:         					#ffffff;
+$label_new_color_bg:                				$default_color2;
+$label_new_color_text:           					#ffffff;
+$countdownbg:                     					#ffffff;
+$countdowntext:                 					$default_color3;
+$countdown_promo_bg:            					#fe4135;
+$countdown_promo_text:          					#ffffff;
+$product_button_bg_base:            				$btn_colorbg;
+$product_button_text_base:       					$btn_colortext;
+$product_button_bg_hover:         					$btn_colorbg_hover;
+$product_button_text_hover:     					$btn_colortext_hover;
+$service_buttons:                 					$default_color4;
+$service_buttons_active:            				$default_color;
+$product_qvbg_base_color:         					#ffffff;
+$product_qvtext_base_color:     					$default_color2;
+$product_qvicon_base_color:     					$default_color;
+$product_qvbg_active_color:     					$default_color;
+$product_qvtext_active_color:     					#ffffff;
+$product_qvicon_active_color:     					#ffffff;
+$product_notitem_bg_color:       					#ffffff;
+$product_notitem_text_color:        				$default_color3;
+$product_rating_color:           					#fc0;
+$product_rating_color_empty:       					#d6d6d6;
+$product_info_vendor:       						$default_color;
+$product_info_smallvendor_text:        				$default_text_color;
+$product_info_smallvendor_title:       				$default_color2;
+
+/*pagination*/
+$pagination_btn_colorbg:            				$default_color;
+$pagination_btn_colortext:       					#ffffff;
+$pagination_btn_colorbg_hover:   					$default_color2;
+$pagination_btn_colortext_hover:    				#ffffff;
+$pagination_text:                 					$default_text_color;
+$pagination_text_hover:         					$default_color;
+$pagination_text_active:            				$default_color;
+$pagination_border:             					$border;
+$pagination_border_hover:         					$border;
+$pagination_border_active:       					$default_color2;
+$pagination_bg:                 					#ffffff;
+$pagination_bg_hover:             					#ffffff;
+$pagination_bg_active:           					#ffffff;
+
+/*table parameters*/
+$table_parameters_border:         					$border;
+$table_parameters_bg:             					#f6f6f8;
+$table_parameters_title:            				$default_color2;
+
+/*reviews-comments*/
+$reviews_comments_border:         					$border;
+$reviews_comments_title:            				$default_title_color;
+
+/* filter-isotop (index-03.html [.filter-isotop])*/
+$filter_isotop_text_color:       					$default_title_color;
+$filter_isotop_text_color_hover:    				$default_color;
+$filter_isotop_text_color_active:  					$default_color;
+
+/* promo-box (banner [all])*/
+$promo_box_title_text_color:        				#ffffff;
+$promo_box_text_color:           					#ffffff;
+$promo_box_arrow_text:           					#ffffff;
+$promo_box_arrow_bg:                				#ffffff;
+$promo_box_border:                					$border;
+$promo_box_border_hover:          					$default_color;
+
+/* home4 banner big (banner on index.html [home4_banner_big])*/
+$home4_banner_big_text_color:     					#ffffff;
+
+/* img box (banner [index-04.html])*/
+$img_box_input_bg:               					#ffffff;
+$img_box_input_bg_modile:         					#f6f6f8;
+$img_box_arrow:                 					#fe4135;
+$img_box_arrow_text:                				#fe4135;
+
+/* subscribe-box  (subscribe [index-04.html])*/
+$subscribe_box_title:             					$default_color2;
+
+/* instafeed */
+$instafeed_icon_text:             					#ffffff;
+$instafeed_bg_hover:                				$default_color;
+
+/* subcategory item (COLLECTIONS)*/
+$subcategory_item_title_color:   					$default_color;
+$subcategory_item_title_color_hover: 				$default_color2;
+
+/* blog thumb ('LATEST NEWS')*/
+$blog_thumb_title_color:            				$default_title_color;
+$blog_thumb_title_color_hover:   					$default_color;
+$blog_thumb_data_color:         					$default_text_color;
+$blog_thumb_data_color_1:         					$default_color;
+$blog_thumb_data_color_link:        				$default_color;
+$blog_thumb_data_color_link_hover: 					$default_color2;
+
+/* services block (banner index-07.html)*/
+$services_block_border:         					$border;
+$services_block_border_hover:     					$default_color;
+$services_block_title:           					$default_title_color;
+$services_block_title_hover:       					$default_color;
+$services_block_icon:             					$default_color;
+
+/* slider_scroll (index-05.html [.slider-scroll])*/
+$slider_scroll_title_text_color:    				#ffffff;
+$slider_scroll_text_color:       					#ffffff;
+$nav_slider_scroll_bg:           					#ffffff;
+$nav_slider_scroll_border:       					#ffffff;
+
+/* compare aside */
+$compare_aside_title:             					$default_title_color;
+$compare_aside_title_hover:     					$default_color;
+
+/* menu-content-icon (index-10.html - icon menu)*/
+$menu_content_title_color:       					$default_color;
+$menu_content_title_color_hover:    				$default_color2;
+$menu_content_title_color_active:  					$default_color2;
+
+
+/*=============================== footer*/
+$footer_bg_color:                   				#ffffff;
+$footer_border:                  					$border;
+$top_line:                        					$border;
+$footer_text_color:              					#888888;
+$footer_link_text_color:            				$default_color;
+$footer_link_text_color_hover:    					$default_color2;
+$copyright:                      					#242424;
+$footer_content_bg:              					$default_color2;
+$box_copyright_text:                				$default_text_color;
+$box_copyright_text1:               				$default_color;
+$box_copyright_link:                				$box_copyright_text;
+$box_copyright_link_hover:        					$default_color;
+$footer_menu_text:                					$default_color2;
+$footer_menu_text_hover:            				$default_color;
+$hr_color:                        					$border;
+$v_links_list_text_color:           				$default_text_color;
+$v_links_list_text_color_hover:  					$default_color;
+$footer_collapse_title_color:       				$default_title_color;
+$footer_mobile_collapse_border:  					#e9e9e9;
+$footer_mobile_collapse_title_color:				$default_title_color;
+$footer_mobile_collapse_icon_color: 				$default_color4;
+$footer_collapse_title_color_hover: 				$default_color;
+$footer_mobile_collapse_icon_color_hover:			$default_color;
+
+
+$logo_f_text_color:                                 $default_text_color;
+$logo_f_text_color_h:                               $default_color2;
+
+/* subscribe-box-01 (subscribe)*/
+$subscribe_box_01_bg:               				$default_color;
+$subscribe_box_01_title:            				#ffffff;
+$subscribe_box_01_text:          					#ffffff;
+$subscribe_box_01_btn_text:      					$btninversion_colortext;
+$subscribe_box_01_btn_bg:           				$btninversion_colorbg;
+$subscribe_box_01_btn_text_hover:   				$default_color2;
+$subscribe_box_01_btn_bg_hover:  					#ffffff;
+
+/*list-info-center (.list-info-center)*/
+$list_info_center_text:          					#888888;
+$list-info_center_link:          					$default_color;
+$list_info_center_link_hover:       				$default_color2;
+$list_info_center_border:           				#e9e9e9;
+$list_info_center_border1:        					#888888;
+
+/*list-info (index-02.html)*/
+$list_info_text:                    				$default_text_color;
+$list_info_link:                    				$default_color;
+$list_info_link_hover:            					$default_color2;
+
+/*services_block (.services-block)*/
+$services_block_text_color:      					#888888;
+$services_block_text_color_mobile:  				$default_text_color;
+$services_block_text_color_hover:   				$default_color2;
+$services_block_text_color_hover_mobile: 			$default_color;
+$services_block_icon_color:      					$default_color;
+$services_block_title:            					$default_title_color;
+$services_block_title_hover:        				$default_color;
+
+/* social icon fill */
+$social_icon_fill_text:             				#ffffff;
+$social_icon_fill_text_hover:         				#ffffff;
+$social_icon_fill_text_active:       				#ffffff;
+$social_icon_bg_facebook:             				#4867aa;
+$social_icon_bg_twitter:                			#2caae1;
+$social_icon_bg_google_plus:            			#de5347;
+
+/* social-icon-round */
+$social_icon_round_border:        					$default_color4;
+$social_icon_round_border_hover:    				$default_color2;
+$social_icon_round_text:           					$default_color4;
+$social_icon_round_text_hover:    					$default_color2;
+$social_icon_round_border_active:   				$default_color2;
+$social_icon_round_text_active:  					$default_color2;
+
+/*=============================== finish footer*/
+
+/*=============================== modal*/
+/* modal */
+$modal_bg:                        					rgba(0, 0, 0, 0.5);
+$modal_content_bg:                					#ffffff;
+$modal-title:                       				$default_title_color;
+$modal_shadow:                    					rgba(0, 0, 0, 0.2);
+$modal_close_link:                					$default_color2;
+$modal_close_link_hover:            				$default_color;
+
+/* modal-add-cart-product */
+$modalAddToCart_info_title:             			$default_color2;
+$modalAddToCart_info_title_mobile:             		$default_text_color;
+$modalAddToCart_product_title:           			$title_base_color;
+$modalAddToCart_product_title_description: 			$default_text_color;
+$modalAddToCart_product_qty:                		$default_color2;
+$modalAddToCart_total_default:           			$default_color2;
+$modalAddToCart_total_color2:             			$default_color;
+$modalAddToCart_itemm_total_text:         			$default_color2;
+$modalAddToCart_itemm_total_icon:         			$default_color;
+$modalAddToCart_itemm_total_btn:         			$default_color;
+$modalAddToCart_total_product:           			$default_color2;
+$modalAddToCart_separator:               			$border;
+
+/* modal-wishlist */
+$modal_wishlist_bg:                              	#ffffff;
+$modal_wishlist_button_close:                       $default_color2;
+$modal_wishlist_button_close_hover:              	$default_color;
+$modal_wishlist_title:                            	$default_title_color;
+$modal_wishlist_item_title:                      	$default_color2;
+$modal_wishlist_item_title_hover:                   $default_color;
+$modal_wishlist_item_price:                      	$default_color;
+$modal_wishlist_item_icon_delete:                   #c2c2c1;
+$modal_wishlist_item_icon_delete_hover:          	$default_color2;
+$modal_wishlist_item_separator:                  	$border;
+$modal_wishlist_button_separator:                   $border;
+$modal_wishlist_item_icon_check:                    $default_color;
+$modal_wishlist_item_icon_check_hover:              $default_color2;
+$modal_wishlist_shadow:                             $default_color4;
+
+/* modal-compare */
+$modal_compare_bg:                                	#ffffff;
+$modal_compare_button_close:                        $default_color2;
+$modal_compare_button_close_hover:                	$default_color;
+$modal_compare_title:                               $default_title_color;
+$modal_compare_item_title:                        	$default_color2;
+$modal_compare_item_title_hover:                    $default_color;
+$modal_compare_item_price:                        	$default_color;
+$modal_compare_item_icon:                           #c2c2c1;
+$modal_compare_item_icon_hover:                  	$default_color2;
+$modal_compare_item_separator:                    	$border;
+$modal_compare_button_separator:                    $border;
+$modal_compare_shadow:                            	$default_color4;
+/*=============================== finish modal*/
+
+/* shopping-cart-table */
+$shop_cart_table_border:                			#e9e9e9;
+$shop_cart_product_title:             				$default_title_color;
+$shop_cart_product_title_hover:     				$default_color;
+$shop_cart_product_list_parameters: 				$default_text_color;
+$shop_cart_product_delete_icon:     				$default_color4;
+$shop_cart_product_delete_icon_hover:  				$default_color;
+$shop_cart_product_subtotal:            			$default_color;
+
+/* shopping-cart-table-total */
+$table_total_title:                 				$default_color2;
+$table_total_text:                   				$default_text_color;
+$table_total_grand_text:                			$default_color;
+
+/* wishlist-table */
+$wishlist_table_border:             				$border;
+$wishlist_product_title:              				$default_title_color;
+$wishlist_product_title_hover:      				$default_color;
+$wishlist_product_list_parameters:  				$default_text_color;
+$wishlist_product_delete_icon:      				$default_color4;
+$wishlist_product_delete_icon_hover:  				$default_color;
+$wishlist_product_check_icon:        				$default_color;
+$wishlist_product_check_icon_hover: 				$default_color2;
+$wishlist_product_subtotal:         				$default_color;
+
+/* gallery (gallery-grid_col-2.html, gallery-grid_col-2.html) */
+$filter_nav_color:                  				$default_title_color;
+$filter_nav_color_hover:              				$default_color;
+$gallery_content_title:             				#ffffff;
+$gallery_content_text:              				#ffffff;
+$gallery_content_title_hover:        				$default_color2;
+$gallery_tag_border:                  				#ffffff;
+$gallery_tag_text:                  				#ffffff;
+$gallery_tag_border_hover:          				$default_color2;
+$gallery_tag_text_hover:              				$default_color2;
+$gallery_content_icon_zoom:         				#ffffff;
+$gallery_content_icon_zoom_hover:    				$default_color2;
+$gallery_content_bg:                  				rgba(95, 209, 121, 0.8);
+
+/* lookbook_title (look-book.html)*/
+$lookbook_title:                      				#ffffff;
+$lookbook_title_hover:              				$default_color;
+$lookbook_price:                      				$default_color;
+$lookbook_price_hover:                				$default_color2;
+
+/* link-banner1  (about.html) - banner*/
+$link_promo_title:                  				$default_color;
+$link_promo_description:              				$default_color;
+$link_promo_title_hover:              				$default_color2;
+$link_promo_description_hover:      				$default_color2;
+
+/* comming-soon-box  (comming-soon.html)*/
+$comming_soon_box_text:             				#ffffff;
+$comming_soon_box_title:              				#ffffff;
+$comming_soon_box_subscribe_title:  				#ffffff;
+$comming_soon_box_password_title:  					#ffffff;
+$comming_soon_box_social_icon_round_border:       	rgba(255, 255, 255, 0.5);
+$comming_soon_box_social_icon_round_text:           #ffffff;
+$comming_soon_box_social_icon_round_border_hover:   rgba(255, 255, 255, 1);
+$comming_soon_box_social_icon_round_text_hover:   	#ffffff;
+$comming_soon_box_social_icon_round_border_active:  rgba(255, 255, 255, 1);
+$comming_soon_box_social_icon_round_text_active:    #ffffff;
+
+/* list_information   (contact.html)*/
+$list_information_icon:                          	$default_color;
+$list_information_link:                          	$default_color;
+$list_information_link_hover:                       $default_color2;
+
+/* list-information-center  (contact-02.html)*/
+$list_information_center_text:                    	$default_color2;
+$list_information_center_link:                    	$default_color;
+$list_information_center_link_hover:                $default_color2;
+
+/* box-about (about_01.html)*/
+$box_about_description:                          	$default_title_color;
+$box_about_list_link:                               $default_color;
+$box_about_list_link_hover:                      	$default_color2;
+$box_about_list:                                    $default_text_color;
+$box_about_list_border:                          	$default_text_color;
+$box_1_title:                                       $default_title_color;
+
+/* blog-fluid  (about.html, before footer)*/
+$blog_fluid_bg:                                  	#fafafa;
+$blog_fluid_icon:                                   $default_color;
+$blog_fluid_title:                                	$default_title_color;
+$blog_fluid_title_hover:                            $default_color;
+
+/* parallax-description (about.html) "About Store"*/
+$parallax_description_title:                        #ffffff;
+$parallax_description:                            	#ffffff;
+
+/* personal-block  (about.html) "OUR TEAM"*/
+$personal_block_title:                            	$default_title_color;
+$personal_block_title_hover:                        $default_color;
+$personal_block_title_description:                	$default_color;
+$personal_block_title_description_hover:            $default_color2;
+
+/* on-duty-box
+(page-404.html, page-empty-category.html, page-empty-search.html, page-empty-shopping-cart.html
+[.on-duty-box])*/
+$on_duty_box_description:                           $default_color2;
+
+/* collection */
+$collection_title_color:                            $default_color;
+$collection_title_color_hover:                    	$default_color2;
+
+/* blog-single-post */
+$post_single_tag_bg:                                $default_color;
+$post_single_tag_text_color:                        #ffffff;
+$post_single_tag_bg_hover:                        	#ffffff;
+$post_single_tag_text_color_hover:                	$default_color;
+$post_single_title_color:                           #ffffff;
+$post_single_title_color_hover:                  	$default_color;
+$post_single_meta_text_color:                       #ffffff;
+$block_aside_info_title:                            $default_color2;
+$nav_single_post_text:                            	$default_title_color;
+$nav_single_post_text_hover:                        $default_color;
+$nav_single_post_arrow:                          	$default_color4;
+$nav_single_post_arrow_hover:                       $default_color;
+
+/* comments (blog_single_post_01.html)*/
+$comments_media_bg:                              	#f5f5f5;
+$comments_media_text:                               $default_color4;
+$comments_media_title:                            	$default_title_color;
+$comments_media_title_link:                      	$default_color;
+$comments_media_time:                               $default_text_color;
+
+/* login-form-box  (login-form.html)*/
+$login_form_box:                                    $border;
+$login_additional_links:                            $default_color2;
+$login_additional_links_01:                         $default_color2;
+$login_additional_links_01_hover:                   $default_color;
+
+/* table-1 */
+$table_1_title:                                  	$default_title_color;
+$table_1_bg:                                        #f6f6f8;
+$table_1_border:                                    $border;
+
+/* table-2 */
+$table_2_title:                                  	$default_title_color;
+$table_2_border:                                    $border;
+
+/* table-3 */
+$table_3_title:                                  	$default_title_color;
+$table_3_border:                                    $border;
+
+/* table-params */
+$table_params_title:                                $default_title_color;
+$table_params_border:                               $border;
+
+/* table-order-history */
+$table_order_history_border:                        $border;
+$table_order_history_title:                      	$default_title_color;
+$table_order_th_title:                            	$default_color2;
+
+/* table-order-history */
+$table_order_history02_border:                      $border;
+$table_order_history02_title:                      	$default_title_color;
+$table_order02_th_title:                            $default_color2;
+
+/* information-block */
+ $information_block_text_color:                  	$default_title_color;
+
+/* box-product-info  (index-08.html, banner "WOMEN’S", banner "MEN’S")*/
+$box_product_info_bg:               				#f5f5f7;
+$box_product_info_title_color:   					$default_title_color;
+$box_product_info_list_a_color: 					$default_color2;
+$box_product_info_list_a_color_hover:				$default_color;
+$box_product_info_btn_link_color:  					$default_color2;
+$box_product_info_btn_color_hover: 					$default_color;
+
+/*blog */
+$post_border:                                       $border;
+$post_title_color:                                	$default_title_color;
+$post_title_color_hover:                            $default_color;
+$post_tag_bg:                                       $default_color;
+$post_tag_bg_hover:                              	$default_color2;
+$post_tag_text_color:                               #ffffff;
+$post_tag_text_color_hover:                      	#ffffff;
+$post_meta_text_color1:                         	$default_text_color;
+$post_meta_text_color2:                          	$default_color;
+$post_meta_link:                                    $default_color;
+$post_meta_link_hover:                            	$default_color2;
+$post_social_icon_color:                            $default_color4;
+$post_social_icon_color_hover:                    	$default_color;
+$post_social_icon_color_active:                  	$default_color;
+$post_link_video_bg:                                #ffffff;
+$post_link_video_arrow:                          	$default_color2;
+$post_link_video_bg_hover:                        	$default_color2;
+$post_link_video_arrow_hover:                       #ffffff;
+$post_link_text_bg:                              	$default_color;
+$post_link_text_color:                            	#ffffff;
+$post_link_text_bg_hover:                           $default_color2;
+$post_link_text_color_hover:                        #ffffff;
+$featured_post_title:                               $default_title_color;
+$featured_post_title_hover:                      	$default_color;
+$featured_post_description_color1:                	$default_text_color;
+$featured_post_description_color2:                	$default_color;
+$featured_post_comment:                          	$default_color;
+$featured_post_comment_hover:                       $default_color2;
+$audio_link_bg:                                  	#f6f6f8;
+$audio_link_bg_hover:                               $default_color;
+$block_aside_title:                              	$default_color2;
+
+/* comments (Pages blog, left aside - "RECENT COMMENTS")*/
+$recent_comments_author_color1:                  	$default_text_color;
+$recent_comments_author_color2:                  	$default_color;
+$recent_comments_title:                          	$default_title_color;
+$recent_comments_title_hover:                       $default_color;
+
+/* shopping-cart-table-total */
+$shopping_cart_box_aside:                           #e9e9e9;
+
+/* checkout */
+$form_icon_color:                                   $default_color;
+$form_icon_color_hover:                          	$default_color2;
+
+/* box-faq  (faqs.html)*/
+$box_faq_title:                                  	$default_color;
+
+/* testimonialsAsid (index-02.html left aside(slider-content[grenn bg])*/
+$testimonialsAsid_bg:                               $default_color;
+$testimonialsAsid_text:                          	#ffffff;
+$testimonialsAsid_text_hover:                       $default_color2;
+$testimonialsAsid_slick_dots:                       #ffffff;
+$testimonialsAsid_slick_dots_active:                #ffffff;
+
+/* menu-aside (index-09.html - tab "WOMEN’S")*/
+$tab_aside_title:                                	$default_title_color;
+$tab_aside_link:                                    $default_color2;
+$tab_aside_link_hover:                          	$default_color;
+
+/* breadcrumb */
+$breadcrumb_text_color:                             $default_color;
+$breadcrumb_link_color:                             $default_text_color;
+$breadcrumb_link_color_hover:                       $default_color;
+$breadcrumb_border:                                 $border;
+
+/* revolution slider */
+$revolution_caption_text:                           $default_color2;
+$revolution_dot_bg:                              	$default_color4;
+$revolution_dot_bg_hover:                           $default_color;
+$revolution_dot_active_border:                    	$default_color4;
+$revolution_video_btn:                            	$default_color4;
+$revolution_video_btn_hover:                        $default_color;
+
+/* checkout (checkout.html)*/
+$checkout_button_edit:                              $default_color4;
+$checkout_button_edit_hover:                        $default_color2;
+$checkout_nav_circle_border:                        #e9e9e9;
+$checkout_nav_circle_border_hover:                	$default_color2;
+$checkout_nav_circle_border_active:              	$default_color2;
+$checkout_nav_circle_border_passed:              	$default_color;
+$checkout_nav_circle_bg:                            #ffffff;
+$checkout_nav_circle_text:                       	$default_color2;
+$checkout_nav_title:                                $default_color2;
+$checkout_nav_icon:                              	$default_color;
+$checkout_tab_required:                          	$default_color;
+$checkout_table01_text:                          	$default_color2;
+$checkout_table02_text:                          	$default_color2;
+$checkout_table02_title:                            $default_color2;
+$checkout_table02_text:                          	$default_color2;
+$checkout_table02_title:                            $default_color2;
+$checkout_box03_title:                            	$default_color2;
+$checkout_box03_title_hover:                        $default_color;
+$checkout_box03_price:                            	$default_color;
+
+/* compare (compare.html)*/
+$compare_table_row_title:                           $default_color2;
+$compare_table_link_close:                        	$default_color4;
+$compare_table_link_close_hover:                    $default_color;
+$link_print_text:                                   $default_color2;
+$link_print_icon:                                   $default_color4;
+$link_print_text_hover:                          	$default_color;
+$link_print_icon_hover:                          	$default_color;
+
+/* slick_slider */
+$slick_slider_text-color:         					#ffffff;
+$slick_slider_title-color:       					#ffffff;
+
+/* slick Arrows */
+$slick_arrow_bg:                                    #ffffff;
+$slick_arrow_bg_hover:                          	#ffffff;
+$slick_arrow_text:                              	$default_color4;
+$slick_arrow_text_hover:                           	$default_color2;
+
+/* slick Dots */
+$slick_dots_bg:                                     $default_color4;
+$slick_dots_bg_hover:                               $default_color2;
+$slick_dots_active_border:                          $default_color4;
+
+/* slick arrow style2*/
+$slick_arrow_style2_bg:                             transparent;
+$slick_arrow_style2_border:                         $border;
+$slick_arrow_style2_bg_hover:                    	$default_color2;
+$slick_arrow_style2_border_hover:                	$default_color2;
+$slick_arrow_style2_text:                        	$default_color4;
+$slick_arrow_style2_text_hover:                   	#ffffff;
+
+/* main indent content */
+$big_screen_margin:              					54px;
+$middle_screen_margin:            					50px;
+$mobile_screen_margin:            					50px;
+
+/* color */
+$fill_bg_dark:                    					#242424;
+$fill_bg_grey:                    					#fafafa;
+$color_white:                       				#ffffff;
+$color_red:                      					#fe4135;
+$color_dark_grey:                   				#6d6d6d;
+$color_pale_gold:                   				#c8c377;
+$color_cadet_gray:                					#84a7bb;
+$color_black:                       				#000;
+$color_grey:                        				#cdcdcd;
+$color_grey_light:                					#f5f5f5;
+$color_yellow:                    					#feb035;
+$color_grey_dark:                   				$default_color2;
+$color_dark_turquoise:            					#23cddc;
+$color_orange:                    					#fe9001;
+$color_pale_violet_red:          					#ff527f;
+
+/*
+Mixin
+*/
+@mixin animation($speed:0.2s){
+    transition:all $speed linear;
+    -ms-transition:all $speed linear;
+    -webkit-transition:all $speed linear;
+    -o-transition: all $speed linear;
+}
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@mixin -text-shadow($size){
+    -webkit-text-shadow: 0px $size 0px rgba(0, 0, 0, 1);
+    -moz-text-shadow: 0px $size 0px rgba(0, 0, 0, 1);
+    text-shadow: 0px $size 0px rgba(0, 0, 0, 1);
+}
+@mixin user-select($none:none){
+    -webkit-touch-callout: $none;
+    -webkit-user-select: $none;
+    -khtml-user-select: $none;
+    -moz-user-select: $none;
+    -ms-user-select: $none;
+    user-select: $none;
+}
+@mixin opacity ($opacity){
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    -webkit-opacity: $opacity;
+    opacity: $opacity;
+}
+@mixin color ($value:100%){
+    -webkit-filter: grayscale($value);
+    -moz-filter: grayscale($value);
+    -ms-filter: grayscale($value);
+    -o-filter: grayscale($value);
+    filter: grayscale($value);
+    filter: gray;
+}
+@mixin scale($value:1){
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -ms-transform: scale($value);
+    -o-transform: scale($value);
+    transform: scale($value);
+}
+@mixin rotate($value:90){
+    -webkit-transform: rotate($value);
+    -moz-transform: rotate($value);
+    -ms-transform: rotate($value);
+    -o-transform: rotate($value);
+    transform: rotate($value);
+}
+@mixin background-size($value:cover){
+    -webkit-background-size: $value;
+    -moz-background-size: $value;
+    -o-background-size: $value;
+    background-size: $value;
+}
+
+*:focus{
+  outline:none;
+}
+
+/*
+Extend
+*/
+._reset-ul-style{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+._reset-ul-style-2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,2516 @@
+$color_p = #000
+$color_s = #212121
+$color_t = #3d3d3d
+$color_f = #797979
+$color_s = #e3bb56
+$color_brow = #e3bb56
+$color_alt = #d7ab9e
+$color_title = #000
+$color_gray_3 = #797979
+$color_boton_primario = #000
+$color_boton_primario_hover = #333
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+
+body
+	font-size 13px
+
+	font-family $fonttext_f3,$fonttext
+	background #f6f6f6 url(../../images/common/bkgd-pattern.gif)
+
+a
+	outline 0px !important
+
+p
+	color #555555
+
+img
+	width auto
+	height auto
+
+.btn
+	border-radius 0px
+	padding 6px 20px
+	text-transform uppercase
+
+.btn
+	-moz-user-select: none;
+	background-image: none;
+	border: medium none
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color #000
+	-webkit-appearance: none !important
+	@include border-radius(0)
+input[type="text"], input[type="submit"], input[type="button"],input[type="password"], input[type="email"]
+	-webkit-appearance: none !important
+	@include border-radius(0)
+	border-radius: 0px 0px 0px 0px !important
+	-moz-border-radius: 0px 0px 0px 0px !important
+	-webkit-border-radius: 0px 0px 0px 0px !important
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus
+	outline: thin dotted;
+	outline-offset: -2px;
+
+.btn:hover, .btn:focus
+	color: #fff;
+	text-decoration: none;
+
+
+
+
+.btn-common
+	color #333333
+	background-color #F8D848
+	border-color #F8D848
+
+.btn-common:hover,.btn-common:focus,.btn-common:active,.btn-common.active,.open .dropdown-toggle.btn-common
+	color #333333
+	background-color #F7D32F
+	border-color #F8D848
+	border-color:#E1BB09
+
+.btn-common:active,.btn-common.active,.open .dropdown-toggle.btn-common
+	background-image none
+
+.btn-common.disabled,.btn-common[disabled],fieldset[disabled] .btn-common,.btn-common.disabled:hover,.btn-common[disabled]:hover,fieldset[disabled] .btn-common:hover,.btn-common.disabled:focus,.btn-common[disabled]:focus,fieldset[disabled] .btn-common:focus,.btn-common.disabled:active,.btn-common[disabled]:active,fieldset[disabled] .btn-common:active,.btn-common.disabled.active,.btn-common[disabled].active,fieldset[disabled] .btn-common.active
+	background-color #F8D848
+	border-color #F8D848
+.btn-common .badge
+	color #F8D848
+	background-color #333333
+.btn-common-alt
+	color #FFFFFF
+	background-color #333333
+	border-color #333333
+
+.btn-common-alt:hover,.btn-common-alt:focus,.btn-common-alt:active,.btn-common-alt.active,.open .dropdown-toggle.btn-common-alt
+	color #FFFFFF
+	background-color #262626
+	border-color #333333
+
+.btn-common-alt:active,.btn-common-alt.active,.open .dropdown-toggle.btn-common-alt
+	background-image none
+.btn-common-alt.disabled,.btn-common-alt[disabled],fieldset[disabled] .btn-common-alt,.btn-common-alt.disabled:hover,.btn-common-alt[disabled]:hover,fieldset[disabled] .btn-common-alt:hover,.btn-common-alt.disabled:focus,.btn-common-alt[disabled]:focus,fieldset[disabled] .btn-common-alt:focus,.btn-common-alt.disabled:active,.btn-common-alt[disabled]:active,fieldset[disabled] .btn-common-alt:active,.btn-common-alt.disabled.active,.btn-common-alt[disabled].active,fieldset[disabled] .btn-common-alt.active
+	background-color #333333
+	border-color #333333
+.btn-common-alt .badge
+	color #333333
+	background-color #FFFFFF
+.btn-action
+	color #FFFFFF
+	background-color $color_boton_primario
+	border-color $color_boton_primario
+	font-size 20px
+	font-weight normal
+	-webkit-appearance: none !important
+	@include border-radius(0)
+
+.btn-action:hover,.btn-action:focus,.btn-action:active,.btn-action.active,.open .dropdown-toggle.btn-action
+	color #FFFFFF
+	background-color $color_boton_primario
+	border-color $color_boton_primario_hover
+.btn-action:active,.btn-action.active,.open .dropdown-toggle.btn-action
+	background-image none
+.btn-action.disabled,.btn-action[disabled],fieldset[disabled] .btn-action,.btn-action.disabled:hover,.btn-action[disabled]:hover,fieldset[disabled] .btn-action:hover,.btn-action.disabled:focus,.btn-action[disabled]:focus,fieldset[disabled] .btn-action:focus,.btn-action.disabled:active,.btn-action[disabled]:active,fieldset[disabled] .btn-action:active,.btn-action.disabled.active,.btn-action[disabled].active,fieldset[disabled] .btn-action.active
+	background-color #181914
+	border-color #181914
+.btn-action .badge
+	color $color_s
+	background-color #FFFFFF
+.btn-default-alt
+	color #333
+	background-color #E6E6E6
+	border-color #E6E6E6
+.btn-default-alt:hover,.btn-default-alt:focus,.btn-default-alt:active,.btn-default-alt.active,.open .dropdown-toggle.btn-default-alt
+	color #333
+	background-color #D9D9D9
+	border-color #E6E6E6
+.btn-default-alt:active,.btn-default-alt.active,.open .dropdown-toggle.btn-default-alt
+	background-image none
+.btn-default-alt.disabled,.btn-default-alt[disabled],fieldset[disabled] .btn-default-alt,.btn-default-alt.disabled:hover,.btn-default-alt[disabled]:hover,fieldset[disabled] .btn-default-alt:hover,.btn-default-alt.disabled:focus,.btn-default-alt[disabled]:focus,fieldset[disabled] .btn-default-alt:focus,.btn-default-alt.disabled:active,.btn-default-alt[disabled]:active,fieldset[disabled] .btn-default-alt:active,.btn-default-alt.disabled.active,.btn-default-alt[disabled].active,fieldset[disabled] .btn-default-alt.active
+	background-color #E6E6E6
+	border-color #E6E6E6
+.btn-default-alt .badge
+	color #E6E6E6
+	background-color #333
+.btn-facebook
+	color #FFFFFF
+	background-color #3A5799
+	border-color #2c4274
+.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook
+	color #FFFFFF
+	background-color #334C87
+	border-color #2c4274
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook
+	background-image none
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active
+	background-color #3A5799
+	border-color #2c4274
+.btn-facebook .badge
+	color #3A5799
+	background-color #FFFFFF
+.btn-google
+	color #FFFFFF
+	background-color #D03F2A
+	border-color #C23A27
+.btn-google:hover,.btn-google:focus,.btn-google:active,.btn-google.active,.open .dropdown-toggle.btn-google
+	color #FFFFFF
+	background-color #BB3926
+	border-color #a63221
+.btn-google:active,.btn-google.active,.open .dropdown-toggle.btn-google
+	background-image none
+.btn-google.disabled,.btn-google[disabled],fieldset[disabled] .btn-google,.btn-google.disabled:hover,.btn-google[disabled]:hover,fieldset[disabled] .btn-google:hover,.btn-google.disabled:focus,.btn-google[disabled]:focus,fieldset[disabled] .btn-google:focus,.btn-google.disabled:active,.btn-google[disabled]:active,fieldset[disabled] .btn-google:active,.btn-google.disabled.active,.btn-google[disabled].active,fieldset[disabled] .btn-google.active
+	background-color #D03F2A
+	border-color #a63221
+.btn-google .badge
+	color #D03F2A
+	background-color #FFFFFF
+
+
+
+
+
+
+
+
+
+
+
+/**VIDEO RESPONSIVE ***/
+.video-container
+	position relative
+	padding-bottom 56.25%
+	padding-top 30px
+	height 100%
+	overflow hidden
+	iframe,	object,	embed
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+
+/*******BANNER HOME***************/
+.carousel-indicators
+	bottom 10px
+	float right
+	left auto
+	list-style outside none none
+	margin-left -30%
+	padding-left 0
+	position absolute
+	right 2%
+	text-align center
+	width auto
+	z-index 15
+	.active
+		background-color #000
+		border 1px solid #000
+	li
+		background-color #D2D2D2
+		border 1px solid #D2D2D2
+
+
+/*WIDGET DE BANNER CAROUSEL  */
+.banner_principal
+	width 100%
+	margin 15px 0 30px 0
+	display inline-block
+	width 100%
+.slide
+	img
+		width auto !important
+		height auto !important
+
+
+/*WIDGET DE BANNER CAROUSEL CONTROLS */
+//.carousel_controls
+/*.carousel-control.left
+		background transparent
+	/*.right
+		background transparent*/
+.bnr_controls
+	margin 10px 0
+	display inline-block
+	width 100%
+	.carousel-control.left
+		background-image none;
+		background-color transparent;
+		.glyphicon-chevron-left
+			background #ffffff
+			border-radius 100%
+
+	.carousel-control.right
+		background-image none;
+		background-color transparent;
+		.glyphicon-chevron-right
+			background #ffffff
+			border-radius 100%
+
+	.carousel-control
+		opacity 0.6
+		width 6%
+		.glyphicon-chevron-left, .glyphicon-chevron-right
+			width 45px
+			height 45px
+			padding 7px 0px 0 0
+			color #000
+			text-shadow none
+
+
+/*WIDGET DE 1 SECCION*/
+.banner_one_section
+	.bnr_one
+		margin-bottom 10px
+		margin-top 10px
+
+/*WIDGET DE 2 SECCIONES*/
+.banner_three_sections
+	.bnr_one
+		margin-right 10px
+		margin-bottom 10px
+		margin-top 5px
+	.bnr_two
+		margin-right 5px
+		margin-bottom 10px
+		margin-left 5px
+		margin-top 5px
+	.bnr_three
+		margin-left 10px
+		margin-bottom 10px
+		margin-top 5px
+
+
+/*WIDGET DE 1Seccion y 2 SECCIONES*/
+.banner_one_two_sections
+	.bnr_one
+		margin-right 10px
+		margin-bottom 10px
+		margin-top 5px
+	.bnr_two_three
+		margin-right 0px
+		margin-bottom 10px
+		margin-left 5px
+		margin-top 5px
+
+/*WIDGET DE 2 SECCIONES*/
+.banner_two_sections
+	.bnr_one
+		margin-right 10px
+		margin-bottom 5px
+		margin-top 5px
+	.bnr_two
+		margin-left 10px
+		margin-bottom 10px
+		margin-top 5px
+
+
+/*WIDGTE SLIDER + VIDEO*/
+.slider_video
+	margin 10px 0
+	display inline-block
+	width 100%
+	.slider_carousel
+		margin-right 10px
+		.img_slider
+			position absolute
+			left 0
+			top 0
+		.bnr_slider_box
+			width 95%
+			float right
+
+			.carousel-control
+				width 30px
+
+			.carousel-indicators
+				display none
+
+			.carousel-control.left
+				background-image none;
+				background-color transparent;
+				left auto
+				right 35px
+			.carousel-control.right
+				background-image none;
+				background-color transparent;
+
+			.glyphicon-chevron-right
+				right 5px
+				margin-top 0px
+				margin-left 0px
+				top 3%
+
+			.glyphicon-chevron-left
+				right 5px
+				margin-top 0px
+				margin-left 0px
+				top 3%
+				left 0
+
+
+	.video
+		margin-left 10px
+
+
+/****BANNER CAROUSEL FADE****/
+.carousel-fade {
+    .carousel-inner {
+
+        .item {
+            transition-property: opacity;
+        }
+				.item, .active a{
+    			float: right;
+				}
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+		text-align: right;
+		float: right;
+  }
+
+
+
+
+
+
+.ico-opps
+	background url(../../images/common/oops.png) no-repeat 0 10px
+	width 80px
+	height 75px
+	display inline-block
+	margin 0px 30px
+
+/********MENU MOBILE PANEL BOOTSTRAP***********/
+/*Menu alternos IE9*/
+#menui9_ropa, #menui9_acc
+	display none
+
+
+
+.sub-nav-wrap .dropdown-menu
+	left 0
+
+.dropdown-men-i9
+	min-width:100%;
+	width:100%;
+	left:0;
+	top:auto;
+	background-image:url(../../images/common/back_header_menu.jpg);
+	position:absolute;
+	position: -ms-page;
+	box-shadow:none;
+	border-radius:0;
+	border:none;
+	display block
+	ul
+		list-style none
+	li
+		list-style none
+		width auto
+		float left
+		margin 8px 0 0px 0px
+		background transparent
+		font-size 17px
+		font-family $fonttext_f2
+		padding 0px
+		text-transform uppercase
+		a
+			color #212121
+			padding 3px 0px
+			text-decoration none
+
+	span
+		border-right 1px solid #00e628
+		float left
+		margin 11px 15px
+		width 1px
+		height 18px
+
+
+@media screen and (min-width:0\0)
+	.dropdown
+		.dropdown-menu
+			position -ms-page; /*Only works in IE10*/
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+	background-color transparent
+	color #555
+
+
+
+/********MENU MOBILE PANEL***********/
+
+
+/**********************/
+/**AGE GATE**/
+
+
+
+/**********************/
+/**HEADER**/
+
+
+
+/**TEMPORAL*/
+
+
+
+/**CONTENT **/
+
+#content
+
+	.favorito
+		h2
+			text-align center
+			font-size 20px
+			margin 20px auto
+			color $color_p
+			text-transform uppercase
+
+
+
+	/* BANNER GALERY */
+	.galery_img
+		.galery_img_1
+			margin 0 0 30px 0
+			b
+				display none
+				position absolute
+				text-align center
+				top 45%
+				width 100%
+				font-family $fonttext_f2
+				color #ffffff
+				font-size 27px
+				/*span
+					border-top 1px solid #ffffff
+					border-bottom 1px solid #ffffff*/
+			p
+				background #225d2c
+				opacity 0.9
+
+		&:hover
+			b
+				display block
+		.galery_img_2
+			margin 0 0 15px 0
+		.galery_img_3
+			margin 0 0 15px 0
+		.galery_img_4
+			margin 0
+		.galery_img_5
+			margin 0
+		.galery_img_6
+			margin 0
+		.galery_img_7
+			margin 0
+		.galery_img_8
+			margin 0
+
+
+	.info_sitemap
+		p
+			text-align:justify
+		strong
+			margin 40px 0 0px 0
+			display block
+			border-bottom 1px solid #ccc
+			text-align left
+			font-weight normal
+			font-size 22px
+
+
+		b
+			margin:15px 0 5px 0
+			display:block
+	.popular_product
+		a
+			float:left
+			width:30%
+			text-align:left
+			color:#808080
+	.popular_o_product
+		a
+			float:left
+			width:100%
+			text-align:left
+			color:#808080
+
+	.information
+		margin 50px 0 0 0
+
+		h1
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		h2
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		h3
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		p
+			text-align justify
+			color #666666
+	.banner_lateral
+		margin 20px 0 90px 0
+
+
+	/** Message **/
+	.msjnoprod
+		width 100%
+		text-align center
+		margin 20px 0 45px 0
+		font-size 16px
+		font-weight bold
+		color #dd0100
+	.messageprod
+		width 100%
+		text-align center
+		margin 30px 0 45px
+		b
+			font-size 16px
+			display inline-block
+			margin 0 0 15px 0
+		p
+			font-size 15px
+			margin 25px 0 20px
+			color #808080
+		a
+			font-size 14px
+			padding 0 20px
+			color #000
+			&:hover
+				color #808080
+	.message404
+		width 100%
+		text-align center
+		margin 30px 0 0px
+		b
+			font-family 'Arial'
+			font-size 180px
+			display inline-block
+
+			margin 0 0 0px 0
+			line-height 150px
+			color #cccccc
+
+		p
+			font-size 18px
+			margin 25px 0 20px
+			color #3b3b3b
+		a
+			font-size 18px
+			padding 0px
+			color #808080
+			&:hover
+				color #000
+
+	.message_url
+		width 100%
+		display inline-block
+		margin 0px 0 70px 0
+		padding 10px 0
+		text-align content ''
+
+		strong
+			color #000
+			font-size 45px
+			display block
+			font-family $fonttext_o1
+			text-transform uppercase
+			padding 5px 0 15px 0
+			font-weight normal
+			line-height 55px
+			text-align center
+		p
+			font-size 25px
+			margin 0px
+			line-height 20px
+			color #000
+			font-family $fonttext_o1
+			text-align center
+		b
+			font-size 30px
+			text-align center
+			font-family $fonttext_o1
+			border-bottom 1px solid #000
+			width 100%
+			display inline-block
+			color #000
+			font-weight normal
+			padding 0 0 40px 0
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+
+
+	.message_url_ne
+		background #f7f7f7
+		width 100%
+		display inline-block
+		margin 40px 0 210px 0
+		padding 40px 0
+		text-align content ''
+
+		.col-sm-18, .col-md-11, .col-lg-9, .col-sm-42, .col-md-27, .col-lg-32
+			width 100%
+		strong
+			color #000
+			font-size 83px
+			display block
+			font-family $fonttext_o1
+			text-transform uppercase
+			border-top 1px solid #cccccc
+			padding 55px 0 15px 0
+			font-weight normal
+			line-height 55px
+			text-align center
+		p
+			font-size 30px
+			margin 0px
+			line-height 20px
+			color #000
+			font-family $fonttext_o1
+			text-align center
+
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+		.tellme_mail
+			margin 5px 0 0 0px
+			.formmail
+				margin 10px 0 0 0px
+			.mailclie
+				width 70%
+			.btnmail
+				width 29%
+	.message_prod_ne
+		background #f7f7f7
+		width 100%
+		display inline-block
+		margin 0px 0 20px 0
+		padding 20px 0 25px 0
+		font-family 'Arial'
+		strong
+			color #808080
+			font-size 55px
+			line-height 55px
+			display block
+			text-align center
+		p
+			font-size 26px
+			margin 15px 0 0 0
+			line-height 30px
+
+		b
+			font-size 28px
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+
+
+	/** WIDGET NAVIGATOR PRODUCT **/
+	.wdgt_nav
+		background #00923F
+		margin 8px 0 3px 0
+		font-size 13px
+		font-weight bold
+		display inline-block
+		width 100%
+		a
+			text-decoration none
+			&:hover
+				color $color_s
+		.pager
+			margin 5px 10px 10px
+		.prev
+			float left
+			.glyphicon-menu-left
+				color $color_s
+				margin 0 0 0 -10px
+		.next
+			float right
+			.glyphicon-menu-right
+				color $color_s
+				margin 0 -10px 0 0
+
+	/** WIDGET SOCIAL **/
+	.product_social
+		width 100%
+		display inline-block
+		text-align left
+		font-weight normal
+		b
+			margin 8px 0 6px 0
+			width 100%
+			display block
+
+		.fb_iframe_widget
+			overflow hidden
+			width 100px
+		div > div
+			float left
+			margin 0 15px 10px 0
+		div
+			float left
+			margin 0 15px 10px 0
+
+	/*WIDGET PRODUCT RECOMEND*/
+	.products_recommended
+		display inline-block
+		margin 30px 0
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 20px
+			font-weight  normal
+			width  100%
+			float  left
+
+	/* WIDGET PRODUCTO VIEW RECENT */
+	.product_view_recent
+		margin 40px 0 30px 0
+		display inline-block
+		width 100%
+		//border-top 1px solid #ddd
+		padding 10px 0 10px 0
+		h2
+			color #000
+			font-size 20px
+			text-align left
+			letter-spacing -1px
+			margin 10px 0 15px 10px
+			font-family $fonttext_f2
+			width 100%
+			float left
+			text-transform none
+		span
+			letter-spacing 0px
+		/*CONTROLS*/
+		.bx-wrapper
+			.bx-prev
+				left -45px
+			.bx-next
+				right -35px
+			.bx-prev, .bx-next
+				//display none !important
+				background transparent
+				color #000
+				&:hover
+					border none
+					color $color_t
+			.bx-viewport
+				background transparent
+
+
+	/*WIDGET BLOG*/
+	.blog_store
+		margin 20px 0
+		display inline-block
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 5px
+			font-weight  normal
+			width  100%
+			float  left
+		.blog_item
+			margin 15px 0 10px 0
+			width 100%
+			display block
+			min-height 280px
+			.blog_img
+				img
+					border 1px solid #999
+			.blog_title
+				a
+					color #000
+					font-weight bold
+					font-size 13px
+					margin 5px 0
+					display inline-block
+			.blog_descript
+				max-height 60px
+				overflow hidden
+				p
+					text-align left
+			.more
+				color #000
+				font-weight bold
+				display inline-block
+				margin 10px 0
+
+	/*WIDGTE SKU PRODUCT***/
+	.featured_products
+		margin 20px 0
+		display inline-block
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 5px
+			font-weight  normal
+			width  100%
+			float  left
+		.product_item
+			margin 10px 0
+			display block
+			min-height 300px
+			.product_img
+				text-align center
+				border 1px solid #ccc
+				img
+					display inline-block
+
+			.product_name
+				color #454545
+				margin 5px 0 0 0
+				display block
+				height 42px
+				overflow hidden
+
+			.product_price
+				margin 5px 0 5px 0
+				text-align center
+				b
+					span
+						font-size 17px
+
+			.btn_addtocart
+				margin 0 0 25px 0
+
+	/*WIDGET DE BANNER*/
+	.banner
+		width 100%
+		margin 15px 0 30px 0
+		display inline-block
+		width 100%
+
+	/*WIDGET DE BANNER PRINCIPAL*/
+	.slide
+		img
+			width auto !important
+			height auto !important
+
+	/*WIDGET DE LIST*/
+	.list_widg
+		margin 30px 0 30px 0
+		display inline-block
+		width 100%
+		a
+			&:hover
+				color $color_s
+
+	/*WIDGET PRODUCT HOME*/
+	.products_slide_home
+		display inline-block
+		margin 20px 0 0 0
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 20px
+			font-weight  normal
+			width  100%
+			float  left
+
+
+.content_designs
+	text-align:center
+	min-height:100px
+	h4
+		border-bottom  1px solid #ededed
+		color  #5d5d5d
+		font-size  22px
+		letter-spacing  -1px
+		margin  30px  0 25px 0px
+		padding  0 0 5px
+		text-align  left
+	big
+		font-size:19px
+		color:#c00008
+		text-align:center
+.box_product
+	border 1px solid transparent
+	cursor:pointer
+	margin:0 0 0px
+	padding:3% 1px 3% 2px
+	position:relative
+	text-align:center
+	min-height:300px
+	&:hover
+		border:1px solid #eee
+
+	.img_product
+		display:inline-block
+		height 190px
+		text-align center
+		img
+			max-height 190px
+	.img_product_size170
+		display:inline-block
+		height auto
+		text-align center
+		width 100%
+		background #fff
+		padding 0 0 5px 0
+		margin 0 0 25px 0
+		img
+			max-height 170px
+	.name_product
+		text-align left
+		color $color_p
+		padding 0 15px 3px 15px
+		font-size 13px
+		padding 10px 0 0px 0
+		border-top 2px solid $color_title
+		margin 5px 0 0 0
+		font-family $fonttext_f3
+		text-transform none
+		a
+			color $color_p
+			font-size 13px
+	.price_product
+		color $color_title
+		font-size:17px
+		text-align:left
+		/*TEMPORAL*/
+		b
+			display none
+		strong
+			font-family $fonttext_f2
+			text-transform uppercase
+	.btn_add_car
+		b
+			font-weight normal
+			float left
+			font-size 13px
+			width 100%
+			margin 15px 0 0 0
+			a
+				-moz-user-select none
+				background-color transparent
+				background-image none
+				border 0 solid #fff
+				border-radius 0
+				color #999
+				cursor pointer
+				display inline-block
+				font-size 13px
+				font-weight normal
+				line-height 1.42857
+				margin 0
+				padding 0 12px
+				text-align center
+				text-decoration underline
+				vertical-align middle
+				white-space nowrap
+		a
+			margin 5px 0 10px 0
+			-moz-user-select none
+			background-image none
+			border 1px solid transparent
+			border-radius 4px
+			cursor pointer
+			display inline-block
+			font-size 14px
+			font-weight normal
+			line-height 1.42857
+			padding 6px 12px
+			text-align center
+			vertical-align middle
+			white-space nowrap
+			background-color #c00008
+			border-color #c00008
+			color #fff
+			text-decoration none
+		img
+			width 140px
+			clear both
+
+
+.elmpage_page_prods_more
+	clear:both
+	width:100%
+	margin:5px auto 10px auto
+	text-align:center
+
+
+	a
+		color:#454545
+.elmpage_categ_list
+	padding-bottom:35px
+	padding-top:0px
+	display:block
+	font-family:inherit
+	p
+		float:left
+	b
+		font-weight:normal
+		clear:both
+		padding:0 0 0 10px
+	h2
+		text-align:left
+		color:#434343
+		margin-top:1px
+		span
+			display:block
+			width:25px
+			float:left
+			margin:-3px 3px 0px 2px
+			background:url('../images/interface/sprt_store.png') no-repeat -600px -180px
+	.title
+		display:none
+	h3
+		display:none
+	a
+		display:block
+		width:24.8%
+		color:#454545
+		font-size:15px
+		float:left
+		text-align:left
+		text-decoration:none
+		line-height:14px
+		padding:0 0 5px 15px
+		border-right-width:1px
+		border-right-style:solid
+		border-right-color:#E9E9E9
+		&:hover
+			text-decoration:underline
+
+
+
+
+/**FOOTER**/
+footer
+	margin 30px 0 10px 0
+	background #ffffff
+	text-align center
+	.marcas
+		margin 10px 0
+		h4
+			text-transform capitalize
+			font-size 14px
+			padding 5px 0px
+			font-family $fonttext_f2
+			font-weight normal
+
+	.cat-populares
+		margin 10px 0
+		padding-left 25px
+		h4
+			text-transform capitalize
+			font-size 14px
+			font-family $fonttext_f2
+			font-weight normal
+			padding 3px 0px
+
+	.nav-categorias
+		margin 5px 0
+		ul
+			list-style none
+			padding 0
+			li
+				line-height 20px
+				font-size 12px
+				text-decoration none
+				font-family $fonttext_f2
+				text-transform capitalize
+				width 50%
+				display inline-block
+				padding 0px 0
+				a
+					color #000
+					text-decoration none
+					&:hover
+						color $color_gray_3
+
+	.nav-footer
+		margin 5px 0
+		ul
+			list-style none
+			padding 0
+			li
+				line-height 20px
+				font-size 12px
+				text-decoration none
+				font-family $fonttext_f2
+				text-transform capitalize
+				width 24%
+				display inline-block
+				padding 0px 0
+				a
+					color #000
+					text-decoration none
+					&:hover
+						color $color_gray_3
+
+	.menu-footer
+		margin 15px 0 5px 0
+		ul
+			list-style none
+			padding 0
+			margin-bottom 15px
+			li
+				display inline-block
+				padding 0 20px
+				font-family $fonttext_f2
+				a
+					text-decoration none
+					color #000
+					text-transform uppercase
+					&:hover
+						color $color_gray_3
+
+	.info-contacto
+		border-bottom 1px solid #e5e5e5
+		border-top 1px solid #e5e5e5
+		span
+			font-size 12px
+
+	.suscrib
+		padding 15px 0
+		h3
+			color #000
+			text-transform uppercase
+			font-size 17px
+			text-align center
+			margin 0 0 20px
+
+	.contacto
+		line-height 25px
+		margin-bottom 20px
+		padding 15px 0
+		h3
+			color #000
+			text-transform uppercase
+			font-size 17px
+			text-align center
+			margin 0 0 20px
+		strong
+			font-family $fonttext_f2
+			color $color_p
+		span
+			font-family $fonttext_f3
+			color $color_p
+			line-height 15px
+			margin-top 15px
+			margin-left 4px
+			float left
+			padding 0 0 0 0
+
+		a
+			color $color_p
+			text-decoration none
+			&:hover
+				color $color_gray_3
+		.ico-mail
+			background url(../../images/common/ico-mail.png)
+			width 37px
+			height 29px
+			float left
+			margin-top 8px
+		.ico-telf
+			background url(../../images/common/ico-telf.png)
+			width 39px
+			height 34px
+			float left
+			margin-top 6px
+		.ico-face
+			background url(../../images/common/ico-face.png)
+			width 36px
+			height 36px
+			float left
+			margin-top 5px
+		.ico-ins
+			background url(../../images/common/ico-ins.png)
+			width 36px
+			height 36px
+			float left
+			margin-top 5px
+
+
+
+
+	.form-subscribe
+		margin-bottom 25px
+		display inline-block
+		vertical-align middle
+		width 100%
+		max-width 570px
+		position relative
+		.input-text
+			display block
+			width 100%
+			padding 12px 100px 12px 15px
+			background-image none
+			outline none
+			font-size 13px
+			line-height 16px
+			border 1px solid #d6d6d6
+			border-radius 2px
+			color #000
+			background-color #fff
+			transition .3s
+			-webkit-appearance none !important
+			float right
+
+			&:focus
+				border-color #252525
+		.button
+			padding 10px 34px
+			min-width 0
+			font-size 13px
+			position absolute
+			top 4px
+			right 5px
+			display inline-block
+			text-align center
+			vertical-align middle
+			cursor pointer
+			background-image none
+			white-space nowrap
+			text-decoration none
+			line-height 1em
+			border-radius 2px
+			color #ffffff
+			background-color $color_boton_primario
+			border 1px solid $color_boton_primario
+			text-transform uppercase
+			transition .3s
+			text-overflow ellipsis
+			overflow hidden
+			&:hover
+				background $color_boton_primario_hover
+				border-color $color_boton_primario_hover
+		.form-group
+			margin-top 10px
+	.footer-social
+		display inline-block
+		vertical-align middle
+		.copyright
+			display inline-block
+			vertical-align middle
+			margin-top 0px
+			font-size 12px
+		address
+			margin-bottom 0px
+		.inner-social-links
+			margin-left 20px
+			font-size 22px
+			display inline-block
+			vertical-align middle
+		ul
+			margin-bottom 0
+			padding-left 0
+			text-indent 0
+			list-style none
+			margin 0
+			li
+				margin-left 0
+				float left
+				padding 0 10px
+				a
+					color #000
+				.fa-twitter
+					&:hover
+						color #4099ff
+				.fa-facebook
+					&:hover
+						color #4d69a2
+				.fa-pinterest-p
+					&:hover
+						color #c92228
+				.fa-youtube
+					&:hover
+						color #ED1010
+
+
+
+
+#msg_page_agegate
+	background-color:#000
+	opacity:1
+	position:absolute
+	z-index:988
+	top:0
+	left:0
+	width:100%
+	height:100%
+	display:none
+
+
+#msg_page_base
+	background-color:#001704
+	opacity:0.7
+	position:absolute
+	z-index:988
+	top:0
+	left:0
+	width:100%
+	height:100%
+	display:none
+
+#msg_reg_eml_cntn
+	position:absolute
+	z-index:1006
+	overflow:auto
+	width:300px
+	min-height:100px
+	padding:10px
+	top:50%
+	left:50%
+	text-align:center
+	background-color:#fff
+	display:none
+	border-radius:8px
+	-moz-border-radius:8px
+	-o-border-radius:8px
+	-webkit-border-radius:8px
+	-ms-border-radius:8px
+
+
+	big
+		display:block
+		margin-top:0px
+		font-size:13pt
+		color:#ccc
+		font-weight:bold
+		text-align:right
+		cursor:pointer
+
+	b
+		display:block
+		margin:-10px 0px 15px 0px
+		font-size:12pt
+		padding:0 0 10px 0
+		text-align:left
+		line-height:16px
+		font-weight:normal
+		color:#434343
+		border-bottom:1px solid #ccc
+
+	span
+		display:block
+		margin:15px 0px 15px 0px
+		font-size:13px
+		text-align:center
+		line-height:16px
+		color:#434343
+
+
+	input
+		width:90px
+		height:30px
+		margin-top:10px
+		border:none
+		background-color:#808080
+		cursor:pointer
+
+		&:hover
+			background-color:#808080
+			color:#fff
+
+#msg_other_destns_cntn
+	strong
+		text-align:center
+		display:block
+
+	h4
+		text-align:center
+
+/***MENU MOBILE - HEADER****/
+
+//nav#menu:not(.mm-menu){  display: none;}
+.header.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed{
+position: fixed;
+bottom: 0;
+left: 0;
+}
+.header a{
+	text-decoration:none;
+	font-size:35px;
+	font-weight:700;
+	display:inline-block;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	margin 12px 0 0 10px
+	/* IE 9 */
+	-webkit-transform:rotate(90deg);
+	/* Opera, Chrome, and Safari */
+	color: #FFFFFF; //Change the color you want for your icon
+	letter-spacing:-2px;
+	height:30px;
+	width:40px;
+	background transparent
+}
+#menu_header, #menu_header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#menu_header {
+width: 100%;
+margin: 0px auto;
+border: 1px solid #222;
+background-color: #000;
+}
+#menu_header:before,
+#menu_header:after {
+content: "";
+display: table;
+}
+#menu_header:after {
+clear: both;
+}
+
+#menu_header {
+zoom:1;
+}
+
+#menu_header li {
+	float: left;
+	position: relative;
+	padding: 6px 9% 12px 0;
+}
+#menu_header .busquedacatg{
+color: #fff;
+font-size: 14px;
+}
+#menu_header li a{
+color: #fff;
+font-size: 14px;
+}
+#menu_header li i{
+margin: 0 10px 0 3px;
+}
+#menu_header a {
+float: left;
+color: #999;
+font:  12px Arial, Helvetica;
+text-decoration: none;
+}
+#menu_header li:hover > a {
+color: #66b200;
+}
+*html #menu_header li a:hover { /* IE6 only */
+color: #fafafa;
+}
+#menu_header ul {
+margin: 0px 0 0 0;
+_margin: 0; /*IE6 only*/
+opacity: 0;
+visibility: hidden;
+position: absolute;
+top: 38px;
+left: 0;
+background: #fff;
+-webkit-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+-moz-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+border:  none;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+width: 200px;
+z-index: 30;
+}
+#menu_header ul li{
+padding: 0px
+}
+#menu_header li:hover > ul {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#menu_header ul ul {
+top: 0px;
+left: 200px;
+margin: 0 0 0 20px;
+_margin: 0; /*IE6 only*/
+-webkit-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+-moz-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+width: 400px;
+height: 505px;
+position: absolute;
+}
+#menu_header ul li {
+float: none;
+display: block;
+border: 0;
+_line-height: 0; /*IE6 only*/
+}
+
+#menu_header ul li .title{
+width: 18px;
+color: #66b200;
+font-family: Arial;
+padding: 8px 0 5px 20px;
+font-weight: bold;
+display: block;
+font-size: 16px;
+}
+#menu_header ul li .title:hover{
+width: 18px;
+color: #66b200;
+font-family: Arial;
+padding: 8px 0 5px 20px;
+font-weight: bold;
+display: block;
+font-size: 16px;
+}
+#menu_header ul li:last-child {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#menu_header ul a {
+padding: 4px 0 3px 20px;
+width: 100%;
+_height: 10px; /*IE6 only*/
+display: block;
+white-space: nowrap;
+/*float: none;*/
+text-transform: none;
+color: #686868;
+font-size: 12px;
+}
+#menu_header ul a:hover {
+background-color: #fff;
+color: #66b200 ;
+font-weight: bold;
+font-size: 12px;
+}
+#menu_header ul li:first-child > a {
+-moz-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+}
+#menu_header ul li:first-child > a:after {
+content: '';
+position: absolute;
+left: 80px;
+top: -6px;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-bottom: 6px solid #fff;
+}
+#menu_header ul ul li:first-child a:after {
+left: -6px;
+top: 50%;
+margin-top: -6px;
+border-left: 0;
+border-bottom: 6px solid transparent;
+border-top: 6px solid transparent;
+border-right: 6px solid #3b3b3b;
+display: none;
+}
+#menu_header ul li:first-child a:hover:after {
+/*border-bottom-color: #04acec;*/
+}
+#menu_header ul ul li:first-child a:hover:after {
+border-right-color: #000002;
+border-bottom-color: transparent;
+}
+#menu_header ul li:last-child > a {
+-moz-border-radius: 0 0 3px 3px;
+-webkit-border-radius: 0 0 3px 3px;
+border-radius: 0 0 3px 3px;
+}
+
+.mm-hidden {
+display: none !important; }
+.mm-wrapper {
+overflow-x: hidden;
+position: relative; }
+.mm-menu,
+.mm-menu > .mm-panel {
+margin: 0;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: 0; }
+.mm-menu {
+background: inherit;
+display: block;
+overflow: hidden;
+padding: 0; }
+.mm-panel {
+-webkit-transition: -webkit-transform 0.4s ease;
+-moz-transition: -moz-transform 0.4s ease;
+-ms-transition: -ms-transform 0.4s ease;
+-o-transition: -o-transform 0.4s ease;
+transition: transform 0.4s ease;
+-webkit-transform: translate3d(100%, 0, 0);
+-moz-transform: translate3d(100%, 0, 0);
+-ms-transform: translate3d(100%, 0, 0);
+-o-transform: translate3d(100%, 0, 0);
+transform: translate3d(100%, 0, 0); }
+.mm-panel.mm-opened {
+-webkit-transform: translate3d(0%, 0, 0);
+-moz-transform: translate3d(0%, 0, 0);
+-ms-transform: translate3d(0%, 0, 0);
+-o-transform: translate3d(0%, 0, 0);
+transform: translate3d(0%, 0, 0); }
+.mm-panel.mm-subopened {
+-webkit-transform: translate3d(-30%, 0, 0);
+-moz-transform: translate3d(-30%, 0, 0);
+-ms-transform: translate3d(-30%, 0, 0);
+-o-transform: translate3d(-30%, 0, 0);
+transform: translate3d(-30%, 0, 0); }
+.mm-panel.mm-highest {
+z-index: 1; }
+.mm-menu > .mm-panel {
+background: inherit;
+-webkit-overflow-scrolling: touch;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: auto;
+box-sizing: border-box;
+padding: 0 20px; }
+.mm-menu > .mm-panel.mm-hasheader {
+padding-top: 40px; }
+.mm-menu > .mm-panel:before, .mm-menu > .mm-panel:after {
+content: '';
+display: block;
+height: 20px; }
+.mm-vertical .mm-panel {
+-webkit-transform: none !important;
+-moz-transform: none !important;
+-ms-transform: none !important;
+-o-transform: none !important;
+transform: none !important; }
+.mm-vertical .mm-listview .mm-panel,
+.mm-listview .mm-vertical .mm-panel {
+display: none;
+padding: 10px 0 10px 10px; }
+.mm-vertical .mm-listview .mm-panel .mm-listview > li:last-child:after,
+.mm-listview .mm-vertical .mm-panel .mm-listview > li:last-child:after {
+border-color: transparent; }
+.mm-vertical li.mm-opened > .mm-panel,
+li.mm-vertical.mm-opened > .mm-panel {
+display: block; }
+.mm-vertical .mm-listview > li > .mm-next,
+.mm-listview > li.mm-vertical > .mm-next {
+height: 40px;
+bottom: auto;
+
+ }
+.mm-vertical .mm-listview > li > .mm-next:after,
+.mm-listview > li.mm-vertical > .mm-next:after {
+top: 16px;
+bottom: auto; }
+.mm-vertical .mm-listview > li.mm-opened > .mm-next:after,
+.mm-listview > li.mm-vertical.mm-opened > .mm-next:after {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg); }
+.mm-header {
+border-bottom: 1px solid transparent;
+text-align: center;
+line-height: 20px;
+height: 40px;
+padding: 0 40px;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+right: 0; }
+.mm-header > a {
+text-decoration: none;
+display: block;
+padding: 10px 0; }
+.mm-header .mm-title {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden; }
+.mm-header .mm-btn {
+box-sizing: border-box;
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+z-index: 1; }
+.mm-header .mm-btn:first-child {
+padding-left: 20px;
+left: 0; }
+.mm-header .mm-btn:last-child {
+padding-right: 20px;
+right: 0; }
+.mm-listview,
+.mm-listview > li {
+list-style: none;
+display: block;
+padding: 0;
+margin: 0; }
+.mm-listview {
+font: inherit;
+font-size: 14px; }
+.mm-listview a,
+.mm-listview a:hover {
+text-decoration: none; }
+.mm-listview > li {
+position: relative; }
+.mm-listview > li > a,
+.mm-listview > li > span {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+color: #fff;
+line-height: 20px;
+display: block;
+padding: 15px 10px 15px 20px;
+margin: 0; }
+.mm-listview > li:not(.mm-divider):after {
+content: '';
+border-bottom-width: 1px;
+border-bottom-style: solid;
+display: block;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0; }
+.mm-listview > li:not(.mm-divider):after {
+left: 20px; }
+.mm-listview .mm-next {
+background: rgba(3, 2, 1, 0);
+width: 100%;
+padding: 0;
+position: absolute;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: 2;
+color: #fff;
+ }
+.mm-listview .mm-next:before {
+content: '';
+border-left-width: 0px;
+border-left-style: solid;
+border-left-color #fff
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0; }
+.mm-listview .mm-next + a,
+.mm-listview .mm-next + span {
+margin-right: 70px; }
+.mm-listview .mm-next.mm-fullsubopen {
+width: 100%; }
+.mm-listview .mm-next.mm-fullsubopen:before {
+border-left: none; }
+.mm-listview .mm-next.mm-fullsubopen + a,
+.mm-listview .mm-next.mm-fullsubopen + span {
+padding-right: 50px;
+margin-right: 0; }
+
+.mm-menu > .mm-panel > .mm-listview {
+margin-left: -20px;
+margin-right: -20px; }
+.mm-menu > .mm-panel > .mm-listview.mm-first {
+margin-top: -20px; }
+.mm-menu > .mm-panel > .mm-listview.mm-last {
+padding-bottom: 20px; }
+.mm-prev:before,
+.mm-next:after {
+content: '';
+border: 2px solid transparent;
+display: inline-block;
+width: 8px;
+height: 8px;
+margin: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg); }
+.mm-prev:before {
+border-right: none;
+border-bottom: none;
+left: 20px; }
+.mm-next:after {
+border-top: none;
+border-left: none;
+right: 30px; }
+.mm-divider {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+font-size: 10px;
+text-transform: uppercase;
+text-indent: 20px;
+line-height: 25px; }
+.mm-listview > li.mm-spacer {
+padding-top: 40px; }
+.mm-listview > li.mm-spacer > .mm-next {
+top: 40px; }
+.mm-listview > li.mm-spacer.mm-divider {
+padding-top: 25px; }
+.mm-menu {
+background: #000000;
+color: rgba(0, 0, 0, 0.7); }
+.mm-menu .mm-header {
+border-color: #5a5a5a }
+.mm-menu .mm-header > a {
+color: #fff }
+.mm-menu .mm-header .mm-btn:before,
+.mm-menu .mm-header .mm-btn:after {
+border-color: #fff }
+.mm-menu .mm-listview > li:after {
+border-color: #5a5a5a }
+.mm-menu .mm-listview > li > a.mm-prev, .mm-menu .mm-listview > li > a.mm-next {
+color: #fff; }
+.mm-menu .mm-listview > li > a.mm-prev:before, .mm-menu .mm-listview > li > a.mm-next:after {
+border-color: #fff }
+.mm-menu .mm-listview > li > a.mm-prev:after, .mm-menu .mm-listview > li > a.mm-next:before {
+border-color: #5a5a5a }
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu .mm-listview > li.mm-selected > span {
+background: rgba(255, 255, 255, 0.5); }
+.mm-menu.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+background: rgba(0, 0, 0, 0.05); }
+.mm-menu .mm-divider {
+background: rgba(0, 0, 0, 0.05); }
+.mm-page {
+box-sizing: border-box;
+position: relative; }
+.mm-slideout {
+-webkit-transition: -webkit-transform 0.4s ease;
+-ms-transition: -ms-transform 0.4s ease;
+transition: transform 0.4s ease; }
+html.mm-opened {
+overflow: hidden;
+position: relative; }
+html.mm-opened body {
+overflow: hidden; }
+html.mm-opened .mm-page {
+min-height: 100vh; }
+html.mm-background .mm-page {
+background: inherit; }
+#mm-blocker {
+background: rgba(3, 2, 1, 0);
+display: none;
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999999; }
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+display: block; }
+.mm-menu.mm-offcanvas {
+display: none;
+position: fixed; }
+.mm-menu.mm-current {
+display: block; }
+.mm-menu {
+width: 80%;
+min-width: 140px;
+max-width: 440px;
+}
+	html.mm-opening .mm-slideout {
+	-webkit-transform: translate(80%, 0);
+	-moz-transform: translate(80%, 0);
+	-ms-transform: translate(80%, 0);
+	-o-transform: translate(80%, 0);
+	transform: translate(80%, 0);
+}
+
+@media all and (max-width: 175px) {
+	html.mm-opening .mm-slideout {
+		-webkit-transform: translate(140px, 0);
+		-moz-transform: translate(140px, 0);
+		-ms-transform: translate(140px, 0);
+		-o-transform: translate(140px, 0);
+		transform: translate(140px, 0); }
+}
+@media all and (min-width: 550px) {
+	html.mm-opening .mm-slideout {
+		-webkit-transform: translate(440px, 0);
+		-moz-transform: translate(440px, 0);
+		-ms-transform: translate(440px, 0);
+		-o-transform: translate(440px, 0);
+		transform: translate(440px, 0); }
+}
+
+/**POP UP*/
+.process_message_age
+	position absolute
+	z-index 1006
+	overflow-y scroll
+	overflow-x hidden
+	height 100%
+	padding 0px
+	text-align center
+	top 0%
+	left 0%
+	text-align center
+	font-family inherit
+	background-color #001704
+	width 100%
+
+
+
+
+
+
+
+
+
+@media (min-width:1700px) and (max-width:1950px)
+	.video-container
+		height 788px
+
+
+@media (min-width:1500px) and (max-width:1699px)
+	.video-container
+		height 649px
+
+@media (min-width:1368px) and (max-width:1449px)
+	.video-container
+		height 563px
+
+
+@media (min-width:1360px) and (max-width:1367px)
+	.video-container
+		height 541px
+
+
+@media (min-width:1200px) and (max-width:1359px)
+	.video-container
+		height 511px
+	header
+		.menuhome
+			#nav_menu > li > a
+				padding 10px 20px
+
+@media (min-width:992px) and (max-width:1199px)
+
+	.video-container
+		height 401px
+
+
+
+@media (min-width:768px)
+
+	.navbar
+		.navbar-nav
+			display inline-block
+			float none
+		.navbar-collapse
+			text-align center
+
+
+
+@media (min-width:768px) and (max-width:991px)
+
+
+
+	.video-container
+		height 290px
+	.menu_header
+		display none
+
+
+	#content
+		.container-fluid
+			padding-left 20px
+			padding-right 20px
+	.box_design_full
+		.img_static
+			img
+				max-height auto
+
+	.tellme_mail
+		p
+			font-size 14px
+			margin 18px 0 15px
+
+		.formmail
+			.mailclie
+				font-size 12px
+				width 66%
+			.btnmail
+				font-size 14px
+				width 34%
+
+
+		.btnmail
+			width 28%
+			float left
+			background #808080
+			color #fff
+			border none
+			text-align center
+			height 40px
+			font-family 'Arial'
+
+	.tiendas
+		section
+			.it_brand
+				width 25%
+
+	footer
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 80%
+		.nav-footer
+			ul
+				li
+					width 24%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+
+	/*WIDGET SLIDER + VIDEO*/
+	.slider_video
+		.slider_carousel
+			.bnr_slider_box
+				width 100%
+				margin 0 0 20px 0
+		.video
+			margin 0
+
+
+@media (max-width:767px)
+
+
+
+	/*CONTENT*/
+	#content
+		.container-fluid
+			padding-left 10px
+			padding-right 10px
+		h1
+			line-height 33px
+		.banner
+			margin 15px 0 0px
+
+
+		.galery_img
+			.galery_img_1
+				margin 0 0 20px 0
+				text-align center
+				display inline-block
+				width 100%
+				img
+					display inline-block
+			.galery_img_2
+				margin 0 0 12px 0
+			.galery_img_3
+				margin 0 0 20px 0
+			.galery_img_4
+				margin 0 0 20px 0
+			.galery_img_5
+				margin 0 0 20px 0
+			.galery_img_6
+				margin 0 0 20px 0
+			.galery_img_6
+				margin 0 0 20px 0
+		/*PRODUCT RECOMMEND*/
+		.products_recommended
+			display none
+
+
+
+		.bx-wrapper
+			.bx-next::before
+				margin 0px
+		.bx-wrapper
+			.bx-controls-direction
+				a
+					width 20px
+
+		.product_view_recent
+			.bx-wrapper
+				.bx-prev
+					left: auto;
+					right: 30px;
+					top: -16%;
+				.bx-next
+					right: 5px;
+					top: -16%;
+
+
+	.box_product
+		.img_product
+			height 150px
+			img
+				max-height 110px
+		.img_product_size170
+			height 120px
+			img
+				max-height 120px
+
+	.showing
+		width 100%
+		border-bottom 1px solid $color_title
+		padding 0 0 10px 0
+		display inline-block
+		margin 10px 0
+		#filters
+			margin 0px
+			padding 0px
+		.showing_link
+			display none
+	/*ESTILOS MENU FILTRO */
+	.sidebar_filter
+		display none
+
+	.showing_text
+		text-align left
+		font-size 11px
+		margin 0px 0 0 0
+	.showing_link
+		text-align left
+		margin 15px 0 5px 0
+		select
+			width 70%
+	.catgfilter
+		.headercf
+			background none
+			font-weight normal
+			margin-left -10px
+			margin-right -10px
+			padding 0px
+			width auto
+			display block
+			color $color_s
+			i
+				margin 0 3px 0 0
+			a
+				background none
+				display inline-block
+				position relative
+				color $color_s
+				text-align right
+				transform rotate(0deg)
+				letter-spacing 0px
+				font-size 14px
+				text-decoration underline
+				text-decoration none
+				margin 0px
+				padding 0 5px 0 0
+				width 100%
+				height 24px
+				font-weight normal
+		.header_mascateg
+			background none
+			font-size 16px
+			font-weight bold
+			height 38px
+			margin 0px 0 0 0
+			padding 0px
+			width 100%
+			a
+				background none
+				height 35px
+				display block
+				position absolute
+				right 5px
+				top none
+				width 94%
+				color #808080
+				text-align right
+
+
+	/*WIDGET */
+	.banner_three_sections, banner_one_two_sections
+		.bnr_one, .bnr_two, .bnr_three
+			margin-right 0px
+			margin-left 0px
+
+	.banner_two_sections
+		.bnr_one, .bnr_two
+			margin-right 0px
+			margin-left 0px
+
+	.banner_one_two_sections
+		.bnr_one, bnr_two_three
+			margin-right 0px
+			margin-left 0px
+	.slider_video
+		.video
+			margin-left 0px
+
+
+
+	.slider_video
+		.slider_carousel
+			.img_slider
+				width 30%
+
+
+	/*WIDGET SLIDER + VIDEO*/
+	.slider_video
+		.slider_carousel
+			margin 0 0 30px 0
+			display inline-block
+			width 100%
+			.bnr_slider_box
+				width 100%
+
+		.video
+			margin 0
+
+
+
+@media (max-width:650px)
+
+
+
+	footer
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 49%
+		.nav-footer
+			ul
+				li
+					width 32%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+
+
+
+@media (max-width:550px)
+
+	#msg_page_base
+		height 1780px
+	.process_message_age
+		height 1780px
+
+
+
+
+
+@media (max-width:479px)
+
+
+
+	footer
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 49%
+		.nav-footer
+			ul
+				li
+					width 32%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+		.social
+			padding 15px 10px
+			text-align left
+
+@media (max-width:360px)
+
+
+
+
+
+	footer
+		.contacto
+			span
+				width 100%
+				text-align center
+				margin-left -15px
+				margin-top 15px
+			.ico-mail
+				margin-left 22px
+			.ico-telf
+				margin-left 27px
+			.ico-face
+				margin-left 25px
+			.ico-ins
+				margin-left 29px
+
+
+
+
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 49%
+		.nav-footer
+			user-select none
+				li
+					width 49%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+		.social
+			padding 15px 10px
+			text-align left
+
+@media (max-width:320px)
+
+
+
+
+
+	footer
+		.contacto
+			span
+				width 100%
+				text-align center
+				margin-left -15px
+				margin-top 15px
+			.ico-mail
+				margin-left 22px
+			.ico-telf
+				margin-left 27px
+			.ico-face
+				margin-left 25px
+			.ico-ins
+				margin-left 29px
+
+
+
+
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 49%
+		.nav-footer
+			user-select none
+				li
+					width 49%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+		.social
+			padding 15px 10px
+			text-align left

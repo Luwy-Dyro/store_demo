@@ -1,0 +1,170 @@
+$color_p = #000
+$color_s = #212121
+$color_t = #3D3D3D
+$color_f = #d7ab9e
+$color_b = #797979
+$color_int = #000
+$color_title = #000
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+$color_boton_primario = #29b34b
+$color_boton_primario_hover = #10924B
+//body
+	//background #272727
+/*.content*/
+#content
+
+	.title_section
+		width 100%
+		text-align center
+		margin 20px 0 30px 0
+		display inline-block
+		padding 0 10px
+		font-weight bold
+		color #454545
+		font-size 26px
+		text-transform uppercase
+		i
+			border-top 1px solid #ccc
+			float left
+			width 28%
+			margin 15px 0 0 0
+		b
+			float left
+			width 100%
+			text-align center
+			font-weight normal
+		span
+			border-top 1px solid #ccc
+			float right
+			width 28%
+			margin 15px 0 0 0
+	.content_elements
+		.img_center1
+			margin 0 0 24px 0
+			position relative
+		.img_center2
+			position relative
+		.img_left_bottom
+			display block
+			margin 0 0 24px 0
+			overflow hidden
+		.space_prod
+			height 20px
+			float left
+			width 100%
+	.latest_design
+		margin 70px 0
+		display inline-block
+		width 100%
+		h2
+			font-family $fonttext
+			width 100%
+			text-align center
+			margin 10px 0 20px 0
+			display inline-block
+			padding 0px
+		strong
+			font-family $fonttext
+			font-weight normal
+			font-size 25px
+			width 100%
+			text-align center
+			display inline-block
+			line-height 25px
+		.btn_viewm
+			border-radius 0px
+			padding 4px 30px
+			font-size 16px
+			margin 40px auto 0
+			text-align center
+			display block
+			width 50%
+			font-family $fonttext
+			&:hover
+				background #fff
+				color $color_p
+	.product_view_recent
+		h2
+			display inline-block
+			font-family $fonttext
+			margin 40px 0 30px 0
+			padding 0 10px
+			text-align center
+			width 100%
+
+	/*.ley_img
+		min-height: 305px;*/
+
+
+	.unsuscribe
+		display inline-block
+		margin 30px 0 120px 0
+		width 100%
+		strong
+			font-size 23px
+			text-align center
+			display inline-block
+			width 100%
+			margin 20px 0 30px 0
+		p
+			text-align center
+			font-size 14px
+		input
+			text-transform none
+			font-size 14px
+			font-weight bold
+			padding 7px 20px
+			margin-top 20px
+			background $color_boton_primario
+
+
+/*
+@media (min-width:1200px)
+
+@media (min-width:992px) and (max-width:1199px)
+*/
+@media (min-width:768px) and (max-width:991px)
+	#content
+
+		.content_elements
+			.title_section
+				i
+					width 20%
+				b
+					width 100%
+				span
+					width 20%
+
+			.latest_design
+				h2
+					margin 0 0 10px
+
+
+@media (max-width:767px)
+	#content
+		h1
+			font-size 25px
+			line-height 35px
+			margin-bottom 15px
+			margin-top 15px
+			height 35px
+			span
+				height 34px
+
+
+		.content_elements
+			.title_section
+				font-size 24px
+				i
+					display none
+				b
+					width 100%
+				span
+					display none
+
+/*
+@media (max-width:479px)
+*/

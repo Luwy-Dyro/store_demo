@@ -1,0 +1,42 @@
+body {
+    padding-right: 0 !important;
+}
+
+
+/*=============Redes Sociales===============*/
+
+.social_link {
+    text-align: right;
+}
+
+.social_link .fa-stack {
+    margin: 0 0 15px 0;
+}
+
+.social_link .fa-stack i {
+    font-size: 32px
+}
+
+.social_link .fa-facebook-square {
+    color: #385a98;
+}
+
+.social_link .fa-facebook-square:hover {
+    color: #304d82
+}
+
+.social_link .fa-twitter-square {
+    color: #55acee;
+}
+
+.social_link .fa-twitter-square:hover {
+    color: #399eeb
+}
+
+.social_link .fa-linkedin-square {
+    color: #0976b4;
+}
+
+.social_link .fa-linkedin-square:hover {
+    color: #086397
+}

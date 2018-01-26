@@ -1,0 +1,78 @@
+$color_p = #000
+$color_s = #212121
+$color_t = #3D3D3D
+$color_f = #d7ab9e
+$color_b = #797979
+$color_int = #000
+$color_title = #000
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+.signin_revieworder
+	display block
+	margin 60px 0 0 0
+	.col-md-15, .col-lg-15
+		display none
+
+	.col-md-30, .col-lg-30
+		width 100%
+
+	strong
+		font-size 40px
+		font-weight normal
+		text-align left
+		display block
+		margin 60px 0 20px 0
+		font-family $fonttext_f3
+		color $color_title
+		border-bottom 2px solid $color_title
+		letter-spacing -1px
+		text-transform uppercase
+	.form-group
+		display block
+		width 75%
+		margin 0
+		clear both
+		padding 15px 0 0 0
+		input
+			border-radius 0px
+			margin 0 0 15px 0
+			border 1px solid #cccccc
+		label
+			display block
+			font-size 14px
+			color #333
+			font-weight normal
+		.nickname
+			width 50%
+
+	.form_btn
+			display block
+			text-align left
+			margin 50px 0 40px 0
+
+			.btn_signin
+				padding 6px 45px
+				margin-bottom 60px
+			p
+				margin 10px 0 0 0
+				display block
+				color #333
+
+
+
+/*
+@media (min-width:992px) and (max-width:1199px)
+
+
+@media (min-width:768px) and (max-width:991px)
+
+*/
+@media (max-width:767px)
+	.signin_revieworder
+		.form-group
+			width 100%
+			.nickname
+				width 100%

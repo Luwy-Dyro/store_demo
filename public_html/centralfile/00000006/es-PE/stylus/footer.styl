@@ -1,0 +1,273 @@
+$color_p = #000
+$color_s = #787878
+$color_t = #979797
+/*$color_f = #797979
+$color_s = #e3bb56
+$color_brow = #e3bb56
+$color_alt = #d7ab9e
+$color_title = #000
+$color_gray_3 = #797979
+$color_boton_primario = #29b34b
+$color_boton_primario_hover = #10924B
+*/
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+/**FOOTER**/
+footer
+	padding 50px 0 0 0
+	background #000
+	margin 30px 0 0 0 !important
+	font-family $fonttext_f1
+	color $color_t
+	font-size 14px
+
+	.logo
+		margin 0 0 40px 0
+		img
+			display inline-block
+	p
+		color $color_t
+		font-size 13px
+		font-family $fonttext_f1
+	strong
+		margin 0 0 15px 0
+		display block
+		font-size 18px
+		font-weight normal
+		color #fff
+		font-family $fonttext_f1
+
+
+	.section_social
+		i
+			font-size 17px
+			margin-right 10px
+			&:hover
+				-webkit-transform: scale(1.3);
+				-ms-transform: scale(1.3);
+				transform: scale(1.3);
+		a:hover
+			text-decoration none
+		.fa-facebook
+			width 36px
+			height 36px
+			display inline-block
+			background #3b5998
+			border-radius 100%
+			moz-border-radius 100%
+			webkit-border-radius 100%
+			color #ffffff
+			text-align center
+			padding 10px 0 0 0
+		.fa-twitter
+			width 36px
+			height 36px
+			display inline-block
+			background #55acee
+			border-radius 100%
+			moz-border-radius 100%
+			webkit-border-radius 100%
+			color #ffffff
+			text-align center
+			padding 10px 0 0 0
+		.fa-linkedin
+			width 36px
+			height 36px
+			display inline-block
+			background #007ab9
+			border-radius 100%
+			moz-border-radius 100%
+			webkit-border-radius 100%
+			color #ffffff
+			text-align center
+			padding 10px 0 0 0
+		.fa-google-plus
+			width 36px
+			height 36px
+			display inline-block
+			background #dd4b39
+			border-radius 100%
+			moz-border-radius 100%
+			webkit-border-radius 100%
+			color #ffffff
+			text-align center
+			padding 10px 0 0 0
+
+
+
+	.about_us
+		strong
+			font-size 18px
+		img
+			margin 0 0 10px 0
+		p
+			padding 0 35px 0 0
+			text-align left
+		i
+			color $color_s
+			&:hover
+				-webkit-transform: scale(1.9);
+				-ms-transform: scale(1.9);
+				transform: scale(1.9);
+		a
+			color $color_p
+	.information, .myaccount
+		margin 0px
+		ul
+			padding 0
+			list-style none
+			li
+				margin 0 0 4px 0
+				a
+					color $color_t
+
+	.newsletter
+
+		.form-inline
+			display inline-block
+			width 100%
+			margin 0 0 10px
+			.form-group
+				width 100%
+				input
+					width 65%
+					height 35px
+					float left
+					border-top 1px solid #999
+					border-bottom 1px solid #999
+					border-left 1px solid #999
+					border-right 1px solid #fff
+					color $color_p
+					border-radius 0
+					margin-bottom 8px
+				button
+					width 35%
+					height 35px
+					float left
+					border none
+					color #ffffff
+					background #989898
+					border-radius 0
+
+
+	.copyright
+		margin 5px 0 10px 0
+		display inline-block
+		width 100%
+		b
+			color #999
+			width 100%
+			text-align center
+			font-size 12px
+			margin 0 15px 0 0
+			font-weight normal
+			display block
+			a
+				color #333333
+				font-size 13px
+				text-decoration none
+				&:hover
+					text-decoration underline
+
+	.footer_bar_bottom
+		background #989898
+		border-top 1px solid #fff
+		width 100%
+		height 48px
+		display inline-block
+		margin-top 40px
+		text-align center
+		padding 15px 0 0 0
+		color $color_p
+		p
+			color $color_p
+		a
+			color $color_p
+			text-decoration underline
+
+
+
+
+
+//@media (min-width:768px)
+
+
+
+@media (min-width:768px) and (max-width:991px)
+
+
+	footer
+
+		.cat-populares
+			padding-left 0px
+		.nav-categorias
+			ul
+				li
+					width 80%
+		.nav-footer
+			ul
+				li
+					width 24%
+		.menu-footer
+			ul
+				text-align center
+				li
+					padding 10px 10px
+
+
+		.newsletter
+			margin 50px 0 30px 0
+			strong
+				text-align center
+			p
+				text-align center
+
+			.section_social
+				margin 20px 0 0 0
+				width 100%
+				display inline-block
+				text-align center
+
+
+
+
+
+
+@media (max-width:767px)
+
+	footer
+		.backg-suscrib
+			.text-suscrib
+				br
+					display none
+				span
+					font-size 36px
+					line-height 39px
+				p
+					font-size 17px
+			.form-inline
+				.form-group
+					input, button
+						float left
+		.about_us
+			margin 0 0 50px 0
+			display inline-block
+			width 100%
+		.newsletter
+			margin 50px 0 30px 0
+			strong
+				text-align center
+			p
+				text-align center
+
+			.section_social
+				margin 20px 0 0 0
+				width 100%
+				display inline-block
+				text-align center
+		.footer_bar_bottom
+			height auto
+

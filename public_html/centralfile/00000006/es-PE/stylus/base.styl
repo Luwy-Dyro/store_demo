@@ -1,0 +1,2937 @@
+$color_p = #000
+$color_s = #787878
+$color_t = #979797
+/*$color_f = #797979
+$color_s = #e3bb56
+$color_brow = #e3bb56
+$color_alt = #d7ab9e
+$color_title = #000
+$color_gray_3 = #797979
+$color_boton_primario = #29b34b
+$color_boton_primario_hover = #10924B
+*/
+$fonttext = 'Arial'
+$fonttext_f1 ='OpenSans-Bold'
+$fonttext_f2 ='OpenSans-Semibold'
+$fonttext_f3 ='OpenSans'
+
+
+
+body
+	font-size 14px
+	font-family $fonttext_f3
+a
+
+	outline 0px !important
+	color #989898
+p
+	color #555555
+
+
+
+.btn
+	border-radius 0px
+	padding 6px 20px
+	text-transform uppercase
+
+.btn
+	-moz-user-select: none;
+	background-image: none;
+	border: medium none
+	border-radius: 0px 0px 0px 0px;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color #000
+	color #ffffff
+	-webkit-appearance: none !important
+	@include border-radius(0)
+input[type="text"], input[type="submit"], input[type="button"],input[type="password"], input[type="email"]
+	-webkit-appearance: none !important
+	@include border-radius(0)
+	border-radius: 0px 0px 0px 0px !important
+	-moz-border-radius: 0px 0px 0px 0px !important
+	-webkit-border-radius: 0px 0px 0px 0px !important
+
+
+.btn:focus, .btn:active:focus, .btn.active:focus
+	outline: thin dotted;
+	outline-offset: -2px;
+
+.btn:hover, .btn:focus
+	color: #fff;
+	text-decoration: none;
+
+
+
+
+.btn-common
+	color #333333
+	background-color #F8D848
+	border-color #F8D848
+
+.btn-common:hover,.btn-common:focus,.btn-common:active,.btn-common.active,.open .dropdown-toggle.btn-common
+	color #333333
+	background-color #F7D32F
+	border-color #F8D848
+	border-color:#E1BB09
+
+.btn-common:active,.btn-common.active,.open .dropdown-toggle.btn-common
+	background-image none
+
+.btn-common.disabled,.btn-common[disabled],fieldset[disabled] .btn-common,.btn-common.disabled:hover,.btn-common[disabled]:hover,fieldset[disabled] .btn-common:hover,.btn-common.disabled:focus,.btn-common[disabled]:focus,fieldset[disabled] .btn-common:focus,.btn-common.disabled:active,.btn-common[disabled]:active,fieldset[disabled] .btn-common:active,.btn-common.disabled.active,.btn-common[disabled].active,fieldset[disabled] .btn-common.active
+	background-color #F8D848
+	border-color #F8D848
+.btn-common .badge
+	color #F8D848
+	background-color #333333
+.btn-common-alt
+	color #FFFFFF
+	background-color #333333
+	border-color #333333
+
+.btn-common-alt:hover,.btn-common-alt:focus,.btn-common-alt:active,.btn-common-alt.active,.open .dropdown-toggle.btn-common-alt
+	color #FFFFFF
+	background-color #262626
+	border-color #333333
+
+.btn-common-alt:active,.btn-common-alt.active,.open .dropdown-toggle.btn-common-alt
+	background-image none
+.btn-common-alt.disabled,.btn-common-alt[disabled],fieldset[disabled] .btn-common-alt,.btn-common-alt.disabled:hover,.btn-common-alt[disabled]:hover,fieldset[disabled] .btn-common-alt:hover,.btn-common-alt.disabled:focus,.btn-common-alt[disabled]:focus,fieldset[disabled] .btn-common-alt:focus,.btn-common-alt.disabled:active,.btn-common-alt[disabled]:active,fieldset[disabled] .btn-common-alt:active,.btn-common-alt.disabled.active,.btn-common-alt[disabled].active,fieldset[disabled] .btn-common-alt.active
+	background-color #333333
+	border-color #333333
+.btn-common-alt .badge
+	color #333333
+	background-color #FFFFFF
+.btn-action
+	color #FFFFFF
+	background-color #d20009
+	border-color #d20009
+	font-size 20px
+	font-weight normal
+	-webkit-appearance: none !important
+	@include border-radius(0)
+
+.btn-action:hover,.btn-action:focus,.btn-action:active,.btn-action.active,.open .dropdown-toggle.btn-action
+	color #FFFFFF
+	background-color #c00008
+	border-color #c00008
+.btn-action:active,.btn-action.active,.open .dropdown-toggle.btn-action
+	background-image none
+.btn-action.disabled,.btn-action[disabled],fieldset[disabled] .btn-action,.btn-action.disabled:hover,.btn-action[disabled]:hover,fieldset[disabled] .btn-action:hover,.btn-action.disabled:focus,.btn-action[disabled]:focus,fieldset[disabled] .btn-action:focus,.btn-action.disabled:active,.btn-action[disabled]:active,fieldset[disabled] .btn-action:active,.btn-action.disabled.active,.btn-action[disabled].active,fieldset[disabled] .btn-action.active
+	background-color #c00008
+	border-color #c00008
+.btn-action .badge
+	color $color_s
+	background-color #FFFFFF
+.btn-default-alt
+	color #333
+	background-color #E6E6E6
+	border-color #E6E6E6
+.btn-default-alt:hover,.btn-default-alt:focus,.btn-default-alt:active,.btn-default-alt.active,.open .dropdown-toggle.btn-default-alt
+	color #333
+	background-color #D9D9D9
+	border-color #E6E6E6
+.btn-default-alt:active,.btn-default-alt.active,.open .dropdown-toggle.btn-default-alt
+	background-image none
+.btn-default-alt.disabled,.btn-default-alt[disabled],fieldset[disabled] .btn-default-alt,.btn-default-alt.disabled:hover,.btn-default-alt[disabled]:hover,fieldset[disabled] .btn-default-alt:hover,.btn-default-alt.disabled:focus,.btn-default-alt[disabled]:focus,fieldset[disabled] .btn-default-alt:focus,.btn-default-alt.disabled:active,.btn-default-alt[disabled]:active,fieldset[disabled] .btn-default-alt:active,.btn-default-alt.disabled.active,.btn-default-alt[disabled].active,fieldset[disabled] .btn-default-alt.active
+	background-color #E6E6E6
+	border-color #E6E6E6
+.btn-default-alt .badge
+	color #E6E6E6
+	background-color #333
+.btn-facebook
+	color #FFFFFF
+	background-color #3A5799
+	border-color #2c4274
+.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook
+	color #FFFFFF
+	background-color #334C87
+	border-color #2c4274
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook
+	background-image none
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active
+	background-color #3A5799
+	border-color #2c4274
+.btn-facebook .badge
+	color #3A5799
+	background-color #FFFFFF
+.btn-google
+	color #FFFFFF
+	background-color #D03F2A
+	border-color #C23A27
+.btn-google:hover,.btn-google:focus,.btn-google:active,.btn-google.active,.open .dropdown-toggle.btn-google
+	color #FFFFFF
+	background-color #BB3926
+	border-color #a63221
+.btn-google:active,.btn-google.active,.open .dropdown-toggle.btn-google
+	background-image none
+.btn-google.disabled,.btn-google[disabled],fieldset[disabled] .btn-google,.btn-google.disabled:hover,.btn-google[disabled]:hover,fieldset[disabled] .btn-google:hover,.btn-google.disabled:focus,.btn-google[disabled]:focus,fieldset[disabled] .btn-google:focus,.btn-google.disabled:active,.btn-google[disabled]:active,fieldset[disabled] .btn-google:active,.btn-google.disabled.active,.btn-google[disabled].active,fieldset[disabled] .btn-google.active
+	background-color #D03F2A
+	border-color #a63221
+.btn-google .badge
+	color #D03F2A
+	background-color #FFFFFF
+
+
+/*=============Paginacion===============*/
+.pagination_wrapper
+	nav
+		text-align center
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus
+	background-color #555
+	border-color #555
+.pagination>li>a, .pagination>li>span
+	color $color_p
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus
+	color $color_p
+
+
+// redes sociales
+#social_icon
+	.facebook
+		color #385a98
+		&:hover
+			color #304d82
+	.twitter
+		color #55acee
+		&:hover
+			color #399eeb
+	.youtube
+		color #e62117
+		&:hover
+			color #dd2825
+
+
+
+/**VIDEO RESPONSIVE ***/
+.video-container
+	position relative
+	padding-bottom 56.25%
+	padding-top 30px
+	height 100%
+	overflow hidden
+	iframe,	object,	embed
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+
+
+/*******BANNERS**************/
+.conten-ban
+	margin-bottom 10px
+	.carousel
+		margin-left -10px !important
+		margin-right -10px !important
+.carousel-control
+	width 3%
+	.icon-prev
+		font-size 80px
+		margin-top -50px
+		color #ffffff
+	.icon-next
+		font-size 80px
+		margin-top -50px
+		color #ffffff
+.carousel-control.left,.carousel-control.right
+	background-image none
+.carousel-indicators
+	// display none
+	bottom 10px
+	// float right
+	// left auto
+	// list-style outside none none
+	// margin-left -30%
+	// padding-left 0
+	// position absolute
+	// right 2%
+	// text-align center
+	// width auto
+	// z-index 15
+	.active
+		background-color #fff
+		border 1px solid #fff
+	li
+		background-color #D2D2D2
+		border 1px solid #D2D2D2
+
+.space_banner-home-2
+	.carousel-indicators
+		display none
+/*GALLERIA DE 1 */
+.banner_one_section
+
+	.bnr_one
+		padding-left 10px
+		padding-right 10px
+		margin-bottom 10px
+
+/*GALLERIA DE 2 */
+.banner_two_sections
+
+	&>.row
+		margin-left -5px
+		margin-right -5px
+	.bnr_one
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_two
+		padding-right 5px
+		padding-left 5px
+		margin-bottom 10px
+		.bnr_boton1
+			margin-bottom 10px
+		.bnr_boton
+			margin-bottom 11px
+
+/*GALLERIA DE 3 */
+.banner_three_sections
+	&>.row
+		margin-left -5px
+		margin-right -5px
+	.bnr_one
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_two
+		padding-right 5px
+		padding-left 5px
+		margin-bottom 10px
+		.bnr_three_sup
+			margin-bottom 18px
+	.bnr_three
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+
+/*GALLERIA DE 4*/
+.banner_four_sections
+	&>.row
+		margin-left -5px
+		margin-right -5px
+	.bnr_one
+		padding-left   5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_two
+		padding-left  5px
+		padding-right  5px
+		margin-bottom 10px
+	.bnr_three
+		padding-left  5px
+		padding-right  5px
+		margin-bottom 10px
+	.bnr_four
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+
+/*GALLERIA DE 5*/
+.banner_five_sections
+
+	&>.row
+		margin-left -5px
+		margin-right -5px
+	.bnr_one
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_two
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_three
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_four
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_five
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+
+/*WIDGET DE  y 2 SECCIONES*/
+.banner_one_two_sections
+	&>.row
+		margin-left -5px
+		margin-right -5px
+	.bnr_one
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+	.bnr_two_three
+		padding-left 5px
+		padding-right 5px
+		margin-bottom 10px
+
+
+/****BANNER CAROUSEL FADE****/
+.carousel-fade {
+    .carousel-inner {
+
+        .item {
+            transition-property: opacity;
+        }
+				.item, .active a{
+    			float: right;
+				}
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+/*unsuscribe*/
+.unsuscribe
+	display inline-block
+	width 100%
+	text-align center
+	margin-top 30px
+	strong
+		font-weight normal
+		font-size 18px
+		font-family $fonttext_f2
+		margin-bottom 10px
+		display block
+	p
+		font-size 14px
+		b
+			font-weight normal
+			font-family $fonttext_f2
+	.btn_signin
+		font-size 15px
+		font-family $fonttext_f2
+		text-transform uppercase
+		background $color_blanco
+		color $color_negro
+		border 2px solid $color_negro
+		padding 9px 30px 7px
+		margin-bottom 15px
+		&:hover
+			background $color_blanco
+			color $color_rojo
+			border 2px solid $color_rojo
+			box-shadow none
+			outline none
+
+
+// footer
+.dom-content-footer
+	margin-top 30px
+	.suscrib
+		.form-group
+			#new_letter
+				display none !important
+			.form-control
+				width 75% !important
+
+			.btn-default
+				width 25% !important
+	.strong
+		font-weight normal
+
+
+.ico-opps
+	width 80px
+	height 75px
+	display inline-block
+	margin 0px 30px
+
+
+/**TEMPORAL*/
+.bredcrumb, .page_breadcrumb, .breadcrumb, .breadcrumbs
+	overflow visible
+	text-align left
+	margin-top 0px
+	margin-bottom 20px
+	float left
+	width 100%
+	//border-bottom 1px solid $color_t
+	padding-bottom 5px
+	font-size 14px
+	text-transform none
+	margin-top 10px
+	a
+		display inline-block
+		font-size 14px
+		color #282828
+		text-decoration none
+		font-family $fonttext_f3
+		text-transform none
+	b
+		display inline-block
+		font-size 14px
+		//color $color_p
+		color #282828
+		font-weight normal
+		font-family $fonttext_f3
+		text-transform none
+	big
+		display inline-block
+		width 5px
+		height 16px
+		font-size 8pt
+		margin 0px 2px 0 5px
+		color #777
+	span
+		display inline-block
+		font-size 14px
+		//color $color_p
+		color #282828
+		font-weight normal
+		font-family $fonttext_f3
+		text-transform capitalize
+	strong
+		font-size 11px
+		font-weight normal
+		color #808080
+		font-weight normal
+	.glyphicon-menu-right
+		//background url(../../images/common/arrow.png)
+		width 12px
+		height 8px
+		font-family none
+		content ""
+		top -2px
+	.glyphicon-menu-right::before
+		content "/"
+
+
+/**CONTENT **/
+#content
+	.container-fluid
+		.container
+			padding-left 0px
+			padding-right 0px
+	h1
+		font-family $fonttext_f3
+		text-align center
+		text-transform uppercase
+		font-size 30px
+		color #05551b
+		line-height 40px
+		margin-bottom 30px
+		margin-top 35px
+		/*span
+			border-bottom 1px solid #05551b*/
+	.favorito
+		h2
+			text-align center
+			font-size 20px
+			margin 20px auto
+			color $color_p
+			text-transform uppercase
+
+
+	/*TITULOS*/
+	.section-tittle
+		display inline-block
+		margin-top 30px
+		margin-bottom 15px
+	.title-line
+		border-bottom #e5e5e5 1px solid
+		position relative
+		display block
+		margin-top 17px
+	.box-title
+		text-align center
+		display block
+		margin-top -20px
+	.title-h2
+		font-size 24px
+		display inline-block
+		padding 5px 30px
+		margin 0
+		position relative
+		background #fff
+		font-family $fonttext_f1
+		color #383838
+		text-transform uppercase
+
+
+	/* BANNER GALERY */
+	.galery_img
+		.galery_img_1
+			margin 0 0 30px 0
+			b
+				display none
+				position absolute
+				text-align center
+				top 45%
+				width 100%
+				font-family $fonttext_f2
+				color #ffffff
+				font-size 27px
+				/*span
+					border-top 1px solid #ffffff
+					border-bottom 1px solid #ffffff*/
+			p
+				background #225d2c
+				opacity 0.9
+
+		&:hover
+			b
+				display block
+		.galery_img_2
+			margin 0 0 15px 0
+		.galery_img_3
+			margin 0 0 15px 0
+		.galery_img_4
+			margin 0
+		.galery_img_5
+			margin 0
+		.galery_img_6
+			margin 0
+		.galery_img_7
+			margin 0
+		.galery_img_8
+			margin 0
+
+
+	.info_sitemap
+		p
+			text-align:justify
+		strong
+			margin 40px 0 0px 0
+			display block
+			border-bottom 1px solid #ccc
+			text-align left
+			font-weight normal
+			font-size 22px
+
+
+		b
+			margin:15px 0 5px 0
+			display:block
+	.popular_product
+		a
+			float:left
+			width:30%
+			text-align:left
+			color:#808080
+	.popular_o_product
+		a
+			float:left
+			width:100%
+			text-align:left
+			color:#808080
+
+	.information
+		margin 50px 0 0 0
+
+		h1
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		h2
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		h3
+			color  #5d5d5d
+			font-size  25px
+			font-weight  normal
+			letter-spacing  -1px
+			margin-bottom  15px
+			text-align  left
+			padding 0 0 5px;
+		p
+			text-align justify
+			color #666666
+	.banner_lateral
+		margin 20px 0 90px 0
+
+
+	/** Message **/
+	.msjnoprod
+		width 100%
+		text-align center
+		margin 20px 0 45px 0
+		font-size 16px
+		font-weight bold
+		color #dd0100
+	.messageprod
+		width 100%
+		text-align center
+		margin 30px 0 45px
+		b
+			font-size 16px
+			display inline-block
+			margin 0 0 15px 0
+		p
+			font-size 15px
+			margin 25px 0 20px
+			color #808080
+		a
+			font-size 14px
+			padding 0 20px
+			color #000
+			&:hover
+				color #808080
+	.message404
+		width 100%
+		text-align center
+		margin 30px 0 0px
+		b
+			font-family 'Arial'
+			font-size 180px
+			display inline-block
+
+			margin 0 0 0px 0
+			line-height 150px
+			color #cccccc
+
+		p
+			font-size 18px
+			margin 25px 0 20px
+			color #3b3b3b
+		a
+			font-size 18px
+			padding 0px
+			color #808080
+			&:hover
+				color #000
+
+	.message_url
+		width 100%
+		display inline-block
+		margin 0px 0 70px 0
+		padding 10px 0
+		text-align content ''
+
+		strong
+			color #000
+			font-size 45px
+			display block
+			font-family $fonttext_f3
+			text-transform uppercase
+			padding 5px 0 15px 0
+			font-weight normal
+			line-height 55px
+			text-align center
+		p
+			font-size 25px
+			margin 0px
+			line-height 20px
+			color #000
+			font-family $fonttext_f3
+			text-align center
+		b
+			font-size 30px
+			text-align center
+			font-family $fonttext_f3
+			border-bottom 1px solid #000
+			width 100%
+			display inline-block
+			color #000
+			font-weight normal
+			padding 0 0 40px 0
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+
+
+	.message_url_ne
+		background #f7f7f7
+		width 100%
+		display inline-block
+		margin 40px 0 210px 0
+		padding 40px 0
+		text-align content ''
+
+		.col-sm-18, .col-md-11, .col-lg-9, .col-sm-42, .col-md-27, .col-lg-32
+			width 100%
+		strong
+			color #000
+			font-size 83px
+			display block
+			font-family $fonttext_f3
+			text-transform uppercase
+			border-top 1px solid #cccccc
+			padding 55px 0 15px 0
+			font-weight normal
+			line-height 55px
+			text-align center
+			margin-top 65px
+		p
+			font-size 30px
+			margin 0px
+			line-height 20px
+			color #000
+			font-family $fonttext_f3
+			text-align center
+		b
+			font-size 30px
+			text-align center
+			font-family $fonttext_f3
+			border-bottom 1px solid #ddd
+			width 100%
+			display inline-block
+			color #000
+			font-weight normal
+			padding 0 0 40px 0
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+		.tellme_mail
+			margin 5px 0 0 0px
+			.formmail
+				margin 10px 0 0 0px
+			.mailclie
+				width 70%
+			.btnmail
+				width 29%
+	.message_prod_ne
+		background #f7f7f7
+		width 100%
+		display inline-block
+		margin 0px 0 20px 0
+		padding 20px 0 25px 0
+		font-family 'Arial'
+		strong
+			color #808080
+			font-size 55px
+			line-height 55px
+			display block
+			text-align center
+		p
+			font-size 26px
+			margin 15px 0 0 0
+			line-height 30px
+
+		b
+			font-size 28px
+
+		span
+			font-size 17px
+			float left
+			width 100%
+			text-align center
+
+
+	/** WIDGET NAVIGATOR PRODUCT **/
+	.wdgt_nav
+		background #00923F
+		margin 8px 0 3px 0
+		font-size 13px
+		font-weight bold
+		display inline-block
+		width 100%
+		a
+			text-decoration none
+			&:hover
+				color $color_s
+		.pager
+			margin 5px 10px 10px
+		.prev
+			float left
+			.glyphicon-menu-left
+				color $color_s
+				margin 0 0 0 -10px
+		.next
+			float right
+			.glyphicon-menu-right
+				color $color_s
+				margin 0 -10px 0 0
+
+	/** WIDGET SOCIAL **/
+	.product_social
+		width 100%
+		display inline-block
+		text-align left
+		font-weight normal
+		b
+			margin 8px 0 6px 0
+			width 100%
+			display block
+
+		.fb_iframe_widget
+			overflow hidden
+			width 100px
+		div > div
+			float left
+			margin 0 15px 10px 0
+		div
+			float left
+			margin 0 15px 10px 0
+
+
+
+	/* WIDGET PRODUCTO VIEW RECENT */
+	.product_view_recent
+		margin 40px 0 30px 0
+		display inline-block
+		width 100%
+		//border-top 1px solid #ddd
+		padding 10px 0 10px 0
+		h2
+			color #000
+			font-size 20px
+			text-align left
+			letter-spacing -1px
+			margin 10px 0 15px 10px
+			font-family $fonttext_f2
+			width 100%
+			float left
+			text-transform none
+		span
+			letter-spacing 0px
+		/*CONTROLS*/
+		/*.bx-wrapper
+			.bx-prev
+				left -45px
+				&:before
+					content url("../../images/common/arrow-left.png")
+			.bx-next
+				right -35px
+				&:before
+					content url("../../images/common/arrow-right.png")
+			.bx-prev, .bx-next
+				//display none !important
+				background transparent
+				color #000
+				&:hover
+					border none
+					color $color_t
+			.bx-viewport
+				background transparent*/
+
+
+	/*WIDGET BLOG*/
+	.blog_store
+		margin 20px 0
+		display block
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 5px
+			font-weight  normal
+			width  100%
+			float  left
+		.blog_item
+			margin 15px 0 10px 0
+			width 100%
+			display block
+			min-height 280px
+			.blog_img
+				img
+					border 1px solid #999
+			.blog_title
+				a
+					color #000
+					font-weight bold
+					font-size 13px
+					margin 5px 0
+					display inline-block
+			.blog_descript
+				max-height 55px
+				overflow hidden
+				p
+					text-align left
+			.more
+				color #000
+				font-weight bold
+				display inline-block
+				margin 10px 0
+
+	/*WIDGTE SKU PRODUCT***/
+	.featured_products
+		margin 20px 0
+		display inline-block
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 5px
+			font-weight  normal
+			width  100%
+			float  left
+		.product_item
+			margin 10px 0
+			display block
+			min-height 300px
+			.product_img
+				text-align center
+				border 1px solid #ccc
+				img
+					display inline-block
+
+			.product_name
+				color $color_nombre_producto
+				margin 5px 0 0 0
+				display block
+				height 42px
+				overflow hidden
+				font-size $font_size_nombre_producto
+
+			.product_price
+				margin 5px 0 5px 0
+				text-align center
+				b
+					span
+						font-size $font_size_precio_producto
+						color $color_precio_producto
+
+			.btn_addtocart
+				margin 0 0 25px 0
+
+	/*WIDGET DE BANNER*/
+	.banner
+		width 100%
+		margin 15px 0 30px 0
+		display inline-block
+		width 100%
+
+
+
+	/*WIDGET DE LIST*/
+	.list_widg
+		margin 30px 0 30px 0
+		display inline-block
+		width 100%
+		a
+			&:hover
+				color $color_s
+
+	/*WIDGET PRODUCT HOME*/
+	.products_slide_home
+		display inline-block
+		margin 20px 0 0 0
+		width 100%
+		h3
+			border-bottom  1px solid #dde0e2
+			padding 0 0 10px 0
+			color  #333
+			font-size  22px
+			text-align  left
+			letter-spacing  -1px
+			margin  5px 0 20px
+			font-weight  normal
+			width  100%
+			float  left
+
+	/**WIDGET CARUSEL PRODUCTOS con preview*/
+	.product_list,.widget_slider
+		// margin 20px 0
+		// display inline-block
+		// width 100%
+		hr
+			display none
+		.product_item
+			padding 10px
+			display inline-block
+			min-height 300px
+			width 100%
+			.product_img
+				text-align center
+				//border 1px solid #ccc
+				display inline-block
+				width 100%
+				padding 5%
+				img
+					display inline-block
+					width 100%
+			.product_name
+				color $color_nombre_producto
+				padding 5px 0 0 0
+				display block
+				height 42px
+				overflow hidden
+				text-align center
+				a
+					color $color_nombre_producto
+					text-decoration none
+					font-size $font_size_nombre_producto
+
+			.product_price
+				padding 5px 0 5px 0
+				text-align center
+				display block
+				font-size $font_size_precio_producto
+				font-family $fonttext_f2
+				b
+					text-decoration line-through
+					color $color_precio_producto
+					margin 6px 8px 0 0
+					font-weight normal
+					float none
+				span
+					font-weight normal
+					text-transform none
+					color $color_precio_producto
+					letter-spacing 0px
+					margin 6px 0 0 0
+					float none
+				strong
+					font-weight normal
+					text-transform none
+					color #c00008
+					letter-spacing 0px
+					margin 6px 0 0 0
+					float none
+				.price-range
+					width 100%
+					display inline-block
+
+			.btn_addtocart
+				margin 0 0 25px 0
+
+			.preview
+				position absolute
+				height 50px
+				display none
+				margin 0 0px
+				z-index 150
+				padding 8px 0px 0 0
+				top 55%
+				width 100%
+				text-align center
+				right 0
+				a
+					cursor pointer
+					border none
+					padding 6px 8px
+					font-size 12px
+					text-decoration none
+					display inline-block
+					border-radius 2px
+					width 140px
+					background rgba(0,0,0,0.7)
+					text-align center
+					margin 0px
+					font-weight normal
+					color #fff
+					font-family $fonttext_f2
+					text-transform uppercase
+					// opacity 0.8
+
+	/**WIDGET MODAL CARUSEL PRODUCTOS preview */
+	.msg_prod_catalog
+		.modal-dialog
+			width 695px
+			margin 10% auto 0 auto
+			.modal-content
+				box-shadow 0 2px 5px rgba(0, 0, 0, 0.3)
+			.modal-header
+				padding 8px 0 10px 0
+				border-bottom none
+				.close
+					margin 3px 10px 0 0
+					opacity 1
+					span
+						font-size 13px
+						color #000
+						font-weight normal
+
+			.modal-body
+				.img_prod
+					border-right 1px solid #E6E6E6
+					.img_max
+						display block
+						margin 0 0 15px 0
+					.img_min
+						padding 0 20px
+						img
+							width 80px
+				.descrip_prod
+					padding 0 0 0 35px
+					display block
+					i
+						font-style normal
+					strong
+						font-size 23px
+						font-weight normal
+						margin 0 0 25px 0
+						display block
+						line-height 24px
+					p
+						margin 0px
+						color #000
+						span
+							color #888888
+							width 45px
+							display inline-block
+							margin 8px 0 8px
+						select
+							width 50%
+							height 23px
+							border 1px solid #e6e6e6
+							border-radius 0px
+							background #F2F2F2
+						i
+							font-size 15px
+					b
+						color #3FA9F5
+						margin 15px 10px 0 0
+						font-size 20px
+						font-weight normal
+						display block
+						span
+							margin 10px 10px 4px 0px
+							font-size 37px
+							color #c00008
+					small
+						width 100%
+						display inline-block
+						margin 80px 0 0 0
+						text-align right
+						p
+							span
+								font-size 15px
+								float left
+								text-align left
+							input[type="text"]
+								height 33px
+								border 1px solid #ccc
+								margin 3px 0 0 5px
+								width 73px
+								float left
+								text-align center
+								font-size 15px
+							.btn-addtocart
+								padding 6px 60px
+								font-size 17px
+								margin 0 0 0 10px
+								float right
+					.moreinfo
+						text-align right
+						margin 10px 0 0 0
+						display block
+						a
+							text-decoration none
+							color #000
+
+				/* SALEFORM POSITION LEFT */
+				.saleform_product_images
+					strong
+						font-size $font_size_h2
+						margin-top -25px
+						margin-bottom 20px
+						font-family $fonttext_f2
+						text-transform none
+						color $color_nombre_producto
+						font-weight normal
+						width 600px
+						display block
+					.product_thumbnails_side
+
+						margin 0px 0 0 -10px
+						img
+							border 1px solid #eeeeee
+							padding 0 8px
+							margin 0 0 9px 0
+							&:hover
+								border 1px solid #606060
+						.active
+							border 1px solid #606060
+							padding 0 8px
+							margin 0 0 10px 0
+					.product_image_full
+						text-align center
+						width 100%
+						h1
+							font-size $font_size_h1
+							text-align center
+							margin 5px 0 18px
+							line-height 22px
+						img
+							text-align center
+							display inline-block
+					.product_thumbnails_color
+						margin 20px 0 0 0
+						img
+							border 1px solid #fff
+							padding 0 3px
+							margin 0 10px
+							float left
+							&:hover
+								border 1px solid #606060
+						.active
+							border 1px solid #606060
+							padding 0 3px
+							margin 0 10px
+
+				/* SALEFORM OPTION POSITION RIGHT */
+				.saleform_options
+					.saleform_product_form
+						margin 50px 0 0
+						b
+							width 100%
+							text-align left
+							color #999
+							font-weight normal
+							text-decoration line-through
+							padding-right 10px
+							font-size 21px
+						strong
+							font-size 21px
+							color #c00008
+						#saleform_prices
+							margin-bottom 15px
+							display -webkit-box
+							display -webkit-flex
+							display flex
+							flex-flow row wrap
+							span
+								color $color_precio_producto
+								font-size 21px
+								font-family $fonttext_f2
+
+						#spnPricesInit
+							color  $color_title
+
+						.product_summ_total
+							color  $color_title
+							display  block
+							font-size  22px
+							font-weight  normal
+							width  100%
+							font-family $fonttext_f3
+							margin-bottom 10px
+						#spanldesc
+							width 100%
+							font-size 12px
+							margin 0 0 20px 0
+						#cont_atrb_group
+							div
+								width 100%
+								margin 5px 0 5px 0
+								height 33px
+								padding 0
+								font-size 14px
+								span
+									width 50%
+									padding 3px 0 0 0px
+									float left
+									text-transform none
+									font-family $fonttext_f3
+									font-size 14px
+								select
+									width 50%
+									border 1px solid #ccc
+									float left
+									height 30px
+									background #fff
+									text-align center
+									border-radius 0px
+									color $color_nombre_producto
+									text-transform capitalize
+
+						.product_select_qty
+							width 100% !important
+							margin 5px 0 5px 0
+							height 33px
+							padding 0
+							font-size 14px
+
+							span
+								width 50%
+								padding 3px 0 0 0px
+								float left
+								text-transform none
+								font-family $fonttext_f3
+								font-size 14px
+							select
+								width 50%
+								border 1px solid #ccc
+								float left
+								height 30px
+								background #ffffff
+								text-align center
+								border-radius 0px
+								color $color_nombre_producto
+
+						.product_qty_10
+							float right
+							width 50%
+							margin 5px 0 15px
+							border 1px solid #cdcdcd
+							height 33px
+							background #ffffff
+							padding-left 5px
+							font-size 14px
+
+						.btn_addcart
+							width 100%
+							font-size 16px
+							margin 40px 0 15px
+							display inline-block
+							background-color $color_boton_primario
+							white-space normal
+							padding 8px 0px 12px 0
+							text-align center
+							border 1px solid $color_boton_primario
+							line-height 22px
+							font-family $fonttext_f1
+							text-transform none
+							&:hover
+								color #fff
+								background-color $color_boton_primario_hover
+								border-color $color_boton_primario_hover
+
+
+						.product_social
+							width 100%
+							display none
+							text-align center
+							font-weight normal
+							b
+								margin 8px 0 6px 0
+								width 100%
+								display block
+
+					.tellme_mail
+						padding 20px 35px 15px
+						float left
+						width 100%
+						text-align justify
+						margin 5px 0 0 0
+						background #ffffff
+						border 1px solid #e6e6e6
+						p
+							font-size 13px
+							text-align center
+							font-weight normal
+							color #333333
+							margin 5px 0 5px 0px
+						input[type='text']
+							width 66%
+							display block
+							float left
+							height 30px
+							border 1px solid #dcdcdc
+							color #6b6b6b
+							padding 0 0 0 10px
+						input[type='button']
+							background $color_p
+							border none
+							color #ffffff
+							padding 0px
+							width 34%
+							display block
+							float left
+							height 30px
+					.saleform_ad_mail
+						padding 17px 5px 10px
+						float left
+						width 100%
+						text-align justify
+						p
+							font-size 13px
+							text-align center
+							font-weight bold
+							color #333333
+						.mailclie
+							width 66%
+							display block
+							float left
+							height 30px
+							border 1px solid #dcdcdc
+							color #6b6b6b
+							padding 0 0 0 10px
+						.btnmail
+							background $color_p
+							border none
+							color #ffffff
+							padding 0px
+							width 34%
+							display block
+							float left
+							height 30px
+
+	/** LIGTH BOX - MODAL**/
+	#msg_prod_summ_cntn
+		display none
+		.modal-header
+			padding 30px 10px 20px 0
+			border-bottom 0px
+
+			strong
+				font-size 22px
+				text-align center
+				display block
+				font-family $fonttext_f2
+				text-transform none
+				color $color_title
+				border-bottom 1px solid #ddd
+				margin 0 auto
+				width 88%
+				font-weight normal
+				padding 0 0 5px 0
+
+
+		.modal-body
+			padding 20px 40px
+			i
+				font-style normal
+				font-size 15px
+				padding-left 2px
+			strong
+				font-size 18px
+				margin 0 0 10px 30px
+				display block
+				line-height 20px
+				color $color_nombre_producto
+				//text-transform uppercase
+				font-family $fonttext_f2
+				font-weight normal
+
+			p
+				margin 0px 0 0 30px
+				color $color_s
+				font-family $fonttext_f3
+				font-size 14px
+				font-weight normal
+				span
+					display inline-block
+			b
+				border-top 1px solid #bbb
+				margin 25px 0 4px 30px
+				display inline-block
+				font-size 14px
+				color $color_p
+				font-weight normal
+				width 92%
+				padding 10px 0 0 0
+				font-family $fonttext_f1
+				span
+					color $color_p
+					margin 0 10px 0 0
+					font-size 17px
+
+
+
+			small
+				display inline-block
+				margin 30px 0 10px 40px
+				text-align right
+				font-family $fonttext_f1
+				width 84%
+				.btn-action
+					color #fff
+					background-color $color_b
+					border 1px solid $color_b
+					font-size 16px
+					padding 10px 10px 8px 10px
+					margin 0 20px 0 0
+					text-transform none
+				.btn-pay
+					color #fff
+					background-color $color_boton_primario
+					border 1px solid  $color_boton_primario
+					font-size 16px
+					padding 10px 20px 8px 20px
+					text-transform none
+					&:hover
+						background $color_boton_primario_hover
+						border 1px solid $color_boton_primario_hover
+
+			#spnSummSku
+				font-size 13px
+
+
+		.modal-footer
+			display inline-block
+			height 0px
+			width 100%
+			border none
+			height auto
+			padding 0px
+			margin 0px
+
+		.btn-pay
+			background #df000c
+			border 1px solid #df000c
+			color #ffffff
+			padding 6px 25px
+			&:hover
+				background #c00008
+				border 1px solid #df000c
+				color #ffffff
+
+
+
+		.modal-footer
+			display inline-block
+			width 100%
+			border none
+			height 0px
+			padding 5px 0 0 0
+
+			.btn-pay
+				background $color_p
+				border 1px solid $color_p
+				color #ffffff
+				padding 6px 25px
+				&:hover
+					background $color_b
+					border 1px solid $color_b
+					color #ffffff
+
+
+
+		// modificaciones para el catalogo
+		.box_design_full
+			//border:1px solid #FFFFFF
+			cursor:pointer
+			margin:0 0 10px
+			padding:3% 1px 3% 2px
+			position:relative
+			text-align:center
+			min-height:320px
+			//&:hover
+				//border:1px solid $color_int
+				//box-shadow:1px 1px 3px rgba(0, 0, 0, 0.3)
+
+			.img_static
+				display:inline-block
+				height 200px
+				width 100%
+				.preview
+					position absolute
+					color #696969
+					width 100%
+					height 50px
+					display none
+					margin 0 0px
+					z-index 150
+					padding 8px 0 0 0
+					top 55%
+					a
+						cursor pointer
+						border none
+						padding 6px 8px
+						font-size 11px
+						text-decoration none
+						display inline-block
+						border-radius 2px
+						width 140px
+						background #000
+						text-align center
+						margin 0px
+						font-weight normal
+						color #fff
+						font-family $fonttext_f3
+						text-transform uppercase
+						opacity 0.8
+
+			.img_static_one
+				display:block
+				overflow:hidden
+				text-align:center
+
+			.img-wrap
+				background none repeat scroll 0 0 #FFFFFF
+				height 100%
+				overflow hidden
+				padding-bottom 100%
+				position relative
+				width 99%
+			.design_price
+				color $color_int
+				font-size:17px
+				text-align:left
+				/*TEMPORAL*/
+				b
+					text-decoration line-through
+					font-size 14px
+					color #3d3d3d
+					margin 6px 8px 0 0
+					float left
+					font-weight normal
+				span
+					font-family $fonttext_f2
+					font-weight bold
+					text-transform none
+					font-size 14px
+					color #000
+					letter-spacing 0px
+					margin 6px 0 0 0
+					float left
+				strong
+					font-family $fonttext_f2
+					font-weight bold
+					text-transform none
+					font-size 14px
+					color #c00008
+					letter-spacing 0px
+					margin 6px 0 0 0
+					float left
+			.design_name
+				text-align left
+				color #454545
+				padding 0 15px 3px 15px
+				font-size 13px
+				padding 10px 0 0px 0
+				border-top none
+				margin 25px 0 0 0
+				font-family $fonttext_f2
+				text-transform capitalize
+				a
+					color $color_t
+					font-size 13px
+					text-decoration none
+			.order
+				display block
+				margin 10px 0 0 0
+				b
+					font-weight normal
+					float left
+					font-size 13px
+					width 100%
+					margin 15px 0 0 0
+					a
+						-moz-user-select none
+						background-color transparent
+						background-image none
+						border 0 solid #fff
+						border-radius 0
+						color #999
+						cursor pointer
+						display inline-block
+						font-size 13px
+						font-weight normal
+						line-height 1.42857
+						margin 0
+						padding 0 12px
+						text-align center
+						text-decoration underline
+						vertical-align middle
+						white-space nowrap
+				a
+					margin 5px 0 10px 0
+					-moz-user-select none
+					background-image none
+					border 1px solid transparent
+					border-radius 4px
+					cursor pointer
+					display inline-block
+					font-size 14px
+					font-weight normal
+					line-height 1.42857
+					padding 6px 22px
+					text-align center
+					vertical-align middle
+					white-space nowrap
+					background-color #0E7513
+					border-color #0E7513
+					color #fff
+					text-decoration none
+					font-family Roboto Condensed
+				img
+					width 140px
+					clear both
+				.visible_mobile
+					display none
+
+
+
+/*WIDGET PRODUCT RECOMEND*/
+.products_recommended
+	display inline-block
+	margin 30px 0
+	width 100%
+	h3
+		border-bottom  1px solid #dde0e2
+		padding 0 0 10px 0
+		color  #333
+		font-size  22px
+		text-align  left
+		letter-spacing  -1px
+		margin  5px 0 20px
+		font-weight  normal
+		width  auto
+		float  none
+
+
+/*WIDGET PRODUCT RECOMEND*/
+.product_view_recent
+	display inline-block
+	margin 30px 0
+	width 100%
+	h2
+		border-bottom  1px solid #dde0e2
+		padding 0 0 10px 0
+		color  #333
+		font-size  22px
+		text-align  left
+		letter-spacing  -1px
+		margin  5px 0 20px
+		font-weight  normal
+		width  auto
+		float  none
+
+
+.content_designs
+	text-align:center
+	min-height:100px
+	h4
+		border-bottom  1px solid #ededed
+		color  #5d5d5d
+		font-size  22px
+		letter-spacing  -1px
+		margin  30px  0 25px 0px
+		padding  0 0 5px
+		text-align  left
+	big
+		font-size:19px
+		color:#c00008
+		text-align:center
+.box_product
+	border 1px solid transparent
+	cursor:pointer
+	margin:0 0 0px
+	padding:3% 1px 3% 2px
+	position:relative
+	text-align:center
+	min-height:300px
+	&:hover
+		border:1px solid #eee
+
+	.img_product
+		display:inline-block
+		height 190px
+		text-align center
+		img
+			max-height 190px
+	.img_product_size170
+		display:inline-block
+		height auto
+		text-align center
+		width 100%
+		background #fff
+		padding 0 0 5px 0
+		margin 0 0 25px 0
+		img
+			max-height 170px
+	.name_product
+		text-align left
+		color $color_p
+		padding 0 15px 3px 15px
+		font-size 13px
+		padding 10px 0 0px 0
+		border-top 2px solid $color_title
+		margin 5px 0 0 0
+		font-family $fonttext_f3
+		text-transform none
+		a
+			color $color_p
+			font-size 13px
+	.price_product
+		color $color_title
+		font-size:17px
+		text-align:left
+		/*TEMPORAL*/
+		b
+			display none
+		strong
+			font-family $fonttext_f2
+			text-transform uppercase
+	.btn_add_car
+		b
+			font-weight normal
+			float left
+			font-size 13px
+			width 100%
+			margin 15px 0 0 0
+			a
+				-moz-user-select none
+				background-color transparent
+				background-image none
+				border 0 solid #fff
+				border-radius 0
+				color #999
+				cursor pointer
+				display inline-block
+				font-size 13px
+				font-weight normal
+				line-height 1.42857
+				margin 0
+				padding 0 12px
+				text-align center
+				text-decoration underline
+				vertical-align middle
+				white-space nowrap
+		a
+			margin 5px 0 10px 0
+			-moz-user-select none
+			background-image none
+			border 1px solid transparent
+			border-radius 4px
+			cursor pointer
+			display inline-block
+			font-size 14px
+			font-weight normal
+			line-height 1.42857
+			padding 6px 12px
+			text-align center
+			vertical-align middle
+			white-space nowrap
+			background-color #c00008
+			border-color #c00008
+			color #fff
+			text-decoration none
+		img
+			width 140px
+			clear both
+
+
+.elmpage_page_prods_more
+	clear:both
+	width:100%
+	margin:5px auto 10px auto
+	text-align:center
+
+
+	a
+		color:#454545
+.elmpage_categ_list
+	padding-bottom:35px
+	padding-top:0px
+	display:block
+	font-family:inherit
+	p
+		float:left
+	b
+		font-weight:normal
+		clear:both
+		padding:0 0 0 10px
+	h2
+		text-align:left
+		color:#434343
+		margin-top:1px
+		span
+			display:block
+			width:25px
+			float:left
+			margin:-3px 3px 0px 2px
+			background:url('../images/interface/sprt_store.png') no-repeat -600px -180px
+	.title
+		display:none
+	h3
+		display:none
+	a
+		display:block
+		width:24.8%
+		color:#454545
+		font-size:15px
+		float:left
+		text-align:left
+		text-decoration:none
+		line-height:14px
+		padding:0 0 5px 15px
+		border-right-width:1px
+		border-right-style:solid
+		border-right-color:#E9E9E9
+		&:hover
+			text-decoration:underline
+
+
+
+
+
+
+
+
+
+#msg_page_agegate
+	background-color:#000
+	opacity:1
+	position:absolute
+	z-index:988
+	top:0
+	left:0
+	width:100%
+	height:100%
+	display:none
+
+
+#msg_page_base
+	background-color:#001704
+	opacity:0.7
+	position:absolute
+	z-index:988
+	top:0
+	left:0
+	width:100%
+	height:100%
+	display:none
+
+#msg_reg_eml_cntn
+	position:absolute
+	z-index:1006
+	overflow:auto
+	width:300px
+	min-height:100px
+	padding:10px
+	top:50%
+	left:50%
+	text-align:center
+	background-color:#fff
+	display:none
+	border-radius:8px
+	-moz-border-radius:8px
+	-o-border-radius:8px
+	-webkit-border-radius:8px
+	-ms-border-radius:8px
+
+
+	big
+		display:block
+		margin-top:0px
+		font-size:13pt
+		color:#ccc
+		font-weight:bold
+		text-align:right
+		cursor:pointer
+
+	b
+		display:block
+		margin:-10px 0px 15px 0px
+		font-size:12pt
+		padding:0 0 10px 0
+		text-align:left
+		line-height:16px
+		font-weight:normal
+		color:#434343
+		border-bottom:1px solid #ccc
+
+	span
+		display:block
+		margin:15px 0px 15px 0px
+		font-size:13px
+		text-align:center
+		line-height:16px
+		color:#434343
+
+
+	input
+		width:90px
+		height:30px
+		margin-top:10px
+		border:none
+		background-color:#808080
+		cursor:pointer
+
+		&:hover
+			background-color:#808080
+			color:#fff
+
+#msg_other_destns_cntn
+	strong
+		text-align:center
+		display:block
+
+	h4
+		text-align:center
+
+/***MENU MOBILE - HEADER****/
+
+//nav#menu:not(.mm-menu){  display: none;}
+.header.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed{
+position: fixed;
+bottom: 0;
+left: 0;
+}
+
+#menu_header, #menu_header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#menu_header {
+width: 100%;
+margin: 0px auto;
+border: 1px solid #222;
+background-color: #000;
+}
+#menu_header:before,
+#menu_header:after {
+content: "";
+display: table;
+}
+#menu_header:after {
+clear: both;
+}
+
+#menu_header {
+zoom:1;
+}
+
+#menu_header li {
+	float: left;
+	position: relative;
+	padding: 6px 9% 12px 0;
+}
+#menu_header .busquedacatg{
+color: #fff;
+font-size: 14px;
+}
+#menu_header li a{
+color: #fff;
+font-size: 14px;
+}
+#menu_header li i{
+margin: 0 10px 0 3px;
+}
+#menu_header a {
+float: left;
+color: #999;
+font:  12px Arial, Helvetica;
+text-decoration: none;
+}
+#menu_header li:hover > a {
+color: #66b200;
+}
+*html #menu_header li a:hover { /* IE6 only */
+color: #fafafa;
+}
+#menu_header ul {
+margin: 0px 0 0 0;
+_margin: 0; /*IE6 only*/
+opacity: 0;
+visibility: hidden;
+position: absolute;
+top: 38px;
+left: 0;
+background: #fff;
+-webkit-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+-moz-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+border:  none;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-ms-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+width: 200px;
+z-index: 30;
+}
+#menu_header ul li{
+padding: 0px
+}
+#menu_header li:hover > ul {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#menu_header ul ul {
+top: 0px;
+left: 200px;
+margin: 0 0 0 20px;
+_margin: 0; /*IE6 only*/
+-webkit-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+-moz-box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+box-shadow: 0px 1px 1px 1px rgba(237,237,237,1);
+width: 400px;
+height: 505px;
+position: absolute;
+}
+#menu_header ul li {
+float: none;
+display: block;
+border: 0;
+_line-height: 0; /*IE6 only*/
+}
+
+#menu_header ul li .title{
+width: 18px;
+color: #66b200;
+font-family: Arial;
+padding: 8px 0 5px 20px;
+font-weight: bold;
+display: block;
+font-size: 16px;
+}
+#menu_header ul li .title:hover{
+width: 18px;
+color: #66b200;
+font-family: Arial;
+padding: 8px 0 5px 20px;
+font-weight: bold;
+display: block;
+font-size: 16px;
+}
+#menu_header ul li:last-child {
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#menu_header ul a {
+padding: 4px 0 3px 20px;
+width: 100%;
+_height: 10px; /*IE6 only*/
+display: block;
+white-space: nowrap;
+/*float: none;*/
+text-transform: none;
+color: #686868;
+font-size: 12px;
+}
+#menu_header ul a:hover {
+background-color: #fff;
+color: #66b200 ;
+font-weight: bold;
+font-size: 12px;
+}
+#menu_header ul li:first-child > a {
+-moz-border-radius: 3px 3px 0 0;
+-webkit-border-radius: 3px 3px 0 0;
+border-radius: 3px 3px 0 0;
+}
+#menu_header ul li:first-child > a:after {
+content: '';
+position: absolute;
+left: 80px;
+top: -6px;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-bottom: 6px solid #fff;
+}
+#menu_header ul ul li:first-child a:after {
+left: -6px;
+top: 50%;
+margin-top: -6px;
+border-left: 0;
+border-bottom: 6px solid transparent;
+border-top: 6px solid transparent;
+border-right: 6px solid #3b3b3b;
+display: none;
+}
+#menu_header ul li:first-child a:hover:after {
+/*border-bottom-color: #04acec;*/
+}
+#menu_header ul ul li:first-child a:hover:after {
+border-right-color: #000002;
+border-bottom-color: transparent;
+}
+#menu_header ul li:last-child > a {
+-moz-border-radius: 0 0 3px 3px;
+-webkit-border-radius: 0 0 3px 3px;
+border-radius: 0 0 3px 3px;
+}
+
+.mm-hidden {
+display: none !important; }
+.mm-wrapper {
+overflow-x: hidden;
+position: relative; }
+.mm-menu,
+.mm-menu > .mm-panel {
+margin: 0;
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: 0; }
+.mm-menu {
+background: inherit;
+display: block;
+overflow: hidden;
+padding: 0; }
+.mm-panel {
+-webkit-transition: -webkit-transform 0.4s ease;
+-moz-transition: -moz-transform 0.4s ease;
+-ms-transition: -ms-transform 0.4s ease;
+-o-transition: -o-transform 0.4s ease;
+transition: transform 0.4s ease;
+-webkit-transform: translate3d(100%, 0, 0);
+-moz-transform: translate3d(100%, 0, 0);
+-ms-transform: translate3d(100%, 0, 0);
+-o-transform: translate3d(100%, 0, 0);
+transform: translate3d(100%, 0, 0); }
+.mm-panel.mm-opened {
+-webkit-transform: translate3d(0%, 0, 0);
+-moz-transform: translate3d(0%, 0, 0);
+-ms-transform: translate3d(0%, 0, 0);
+-o-transform: translate3d(0%, 0, 0);
+transform: translate3d(0%, 0, 0); }
+.mm-panel.mm-subopened {
+-webkit-transform: translate3d(-30%, 0, 0);
+-moz-transform: translate3d(-30%, 0, 0);
+-ms-transform: translate3d(-30%, 0, 0);
+-o-transform: translate3d(-30%, 0, 0);
+transform: translate3d(-30%, 0, 0); }
+.mm-panel.mm-highest {
+z-index: 1; }
+.mm-menu > .mm-panel {
+background: inherit;
+-webkit-overflow-scrolling: touch;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: auto;
+box-sizing: border-box;
+padding: 0 20px; }
+.mm-menu > .mm-panel.mm-hasheader {
+padding-top: 40px; }
+.mm-menu > .mm-panel:before, .mm-menu > .mm-panel:after {
+content: '';
+display: block;
+height: 20px; }
+.mm-vertical .mm-panel {
+-webkit-transform: none !important;
+-moz-transform: none !important;
+-ms-transform: none !important;
+-o-transform: none !important;
+transform: none !important; }
+.mm-vertical .mm-listview .mm-panel,
+.mm-listview .mm-vertical .mm-panel {
+display: none;
+padding: 10px 0 10px 10px; }
+.mm-vertical .mm-listview .mm-panel .mm-listview > li:last-child:after,
+.mm-listview .mm-vertical .mm-panel .mm-listview > li:last-child:after {
+border-color: transparent; }
+.mm-vertical li.mm-opened > .mm-panel,
+li.mm-vertical.mm-opened > .mm-panel {
+display: block; }
+.mm-vertical .mm-listview > li > .mm-next,
+.mm-listview > li.mm-vertical > .mm-next {
+height: 40px;
+bottom: auto;
+
+ }
+.mm-vertical .mm-listview > li > .mm-next:after,
+.mm-listview > li.mm-vertical > .mm-next:after {
+top: 16px;
+bottom: auto; }
+.mm-vertical .mm-listview > li.mm-opened > .mm-next:after,
+.mm-listview > li.mm-vertical.mm-opened > .mm-next:after {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg); }
+.mm-header {
+border-bottom: 1px solid transparent;
+text-align: center;
+line-height: 20px;
+height: 40px;
+padding: 0 40px;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+right: 0; }
+.mm-header > a {
+text-decoration: none;
+display: block;
+padding: 10px 0; }
+.mm-header .mm-title {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden; }
+.mm-header .mm-btn {
+box-sizing: border-box;
+width: 40px;
+height: 40px;
+position: absolute;
+top: 0;
+z-index: 1; }
+.mm-header .mm-btn:first-child {
+padding-left: 20px;
+left: 0; }
+.mm-header .mm-btn:last-child {
+padding-right: 20px;
+right: 0; }
+.mm-listview,
+.mm-listview > li {
+list-style: none;
+display: block;
+padding: 0;
+margin: 0; }
+.mm-listview {
+font: inherit;
+font-size: 14px; }
+.mm-listview a,
+.mm-listview a:hover {
+text-decoration: none; }
+.mm-listview > li {
+position: relative; }
+.mm-listview > li > a,
+.mm-listview > li > span {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+color: #fff;
+line-height: 20px;
+display: block;
+padding: 15px 10px 15px 20px;
+margin: 0; }
+.mm-listview > li:not(.mm-divider):after {
+content: '';
+border-bottom-width: 1px;
+border-bottom-style: solid;
+display: block;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0; }
+.mm-listview > li:not(.mm-divider):after {
+left: 20px; }
+.mm-listview .mm-next {
+background: rgba(3, 2, 1, 0);
+width: 100%;
+padding: 0;
+position: absolute;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: 2;
+color: #fff;
+ }
+.mm-listview .mm-next:before {
+content: '';
+border-left-width: 0px;
+border-left-style: solid;
+border-left-color #fff
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0; }
+.mm-listview .mm-next + a,
+.mm-listview .mm-next + span {
+margin-right: 70px; }
+.mm-listview .mm-next.mm-fullsubopen {
+width: 100%; }
+.mm-listview .mm-next.mm-fullsubopen:before {
+border-left: none; }
+.mm-listview .mm-next.mm-fullsubopen + a,
+.mm-listview .mm-next.mm-fullsubopen + span {
+padding-right: 50px;
+margin-right: 0; }
+
+.mm-menu > .mm-panel > .mm-listview {
+margin-left: -20px;
+margin-right: -20px; }
+.mm-menu > .mm-panel > .mm-listview.mm-first {
+margin-top: -20px; }
+.mm-menu > .mm-panel > .mm-listview.mm-last {
+padding-bottom: 20px; }
+.mm-prev:before,
+.mm-next:after {
+content: '';
+border: 2px solid transparent;
+display: inline-block;
+width: 8px;
+height: 8px;
+margin: auto;
+position: absolute;
+top: 0;
+bottom: 0;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg); }
+.mm-prev:before {
+border-right: none;
+border-bottom: none;
+left: 20px; }
+.mm-next:after {
+border-top: none;
+border-left: none;
+right: 30px; }
+.mm-divider {
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+font-size: 10px;
+text-transform: uppercase;
+text-indent: 20px;
+line-height: 25px; }
+.mm-listview > li.mm-spacer {
+padding-top: 40px; }
+.mm-listview > li.mm-spacer > .mm-next {
+top: 40px; }
+.mm-listview > li.mm-spacer.mm-divider {
+padding-top: 25px; }
+.mm-menu {
+background: #000;
+color: rgba(0, 0, 0, 0.7); }
+.mm-menu .mm-header {
+border-color: #7b7b7b }
+.mm-menu .mm-header > a {
+color: #fff }
+.mm-menu .mm-header .mm-btn:before,
+.mm-menu .mm-header .mm-btn:after {
+border-color: #fff }
+.mm-menu .mm-listview > li:after {
+border-color: #7b7b7b }
+.mm-menu .mm-listview > li > a.mm-prev, .mm-menu .mm-listview > li > a.mm-next {
+color: #fff; }
+.mm-menu .mm-listview > li > a.mm-prev:before, .mm-menu .mm-listview > li > a.mm-next:after {
+border-color: #fff }
+.mm-menu .mm-listview > li > a.mm-prev:after, .mm-menu .mm-listview > li > a.mm-next:before {
+border-color: #7b7b7b }
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu .mm-listview > li.mm-selected > span {
+background: rgba(255, 255, 255, 0.5); }
+.mm-menu.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+background: rgba(0, 0, 0, 0.05); }
+.mm-menu .mm-divider {
+background: rgba(0, 0, 0, 0.05); }
+.mm-page {
+box-sizing: border-box;
+position: relative; }
+.mm-slideout {
+-webkit-transition: -webkit-transform 0.4s ease;
+-ms-transition: -ms-transform 0.4s ease;
+transition: transform 0.4s ease; }
+html.mm-opened {
+overflow: hidden;
+position: relative; }
+html.mm-opened body {
+overflow: hidden; }
+html.mm-opened .mm-page {
+min-height: 100vh; }
+html.mm-background .mm-page {
+background: inherit; }
+#mm-blocker {
+background: rgba(3, 2, 1, 0);
+display: none;
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999999; }
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+display: block; }
+.mm-menu.mm-offcanvas {
+display: none;
+position: fixed; }
+.mm-menu.mm-current {
+display: block; }
+.mm-menu {
+width: 80%;
+min-width: 140px;
+max-width: 440px;
+}
+	html.mm-opening .mm-slideout {
+	-webkit-transform: translate(80%, 0);
+	-moz-transform: translate(80%, 0);
+	-ms-transform: translate(80%, 0);
+	-o-transform: translate(80%, 0);
+	transform: translate(80%, 0);
+}
+
+@media all and (max-width: 175px) {
+	html.mm-opening .mm-slideout {
+		-webkit-transform: translate(140px, 0);
+		-moz-transform: translate(140px, 0);
+		-ms-transform: translate(140px, 0);
+		-o-transform: translate(140px, 0);
+		transform: translate(140px, 0); }
+}
+@media all and (min-width: 550px) {
+	html.mm-opening .mm-slideout {
+		-webkit-transform: translate(440px, 0);
+		-moz-transform: translate(440px, 0);
+		-ms-transform: translate(440px, 0);
+		-o-transform: translate(440px, 0);
+		transform: translate(440px, 0); }
+}
+
+/**POP UP*/
+.process_message_age
+	position absolute
+	z-index 1006
+	overflow-y scroll
+	overflow-x hidden
+	height 100%
+	padding 0px
+	text-align center
+	top 0%
+	left 0%
+	text-align center
+	font-family inherit
+	background-color #001704
+	width 100%
+
+
+.process_message
+	position absolute
+	z-index 1006
+	overflow auto
+	padding 0px
+	text-align center
+	top 50%
+	left 50%
+	text-align center
+	font-family inherit
+	background-color #fff
+	display none
+	width 100%
+
+
+
+/*=================Scroll image============*/
+.parallax-window
+	min-height 430px
+	background transparent
+	margin-left -30px
+	margin-right -30px
+	margin-top 30px
+	margin-bottom 30px
+
+.parallax_content
+	text-align center
+	margin-top 10%
+	h2
+		font-size 48px
+		font-family inherit
+		color #fff
+		text-transform uppercase
+		letter-spacing -1px
+	p
+		font-family inherit
+		font-size 24px
+		color #fff
+		text-transform uppercase
+	a
+		background #333
+		font-family inherit
+		color #fff
+		text-transform uppercase
+		font-size 17px
+		padding 10px 20px 10px
+		margin-top 20px
+
+
+
+@media (min-width:1700px) and (max-width:1950px)
+	.video-container
+		height 788px
+
+
+@media (min-width:1500px) and (max-width:1699px)
+	.video-container
+		height 649px
+
+@media (min-width:1368px) and (max-width:1449px)
+	.video-container
+		height 563px
+
+
+@media (min-width:1360px) and (max-width:1367px)
+	.video-container
+		height 541px
+
+
+@media (min-width:1200px) and (max-width:1359px)
+	.video-container
+		height 511px
+
+@media (min-width:992px) and (max-width:1199px)
+
+	.video-container
+		height 401px
+
+
+
+@media (min-width:768px)
+
+	.navbar
+		.navbar-nav
+			display inline-block
+			float none
+		.navbar-collapse
+			text-align center
+
+
+@media (max-width:767px)
+
+	.dom-content-header
+		.img_head
+			margin-top
+			p
+				a
+					float left
+					font-size 25px !important
+
+	.bredcrumb, .page_breadcrumb, .breadcrumb, .breadcrumbs
+		margin-top 10px
+
+	.parallax-window
+			margin-left auto
+			margin-right auto
+	// banner
+	.carousel-control
+		.icon-prev
+			margin-left -5px
+		.icon-next
+			margin-right 2px
+
+	/*GALLERIA DE 1 */
+	.banner_one_section
+
+		.bnr_one
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+	/*GALLERIA DE 2 */
+	.banner_two_sections
+
+		&>.row
+			margin-left -10px
+			margin-right -10px
+		.bnr_one
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_two
+			padding-right 10px
+			padding-left 10px
+			margin-bottom 10px
+
+	/*GALLERIA DE 3 */
+	.banner_three_sections
+		&>.row
+			margin-left -10px
+			margin-right -10px
+		.bnr_one
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_two
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_three
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+
+	/*GALLERIA DE 4*/
+	.banner_four_sections
+		&>.row
+			margin-left 5px
+			margin-right 5px
+		.bnr_one
+			padding-left   5px
+			padding-right 5px
+			margin-bottom 10px
+		.bnr_two
+			padding-left  5px
+			padding-right  5px
+			margin-bottom 10px
+		.bnr_three
+			padding-left  5px
+			padding-right  5px
+			margin-bottom 10px
+		.bnr_four
+			padding-left 5px
+			padding-right 5px
+			margin-bottom 10px
+
+	/*GALLERIA DE 5*/
+	.banner_five_sections
+
+		&>.row
+			margin-left -10px
+			margin-right -10px
+		.bnr_one
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_two
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_three
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_four
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_five
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+
+
+	/*WIDGET DE  y 2 SECCIONES*/
+	.banner_one_two_sections
+		&>.row
+			margin-left -10px
+			margin-right -10px
+		.bnr_one
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+		.bnr_two_three
+			padding-left 10px
+			padding-right 10px
+			margin-bottom 10px
+	.sidebar_filter
+		display none
+	#content
+		.product_list,.widget_slider
+			.product_item
+				.preview
+					a
+						display none !important
+/*
+
+
+@media (max-width:650px)
+
+	header
+		.header_sec_search
+			.input_search
+				padding-top 3px
+		.navbar-default
+			.navbar-toggle
+				float left
+				margin -47px 0 0
+				background #fff
+
+		.top_movil_search
+			margin 16px 0 0
+			position absolute
+		.top_movil_cart
+			margin 14px 0 0 0
+
+
+
+
+@media (max-width:550px)
+
+	#msg_page_base
+		height 1780px
+	.process_message_age
+		height 1780px
+
+	header
+		.header_sec_search
+			.search_wrapper
+				margin 35px 0 0 -215px
+				width 280px
+				display inline-block
+				.search_box
+					width 90%
+					.input_search
+						width 80%
+				.close_popup
+					float left
+					width 8%
+
+
+		.navbar-default
+			.navbar-toggle
+				float left
+				margin -47px 0 0
+				background #fff
+
+		.top_movil_search
+			margin 16px 0 0
+			position absolute
+		.top_movil_cart
+			margin 14px 0 0 0
+*/
+// @media (max-width:479px)
+
+
+// 	//footer
+// 	.dom-content-footer
+// 		.footer-list
+// 			strong
+// 				border-top 1px solid #DBDBDB !important
+
+
+
+
+
+
+
+
+/*@media (max-width:320px)
+
+
+	header
+		.navbar-default
+			.navbar-toggle
+				float left
+				margin -37px 0 0
+				background #fff
+		.top_movil_search
+			margin 14px 0 0
+			position absolute
+		.top_movil_cart
+			margin 13px 0 0 0
+
+
+*/
